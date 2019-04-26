@@ -20,9 +20,7 @@ export default class MainHeader extends Component {
           </Right>
         </Header>
         <Content padder>
-          <Text>
             {this.props.children}
-          </Text>
         </Content>
       </Container>
     );
