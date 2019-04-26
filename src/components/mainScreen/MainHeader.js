@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Container, Header, Title, Content, Button, Icon, Left, Right, Body, Text } from "native-base";
+
 export default class MainHeader extends Component {
   render() {
     return (
@@ -20,7 +21,7 @@ export default class MainHeader extends Component {
             </Button>
           </Right>
         </Header>
-        <Content padder styles={{ colorBackgorund: 'black'}}>
+        <Content padder>
             {this.props.children}
         </Content>
       </Container>

@@ -30,9 +30,11 @@ export default class App extends Component {
     }
 
     return (
+      <Container  styles={{}}>
         <MainScreenLayout set_tab_number= {this.set_tab_number}>
           {tab}
         </MainScreenLayout>
+      </Container>
     );
   }
 }

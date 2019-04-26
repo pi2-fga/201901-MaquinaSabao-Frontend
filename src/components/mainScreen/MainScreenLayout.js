@@ -7,7 +7,7 @@ import { Container } from 'native-base';
 export default class MainScreenLayout extends Component{
   render() {
     return (
-      <Container >
+      <Container>
         <MainHeader>
           {this.props.children}
         </MainHeader>

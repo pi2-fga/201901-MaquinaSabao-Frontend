@@ -33,8 +33,7 @@ export default class MainFooter extends Component {
 
   render() {
     return (
-      <Container>
-        <Content />
+
         <Footer>
           <FooterTab>
             <Button vertical active={this.state.tab[0]} onPress={() => this.active_tab('1')}>
@@ -55,7 +54,7 @@ export default class MainFooter extends Component {
             </Button>
           </FooterTab>
         </Footer>
-      </Container>
+
     );
   }
 }

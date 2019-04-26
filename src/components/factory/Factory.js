@@ -39,20 +39,19 @@ export default class Factory extends Component {
               <Picker
                 renderHeader
                 mode="dropdown"
-                style={{ width: undefined }}
+
                 selectedValue={this.state.quantity}
                 onValueChange={this.set_quantity.bind(this)}
               >
                 <Picker.Item label="200 ml" value="200" />
                 <Picker.Item label="400 ml" value="400" />
-                <Picker.Item label="600 ml" value="600" />
+                <Picker.Item label="800 ml" value="800" />
               </Picker>
             </Item>
             <Item picker>
-              <Label>Fragrancia</Label>
+              <Label>Fragrância</Label>
               <Picker
                 mode="dropdown"
-                style={{ width: undefined }}
                 selectedValue={this.state.fragrance}
                 onValueChange={this.set_fragrance.bind(this)}
               >
@@ -60,13 +59,11 @@ export default class Factory extends Component {
                 <Picker.Item label="Não" value="0" />
               </Picker>
             </Item>
-
             <Container style={{ marginTop: '10%' }}>
               <Button block onPress={this.submit} >
                 <Text>Iniciar</Text>
               </Button>
             </Container>
-
           </Form>
         </Content>
       </Container>
