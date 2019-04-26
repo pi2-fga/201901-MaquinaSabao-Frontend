@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Header, Content, Form, Item, Picker, Body, Title, Text } from 'native-base';
+import { Container, Header, Content, Form, Item, Picker, Body, Title, Text, Label, Button } from 'native-base';
 
 
 export default class Factory extends Component {
@@ -7,7 +7,7 @@ export default class Factory extends Component {
     constructor(props) {
     super(props);
     this.state = {
-      quantity: 'key1',
+      quantity: '200',
       fragrance: '1'
     };
   }
@@ -24,17 +24,18 @@ export default class Factory extends Component {
     });
   }
 
+  submit(){
+
+  }
+
   render() {
     return (
-      <Container>
-        <Header>
-         <Body>
-           <Title>FABRICAÇÃO DE SABÃO</Title>
-         </Body>
-       </Header>
-        <Content>
+      <Container style={{ }}>
+        <Title style={{ color: 'black', marginTop: '5%', marginBottom: '10%' }}>FABRICAÇÃO DE SABÃO</Title>
+        <Content padder>
           <Form>
             <Item picker>
+              <Label>Quantidade</Label>
               <Picker
                 renderHeader
                 mode="dropdown"
@@ -42,24 +43,30 @@ export default class Factory extends Component {
                 selectedValue={this.state.quantity}
                 onValueChange={this.set_quantity.bind(this)}
               >
-                <Picker.Item label="Wallet" value="key0" />
-                <Picker.Item label="ATM Card" value="key1" />
-                <Picker.Item label="Debit Card" value="key2" />
-                <Picker.Item label="Credit Card" value="key3" />
-                <Picker.Item label="Net Banking" value="key4" />
+                <Picker.Item label="200 ml" value="200" />
+                <Picker.Item label="400 ml" value="400" />
+                <Picker.Item label="600 ml" value="600" />
               </Picker>
             </Item>
             <Item picker>
+              <Label>Fragrancia</Label>
               <Picker
                 mode="dropdown"
                 style={{ width: undefined }}
                 selectedValue={this.state.fragrance}
                 onValueChange={this.set_fragrance.bind(this)}
               >
-                <Picker.Item label="Com" value="1" />
-                <Picker.Item label="Sem" value="0" />
+                <Picker.Item label="Sim" value="1" />
+                <Picker.Item label="Não" value="0" />
               </Picker>
             </Item>
+
+            <Container style={{ marginTop: '10%' }}>
+              <Button block onPress={this.submit} >
+                <Text>Iniciar</Text>
+              </Button>
+            </Container>
+
           </Form>
         </Content>
       </Container>

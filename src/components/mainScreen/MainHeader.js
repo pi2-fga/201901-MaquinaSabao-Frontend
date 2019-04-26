@@ -14,12 +14,13 @@ export default class MainHeader extends Component {
             <Title>Grifinóleo</Title>
           </Body>
           <Right>
-            <Button transparent>
-              <Text>Cancel</Text>
+            <Button iconLeft light>
+              <Icon name='format-color-fill' type='MaterialIcons' />
+              <Text>Máquina</Text>
             </Button>
           </Right>
         </Header>
-        <Content padder>
+        <Content padder styles={{ colorBackgorund: 'black'}}>
             {this.props.children}
         </Content>
       </Container>
