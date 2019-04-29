@@ -1,70 +1,39 @@
 import React, { Component } from 'react';
 import { Container, Header, Content, Form, Item, Picker, Body, Title, Text, Label, Button } from 'native-base';
+import FactoryForm from "./FactoryForm"
+import FactoryProcess from "./FactoryProcess"
+import './global.js'
 
 
 export default class Factory extends Component {
 
     constructor(props) {
-    super(props);
-    this.state = {
-      quantity: '200',
-      fragrance: '1'
-    };
+      super(props);
+      this.state = {
+        screen: global.factory_screen, // Screen can be main, process or end
+      };
   }
 
-  set_quantity(value: string) {
-    this.setState({
-      quantity: value
-    });
-  }
-
-  set_fragrance(value: string) {
-    this.setState({
-      fragrance: value
-    });
-  }
-
-  submit(){
-
+  set_screen = (screen_aux) => {
+    this.setState({screen: screen_aux})
   }
 
   render() {
+
+    let factory_screen;
+
+    if ( this.state.screen === 'main' ){
+      factory_screen = <FactoryForm set_screen={this.set_screen} />
+    }
+    else if ( this.state.screen === 'process' ){
+      factory_screen = <FactoryProcess/>
+    }
+
     return (
       <Container style={{ }}>
         <Title style={{ color: 'black', marginTop: '5%', marginBottom: '10%' }}>FABRICAÇÃO DE SABÃO</Title>
         <Content padder>
-          <Form>
-            <Item picker>
-              <Label>Quantidade</Label>
-              <Picker
-                renderHeader
-                mode="dropdown"
-
-                selectedValue={this.state.quantity}
-                onValueChange={this.set_quantity.bind(this)}
-              >
-                <Picker.Item label="200 ml" value="200" />
-                <Picker.Item label="400 ml" value="400" />
-                <Picker.Item label="800 ml" value="800" />
-              </Picker>
-            </Item>
-            <Item picker>
-              <Label>Fragrância</Label>
-              <Picker
-                mode="dropdown"
-                selectedValue={this.state.fragrance}
-                onValueChange={this.set_fragrance.bind(this)}
-              >
-                <Picker.Item label="Sim" value="1" />
-                <Picker.Item label="Não" value="0" />
-              </Picker>
-            </Item>
-            <Container style={{ marginTop: '10%' }}>
-              <Button block onPress={this.submit} >
-                <Text>Iniciar</Text>
-              </Button>
-            </Container>
-          </Form>
+          {factory_screen}
         </Content>
       </Container>
     );
