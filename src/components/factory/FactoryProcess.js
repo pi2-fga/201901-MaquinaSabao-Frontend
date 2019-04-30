@@ -1,9 +1,17 @@
 import React, {Component} from 'react';
-import { Container, Spinner, Button, Text, Label} from 'native-base';
+import { Container, Spinner, Button, Text, Label, CardItem, Body, Card} from 'native-base';
 import Stepper from 'react-native-js-stepper'
 import { StyleSheet } from 'react-native'
 import { Col, Row, Grid } from 'react-native-easy-grid';
 
+
+const machine_steps = [
+                       'Dissolvendo soda cáustica em água.\n(Isso pode demorar aproximadamente 7 minutos)',
+                       'Acrescentando o óleo residual, e misturando.\n(Isso pode demorar aproximadamente 5 minutos)',
+                       'Acrescentando o álcool, e misturando.\n(Isso pode demorar aproximadamente 5 minutos)',
+                       'Acrescentando o água fervente, e misturando.\n(Isso pode demorar aproximadamente 5 minutos)',
+                       'Acrescentando o água a temperatura ambiente e essência, e misturando.\n(Isso pode demorar aproximadamente 15 minutos)',
+                      ]
 
 export default class FactoryProcess extends Component{
 
@@ -31,7 +39,7 @@ export default class FactoryProcess extends Component{
             </Col>
           </Row>
           <Row style={{ height: 60}}>
-            <Label style={{marginTop: '5%'}}>Passos:</Label>
+            <Label style={{marginTop: '5%'}}>Etapas:</Label>
           </Row>
           <Row>
             <Stepper
@@ -40,7 +48,7 @@ export default class FactoryProcess extends Component{
               inactiveDotStyle={styles.inactiveDot}
               showTopStepper={true}
               showBottomStepper={false}
-              steps={['Diluir soda cáustica em água', 'Acrescentar óleo residual', 'Misturar']}
+              steps={['', '', '', '', '']}
               activeStepStyle={styles.activeStep}
               inactiveStepStyle={styles.inactiveStep}
               activeStepTitleStyle={styles.activeStepTitle}
@@ -49,6 +57,15 @@ export default class FactoryProcess extends Component{
               inactiveStepNumberStyle={styles.inactiveStepNumber}
               initialPage={this.state.step}>
               <Container>
+                 <Card>
+                  <CardItem transparent={false}>
+                    <Body>
+                      <Text>
+                         {machine_steps[this.state.step]}
+                      </Text>
+                    </Body>
+                  </CardItem>
+                 </Card>
               </Container>
             </Stepper>
           </Row>
