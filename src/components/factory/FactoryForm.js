@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Header, Content, Form, Item, Picker, Body, Title, Text, Label, Button, Card, CardItem, Icon, Left, Right, View } from 'native-base';
 import Modal from "react-native-modal";
-import { TouchableOpacity } from 'react-native'
+import { TouchableOpacity, Image } from 'react-native'
 import './global.js'
 
 export default class FactoryForm extends Component {
@@ -158,6 +158,16 @@ export default class FactoryForm extends Component {
                             </Right>
                           </CardItem>) : (<View/>)
                         }
+                        <CardItem>
+                          <Title style={{color: 'black'}}>Qualidade do óleo:</Title>
+                        </CardItem>
+                        <CardItem>
+                          <Image
+                            style={{width: 100, height: 100}}
+                            source={require('../../images/oleo.jpg')}
+                          />
+                          <Text style={{color: 'green', marginLeft: '5%'}}>Boa</Text>
+                        </CardItem>
                         <Button block danger onPress={this.close_modal}>
                           <Icon name='md-close-circle-outline' style={{}}/>
                         </Button>

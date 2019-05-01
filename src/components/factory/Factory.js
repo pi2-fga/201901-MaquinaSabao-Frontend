@@ -31,7 +31,7 @@ export default class Factory extends Component {
 
     return (
       <Container style={{ }}>
-        <Title style={{ color: 'black', marginTop: '5%', marginBottom: '10%' }}>FABRICAÇÃO DE SABÃO</Title>
+        <Title style={{ color: 'black', marginTop: '5%', marginBottom: '5%' }}>FABRICAÇÃO DE SABÃO</Title>
         <Content padder>
           {factory_screen}
         </Content>
