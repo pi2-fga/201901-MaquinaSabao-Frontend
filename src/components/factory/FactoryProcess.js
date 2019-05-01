@@ -19,6 +19,7 @@ export default class FactoryProcess extends Component{
     super(props);
     this.state = {
       step: 0,
+      machine_temp: 50,
     };
   }
 
@@ -26,7 +27,18 @@ export default class FactoryProcess extends Component{
 
   }
 
+
   render() {
+
+    let machine_temp
+
+    if (this.state.machine_temp <= 40){
+      machine_temp = <Text id='machine_temp' style={{color: 'green'}}>  {this.state.machine_temp}ºC</Text>
+    }else{
+      machine_temp = <Text id='machine_temp' style={{color: 'red'}}>  {this.state.machine_temp}ºC</Text>
+    }
+
+
     return (
       <Container>
         <Grid>
@@ -68,6 +80,10 @@ export default class FactoryProcess extends Component{
                  </Card>
               </Container>
             </Stepper>
+          </Row>
+          <Row style={{ height: 320}}>
+            <Label style={{marginTop: '0%'}}>Temperatura da Máquina:</Label>
+            {machine_temp}
           </Row>
         </Grid>
       </Container>

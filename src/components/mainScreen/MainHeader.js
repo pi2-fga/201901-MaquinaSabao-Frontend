@@ -14,12 +14,6 @@ export default class MainHeader extends Component {
           <Body>
             <Title>Grifinóleo</Title>
           </Body>
-          <Right>
-            <Button iconLeft light>
-              <Icon name='format-color-fill' type='MaterialIcons' />
-              <Text>Máquina</Text>
-            </Button>
-          </Right>
         </Header>
         <Content padder>
             {this.props.children}
