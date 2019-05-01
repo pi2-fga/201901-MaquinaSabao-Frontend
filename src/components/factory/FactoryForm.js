@@ -93,7 +93,7 @@ export default class FactoryForm extends Component {
           </Picker>
         </Item>
         <Container style={{ marginTop: '10%' }}>
-          <Button block onPress={this.submit} >
+          <Button block onPress={this.submit} disabled={this.state.quantity === 2 ? false : true} >
             <Text>Iniciar</Text>
           </Button>
           <Card style={{marginTop: '3%'}}>
@@ -164,7 +164,7 @@ export default class FactoryForm extends Component {
                       </Card>
                   </View>
                 </Modal>
-                <Button block light onPress={this.open_modal}>
+                <Button block success onPress={this.open_modal} danger={this.state.quantity === 2 ? false : true}>
                   <Icon name='format-color-fill' type='MaterialIcons'/>
                   <Text>Máquina</Text>
                 </Button>
