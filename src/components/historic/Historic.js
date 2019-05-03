@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import { Container, Header, Content, Text, Title, List, FlatList, ListItem, Right, Left, Button, View, Icon, Card, CardItem } from 'native-base';
 import Modal from "react-native-modal";
+import { TouchableOpacity, Image } from 'react-native'
 
-const list = [{id: 1, date: '12/01/2019', time: '12:42:30'}, {id: 2, date: '12/01/2019', time: '12:02:45'}, {id: 3, date: '11/01/2019', time: '12:50:10'}]
+
+const list = [{id: 1, date: '12/01/2019', startTime: '12:42:30', endTime: '13:30:30', quantity: 2, prePh: 9, preViscosity: 4000, viscosity: 3000, ph: 8, quality:'boa', fragrance:'Sim'},
+              {id: 2, date: '12/01/2019', startTime: '12:02:45', endTime: '12:42:60', quantity: 2, prePh: 9, preViscosity: 4000, viscosity: 3000, ph: 8, quality:'boa', fragrance:'Sim'},
+              {id: 3, date: '11/01/2019', startTime: '12:50:10', endTime: '13:40:10', quantity: 2, prePh: 9, preViscosity: 4000, viscosity: 3000, ph: 8, quality:'boa', fragrance:'Sim'}]
 
 export default class Historic extends Component {
   constructor(props){
@@ -43,10 +47,53 @@ export default class Historic extends Component {
             <View style={{ flex: 1 }}>
               <Card>
                 <CardItem>
-                  <Text>Data: {this.state.element.date}</Text>
+                  <Left><Text>Data: </Text></Left>
+                  <Right><Text>{this.state.element.date}</Text></Right>
                 </CardItem>
                 <CardItem>
-                  <Text>Hora de inicio: {this.state.element.time}</Text>
+                  <Left><Text>Hora de inicio:</Text></Left>
+                  <Right><Text>{this.state.element.startTime}</Text></Right>
+                </CardItem>
+                <CardItem>
+                  <Left><Text>Hora de fim: </Text></Left>
+                  <Right><Text>{this.state.element.endTime}</Text></Right>
+                </CardItem>
+                <CardItem>
+                  <Left><Text>Quantidade de sabão:</Text></Left>
+                  <Right><Text> {this.state.element.quantity}L</Text></Right>
+                </CardItem>
+                <CardItem>
+                  <Left><Text>Ph previsto: </Text></Left>
+                  <Right><Text>{this.state.element.prePh}</Text></Right>
+                </CardItem>
+                <CardItem>
+                  <Left><Text>Viscosidade prevista: </Text></Left>
+                  <Right><Text>{this.state.element.preViscosity}CPS</Text></Right>
+                </CardItem>
+                <CardItem>
+                  <Left><Text>Viscosidade: </Text></Left>
+                  <Right><Text>{this.state.element.viscosity}CPS</Text></Right>
+                </CardItem>
+                <CardItem>
+                  <Left><Text>Ph: </Text></Left>
+                  <Right><Text>{this.state.element.ph}</Text></Right>
+                </CardItem>
+                <CardItem>
+                  <Left><Text>Qualidade do óleo: </Text></Left>
+                  <Right><Text>{this.state.element.quality}</Text></Right>
+                </CardItem>
+                <CardItem>
+                  <Left><Text>Fragrância: </Text></Left>
+                  <Right><Text>{this.state.element.fragrance}</Text></Right>
+                </CardItem>
+                <CardItem>
+                  <Left><Text>Imagem do óleo:</Text></Left>
+                  <Right>
+                    <Image
+                      style={{width: 100, height: 100}}
+                      source={require('../../images/oleo.jpg')}
+                    />
+                  </Right>
                 </CardItem>
                 <Button block danger onPress={this.close_modal}>
                   <Icon name='md-close-circle-outline' style={{}}/>
@@ -63,7 +110,7 @@ export default class Historic extends Component {
                       <Text>{element.date}</Text>
                     </Left>
                     <Right>
-                      <Text>{element.time}</Text>
+                      <Text>{element.startTime}</Text>
                     </Right>
                   </ListItem>
               ))
