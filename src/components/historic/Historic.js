@@ -48,10 +48,11 @@ export default class Historic extends Component {
                 <CardItem>
                   <Text>Hora de inicio: {this.state.element.time}</Text>
                 </CardItem>
+                <Button block danger onPress={this.close_modal}>
+                  <Icon name='md-close-circle-outline' style={{}}/>
+                </Button>
               </Card>
-              <Button block danger onPress={this.close_modal}>
-                <Icon name='md-close-circle-outline' style={{}}/>
-              </Button>
+
             </View>
           </Modal>
           <List>

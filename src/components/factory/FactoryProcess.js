@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import { Container, Spinner, Button, Text, Label, CardItem, Body, Card, Separator, View} from 'native-base';
-import Stepper from 'react-native-js-stepper'
+import StepIndicator from 'react-native-step-indicator';
 import { StyleSheet } from 'react-native'
 import { Col, Row, Grid } from 'react-native-easy-grid';
+import TimerMixin from 'react-timer-mixin';
+import './global.js'
 
 
 const machine_steps = [
@@ -18,24 +20,38 @@ export default class FactoryProcess extends Component{
   constructor(props) {
     super(props);
     this.state = {
-      step: 0,
+      step: global.step_process,
       machine_temp: 50,
     };
   }
 
-  next_step = () => {
-    this.setState({
-      step: this.state.step + 1
-    })
+  mixins: [TimerMixin]
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({
+        step: 1
+      })
+      global.step_process = 1
+      setTimeout(() => {
+        this.setState({
+          step: 2
+        })
+        global.step_process = 2
+        setTimeout(() => {
+          this.setState({
+            step: 3
+          })
+          global.step_process = 3
+          setTimeout(() => {
+            this.setState({
+              step: 4
+            })
+            global.step_process = 4
+          }, 3000);
+        }, 3000);
+      }, 3000);
+    }, 3000);
   }
-
-  back_step = () => {
-    this.setState({
-      step: this.state.step - 1
-    })
-  }
-
-
 
   render() {
 
@@ -50,6 +66,7 @@ export default class FactoryProcess extends Component{
 
     return (
       <Container>
+      <StepIndicator currentPosition={this.state.step}/>
         <Grid>
             <Row style={{ height: '13%', marginBottom: '1%'}}>
                 <Col style={{}}>
@@ -59,46 +76,23 @@ export default class FactoryProcess extends Component{
                   <Label>Em andamento</Label>
                 </Col>
             </Row>
-          <Row style={{ height: '5%'}}>
-            <Label style={{marginTop: '0%'}}>Temperatura da Máquina:</Label>
-            {machine_temp}
-          </Row>
-          { this.state.step === 3 ? (<Row style={{ height: '3%'}}><Label>Temperatura da água: </Label><Text style={{color: 'red'}}>30ºC</Text></Row>) : (<View/>)}
-          <Row style={{ height: '10%'}}>
-            <Label style={{marginTop: '5%'}}>Etapas:</Label>
-          </Row>
-          <Row style={{ height: '37%'}}>
-            <Stepper
-              onPressNext={this.next_step}
-              onPressBack={this.back_step}
-              backButtonTitle="Anterior"
-              nextButtonTitle="Próximo"
-              validation={true}
-              activeDotStyle={styles.activeDot}
-              inactiveDotStyle={styles.inactiveDot}
-              showTopStepper={true}
-              showBottomStepper={true}
-              steps={['->', '', '', '', '',]}
-              activeStepStyle={styles.activeStep}
-              inactiveStepStyle={styles.inactiveStep}
-              activeStepTitleStyle={styles.activeStepTitle}
-              inactiveStepTitleStyle={styles.inactiveStepTitle}
-              activeStepNumberStyle={styles.activeStepNumber}
-              inactiveStepNumberStyle={styles.inactiveStepNumber}
-              initialPage={this.state.step}>
 
-                 <Card>
-                  <CardItem transparent={false} style={{backgroundColor: '#ADD8E6'}}>
-                    <Body>
-                      <Text>
-                         {machine_steps[this.state.step]}
-                      </Text>
-                    </Body>
-                  </CardItem>
-                 </Card>
-
-            </Stepper>
-          </Row>
+            <Card>
+             <CardItem transparent={false} style={{backgroundColor: '#ADD8E6'}}>
+               <Body>
+                 <Text>
+                    {machine_steps[this.state.step]}
+                 </Text>
+               </Body>
+             </CardItem>
+             <CardItem transparent={false} style={{backgroundColor: '#ADD8E6'}}>
+               { this.state.step === 3 ? (<Grid><Label>Temperatura da água: </Label><Text style={{color: 'red'}}>30ºC</Text></Grid>) : (<View/>)}
+             </CardItem>
+            </Card>
+            <Row style={{ height: '5%', marginTop: '2%', marginLeft: '1%'}}>
+              <Label style={{marginTop: '0%'}}>Temperatura da Máquina:</Label>
+              {machine_temp}
+            </Row>
         </Grid>
       </Container>
     );

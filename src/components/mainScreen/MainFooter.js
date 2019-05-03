@@ -34,21 +34,21 @@ export default class MainFooter extends Component {
   render() {
     return (
 
-        <Footer>
+        <Footer style={{height: '10%'}}>
           <FooterTab>
-            <Button vertical active={this.state.tab[0]} onPress={() => this.active_tab('1')}>
+            <Button vertical active={this.state.tab[0]} onPress={() => this.active_tab('1')} style={{ height: '100%'}}>
               <Icon name='factory' type='MaterialCommunityIcons'/>
-              <Text>Fabricação</Text>
+              <Text>Fabricar</Text>
             </Button>
-            <Button vertical active={this.state.tab[1]} onPress={() => this.active_tab('2')}>
+            <Button vertical active={this.state.tab[1]} onPress={() => this.active_tab('2')} style={{ height: '100%'}}>
               <Icon name='history' type='MaterialIcons'/>
               <Text>Histórico</Text>
             </Button>
-            <Button vertical active={this.state.tab[2]} onPress={() => this.active_tab('3')}>
+            <Button vertical active={this.state.tab[2]} onPress={() => this.active_tab('3')} style={{ height: '100%'}}>
               <Icon name='bar-graph' type='Entypo'/>
               <Text>BI</Text>
             </Button>
-            <Button vertical active={this.state.tab[3]} onPress={() => this.active_tab('4')}>
+            <Button vertical active={this.state.tab[3]} onPress={() => this.active_tab('4')} style={{ height: '100%'}}>
               <Icon name='book-open' type='SimpleLineIcons'/>
               <Text>Manual</Text>
             </Button>

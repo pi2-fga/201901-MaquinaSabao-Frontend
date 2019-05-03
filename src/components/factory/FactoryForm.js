@@ -92,21 +92,20 @@ export default class FactoryForm extends Component {
             <Picker.Item label="Não" value={0} />
           </Picker>
         </Item>
-        <Container style={{ marginTop: '10%' }}>
-          <Button block onPress={this.submit} disabled={this.state.quantity === 2 ? false : true} >
-            <Text>Iniciar</Text>
-          </Button>
-          <Card style={{marginTop: '3%'}}>
+        <Container style={{}}>
+          <Card style={{marginTop: '10%', marginBottom: '10%'}}>
             <CardItem transparent={false} style={{ backgroundColor: 'yellow'}}>
-              <Body>
-                <Title style={{color: 'black'}}>Quantidade necessaria de insumos:</Title>
+              <Body >
+                <Icon name='alert-triangle' type='Feather' style={{marginLeft: "auto", marginRight: "auto", marginBottom: '3%'}}/>
+                <Text style={{color: 'black', fontSize: 20, fontWeight: 'bold'}}>Quantidade necessária de insumos:</Text>
                 {quantity_info}
+                <Button block success onPress={this.open_modal} danger={this.state.quantity === 2 ? false : true} style={{marginTop: '3%'}}>
+                  <Icon name='format-color-fill' type='MaterialIcons'/>
+                  <Text>Máquina</Text>
+                </Button>
               </Body>
             </CardItem>
           </Card>
-          <Card style={{marginTop: '3%'}}>
-            <CardItem transparent={false} style={{}}>
-              <Body>
                 <Modal isVisible={this.state.modal}>
                   <View style={{ flex: 1 }}>
                       <Card>
@@ -174,13 +173,9 @@ export default class FactoryForm extends Component {
                       </Card>
                   </View>
                 </Modal>
-                <Button block success onPress={this.open_modal} danger={this.state.quantity === 2 ? false : true}>
-                  <Icon name='format-color-fill' type='MaterialIcons'/>
-                  <Text>Máquina</Text>
+                <Button block onPress={this.submit} disabled={this.state.quantity === 2 ? false : true} >
+                  <Text>Iniciar</Text>
                 </Button>
-              </Body>
-            </CardItem>
-          </Card>
         </Container>
       </Form>
     );
