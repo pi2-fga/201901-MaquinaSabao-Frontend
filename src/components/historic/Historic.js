@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, Header, Content, Text, Title, List, FlatList, ListItem, Right, Left, Button, View, Icon, Card, CardItem } from 'native-base';
 import Modal from "react-native-modal";
 import { TouchableOpacity, Image } from 'react-native'
+import ExtraDimensions from 'react-native-extra-dimensions-android';
 
 
 const list = [{id: 1, date: '12/01/2019', startTime: '12:42:30', endTime: '13:30:30', quantity: 2, prePh: 9, preViscosity: 4000, viscosity: 3000, ph: 8, quality:'boa', fragrance:'Sim'},
@@ -43,7 +44,7 @@ export default class Historic extends Component {
               <Text style={{color: 'white'}}>Hora de inicio</Text>
             </Right>
           </Header>
-          <Modal isVisible={this.state.modal}>
+          <Modal isVisible={this.state.modal} diviceHeight={ExtraDimensions.getRealWindowHeight()} deviceWidth={ExtraDimensions.getRealWindowWidth()}>
             <View style={{ flex: 1 }}>
               <Card>
                 <CardItem>

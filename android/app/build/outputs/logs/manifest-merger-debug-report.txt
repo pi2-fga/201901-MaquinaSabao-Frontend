@@ -5,6 +5,7 @@ INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/andr
 INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:1:1-26:12
 INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:1:1-26:12
 MERGED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:1:1-26:12
+MERGED from [:react-native-extra-dimensions-android] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-extra-dimensions-android/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-vector-icons] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-gesture-handler] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.59.5] /home/bruno/.gradle/caches/transforms-1/files-1.1/react-native-0.59.5.aar/81436e53248f76c69904e10a67cb6308/AndroidManifest.xml:2:1-13:12
@@ -131,6 +132,8 @@ uses-sdk
 INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml
 INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-extra-dimensions-android] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-extra-dimensions-android/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-extra-dimensions-android] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-extra-dimensions-android/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-gesture-handler] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
