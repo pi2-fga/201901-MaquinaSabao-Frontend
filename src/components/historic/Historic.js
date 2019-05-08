@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Header, Content, Text, Title, List, FlatList, ListItem, Right, Left, Button, View, Icon, Card, CardItem } from 'native-base';
 import Modal from "react-native-modal";
-import { TouchableOpacity, Image } from 'react-native'
+import { TouchableOpacity, Image, ScrollView } from 'react-native'
 import ExtraDimensions from 'react-native-extra-dimensions-android';
 
 
@@ -44,8 +44,8 @@ export default class Historic extends Component {
               <Text style={{color: 'white'}}>Hora de inicio</Text>
             </Right>
           </Header>
-          <Modal isVisible={this.state.modal} diviceHeight={ExtraDimensions.getRealWindowHeight()} deviceWidth={ExtraDimensions.getRealWindowWidth()}>
-            <View style={{ flex: 1 }}>
+          <Modal isVisible={this.state.modal} deviceHeight={ExtraDimensions.getRealWindowHeight()} deviceWidth={ExtraDimensions.getRealWindowWidth()}>
+            <ScrollView style={{ flex: 1 }}>
               <Card>
                 <CardItem>
                   <Left><Text>Data: </Text></Left>
@@ -101,7 +101,7 @@ export default class Historic extends Component {
                 </Button>
               </Card>
 
-            </View>
+            </ScrollView>
           </Modal>
           <List>
             {

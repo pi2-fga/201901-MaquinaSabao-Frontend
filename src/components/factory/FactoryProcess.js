@@ -5,6 +5,8 @@ import { StyleSheet } from 'react-native'
 import { Col, Row, Grid } from 'react-native-easy-grid';
 import TimerMixin from 'react-timer-mixin';
 import './global.js'
+import Modal from "react-native-modal";
+
 
 
 const machine_steps = [
@@ -22,40 +24,58 @@ export default class FactoryProcess extends Component{
     this.state = {
       step: global.step_process,
       machine_temp: 50,
+      conclusion_modal: false,
     };
+    this.close_modal = this.close_modal.bind(this)
   }
 
   mixins: [TimerMixin]
   componentDidMount() {
-    setTimeout(() => {
-      this.setState({
-        step: 1
-      })
-      global.step_process = 1
+    if (global.step_process !== 4){
       setTimeout(() => {
         this.setState({
-          step: 2
+          step: 1
         })
-        global.step_process = 2
+        global.step_process = 1
         setTimeout(() => {
           this.setState({
-            step: 3
+            step: 2
           })
-          global.step_process = 3
+          global.step_process = 2
           setTimeout(() => {
             this.setState({
-              step: 4
+              step: 3
             })
-            global.step_process = 4
+            global.step_process = 3
+            setTimeout(() => {
+              this.setState({
+                step: 4
+              })
+              global.step_process = 4
+              setTimeout(() => {
+                this.setState({
+                  conclusion_modal: true
+                })
+              }, 3000);
+            }, 3000);
           }, 3000);
         }, 3000);
       }, 3000);
-    }, 3000);
+    }
+  }
+
+  close_modal(){
+    this.props.set_screen('main')
+    this.setState({
+      conclusion_modal: false
+    })
   }
 
   render() {
 
     let machine_temp
+
+    let conclusion_modal
 
     if (this.state.machine_temp <= 40){
       machine_temp = <Text id='machine_temp' style={{color: 'green'}}>  {this.state.machine_temp}ºC</Text>
@@ -63,6 +83,12 @@ export default class FactoryProcess extends Component{
       machine_temp = <Text id='machine_temp' style={{color: 'red'}}>  {this.state.machine_temp}ºC</Text>
     }
 
+    if( this.state.conclusion_modal ){
+        global.step_process = 0
+      conclusion_modal = (<Modal isVisible={this.state.conclusion_modal}><Card><CardItem><Text style={{color: 'green'}}>Processo de fabricação finalizado!</Text></CardItem><Button block success onPress={this.close_modal}><Text>Voltar</Text></Button></Card></Modal>)
+    }else{
+      conclusion_modal = (<View></View>)
+    }
 
     return (
       <Container>
@@ -94,6 +120,9 @@ export default class FactoryProcess extends Component{
               {machine_temp}
             </Row>
         </Grid>
+        {
+          conclusion_modal
+        }
       </Container>
     );
   }

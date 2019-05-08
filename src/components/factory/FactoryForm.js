@@ -92,8 +92,14 @@ export default class FactoryForm extends Component {
             <Picker.Item label="Não" value={0} />
           </Picker>
         </Item>
+        <View style={{marginTop: '5%'}}>
+          <Button block dark>
+            <Text>Tirar foto do óleo</Text>
+            <Icon name='camera' type='AntDesign'/>
+          </Button>
+        </View>
         <Container style={{}}>
-          <Card style={{marginTop: '10%', marginBottom: '10%'}}>
+          <Card style={{marginTop: '5%', marginBottom: '5%'}}>
             <CardItem transparent={false} style={{ backgroundColor: 'yellow'}}>
               <Body >
                 <Icon name='alert-triangle' type='Feather' style={{marginLeft: "auto", marginRight: "auto", marginBottom: '3%'}}/>
