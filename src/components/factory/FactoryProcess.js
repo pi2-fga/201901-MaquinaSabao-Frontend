@@ -66,6 +66,7 @@ export default class FactoryProcess extends Component{
 
   close_modal(){
     this.props.set_screen('main')
+    global.factory_screen = 'main'
     this.setState({
       conclusion_modal: false
     })
