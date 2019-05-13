@@ -41,7 +41,7 @@ export default class Historic extends Component {
               <Text style={{color: 'white', marginLeft: '11%'}}>Data</Text>
             </Left>
             <Right>
-              <Text style={{color: 'white'}}>Hora de inicio</Text>
+              <Text style={{color: 'white'}}>Hora de início</Text>
             </Right>
           </Header>
           <Modal isVisible={this.state.modal} deviceHeight={ExtraDimensions.getRealWindowHeight()} deviceWidth={ExtraDimensions.getRealWindowWidth()}>
@@ -52,7 +52,7 @@ export default class Historic extends Component {
                   <Right><Text>{this.state.element.date}</Text></Right>
                 </CardItem>
                 <CardItem>
-                  <Left><Text>Hora de inicio:</Text></Left>
+                  <Left><Text>Hora de início:</Text></Left>
                   <Right><Text>{this.state.element.startTime}</Text></Right>
                 </CardItem>
                 <CardItem>
@@ -64,7 +64,7 @@ export default class Historic extends Component {
                   <Right><Text> {this.state.element.quantity}L</Text></Right>
                 </CardItem>
                 <CardItem>
-                  <Left><Text>Ph previsto: </Text></Left>
+                  <Left><Text>PH previsto: </Text></Left>
                   <Right><Text>{this.state.element.prePh}</Text></Right>
                 </CardItem>
                 <CardItem>
@@ -76,7 +76,7 @@ export default class Historic extends Component {
                   <Right><Text>{this.state.element.viscosity}CPS</Text></Right>
                 </CardItem>
                 <CardItem>
-                  <Left><Text>Ph: </Text></Left>
+                  <Left><Text>PH: </Text></Left>
                   <Right><Text>{this.state.element.ph}</Text></Right>
                 </CardItem>
                 <CardItem>

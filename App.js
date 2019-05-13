@@ -1,10 +1,11 @@
 
 import React, { Component } from "react";
-import MainScreenLayout from "./src/components/mainScreen/MainScreenLayout"
-import Factory from "./src/components/factory/Factory"
-import HomeScreen from "./src/components/HomeScreen"
+import MainScreenLayout from "./src/components/mainScreen/MainScreenLayout";
+import Factory from "./src/components/factory/Factory";
+import HomeScreen from "./src/components/HomeScreen";
 import { Container } from 'native-base';
-import Historic from "./src/components/historic/Historic"
+import Historic from "./src/components/historic/Historic";
+import Manual from "./src/components/manual/Manual";
 
 export default class App extends Component {
 
@@ -31,6 +32,8 @@ export default class App extends Component {
     }
     else if (this.state.tab_number === 2){
       tab = <Historic/>
+    } else if (this.state._tab_number === 4){
+      tab = <Manual/>
     }
 
     return (
