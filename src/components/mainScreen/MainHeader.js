@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Header, Title, Content, Button, Icon, Left, Right, Body, Text } from "native-base";
+import { Container, Header, Title, Content, Button, Icon, Left, Right, Body, Text, Col, Grid, View } from "native-base";
 
 export default class MainHeader extends Component {
   render() {
@@ -11,11 +11,12 @@ export default class MainHeader extends Component {
               <Icon name="arrow-back" />
             </Button>
           </Left>
-          <Body>
-            <Title>Grifinóleo</Title>
-          </Body>
+            <View style={{alignItems: 'center', marginTop: '1%'}}>
+              <Icon name="tint" type='FontAwesome' style={{color: 'white'}}/>
+              <Title style={{fontSize: 13}}>FÁBRICA DE SABÃO</Title>
+            </View>
         </Header>
-        <Content padder>
+        <Content>
             {this.props.children}
         </Content>
       </Container>

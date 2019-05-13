@@ -120,6 +120,14 @@ export default class FactoryProcess extends Component{
               <Label style={{marginTop: '0%'}}>Temperatura da Máquina:</Label>
               {machine_temp}
             </Row>
+            <Row style={{ height: '5%', marginTop: '2%', marginLeft: '1%'}}>
+              <Label style={{marginTop: '0%'}}>Ph previsto:</Label>
+              <Text>  9</Text>
+            </Row>
+            <Row style={{ height: '5%', marginTop: '2%', marginLeft: '1%'}}>
+              <Label style={{marginTop: '0%'}}>Viscosidade prevista:</Label>
+              <Text >  4000 CPS</Text>
+            </Row>
         </Grid>
         {
           conclusion_modal

@@ -46,7 +46,7 @@ export default class MainFooter extends Component {
             </Button>
             <Button vertical active={this.state.tab[2]} onPress={() => this.active_tab('3')} style={{ height: '100%'}}>
               <Icon name='bar-graph' type='Entypo'/>
-              <Text>BI</Text>
+              <Text>Economia</Text>
             </Button>
             <Button vertical active={this.state.tab[3]} onPress={() => this.active_tab('4')} style={{ height: '100%'}}>
               <Icon name='book-open' type='SimpleLineIcons'/>
