@@ -6,6 +6,7 @@ import HomeScreen from "./src/components/HomeScreen"
 import { Container } from 'native-base';
 import Historic from "./src/components/historic/Historic"
 import Bi from "./src/components/bi/Bi"
+import Manual from "./src/components/manual/Manual"
 
 
 export default class App extends Component {
@@ -36,6 +37,9 @@ export default class App extends Component {
     }
     else if (this.state.tab_number === 3){
       tab = <Bi/>
+    }
+    else if (this.state.tab_number === 4){
+      tab = <Manual/>
     }
 
     return (
