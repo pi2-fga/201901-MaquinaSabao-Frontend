@@ -88,6 +88,8 @@ MERGED from [com.facebook.soloader:soloader:0.6.0] /home/bruno/.gradle/caches/tr
 	android:label
 		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:8:7-39
 		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:8:7-39
+	android:debuggable
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:12:115-140
 	tools:ignore
 		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:12:75-114
 	android:roundIcon
@@ -251,3 +253,9 @@ MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /home/bruno/.gradle/ca
 MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.7.0.aar/e222e2b101a9735a4ebbb07bf22b5a90/AndroidManifest.xml:14:5-88
 	android:name
 		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:8:29-85
+uses-feature#android.hardware.bluetooth_le
+ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:10:5-89
+	android:required
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:10:64-87
+	android:name
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:10:19-63

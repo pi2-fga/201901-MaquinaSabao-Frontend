@@ -23,7 +23,7 @@ export default class Factory extends Component {
     let factory_screen;
 
     if ( this.state.screen === 'main' ){
-      factory_screen = <FactoryForm set_screen={this.set_screen} />
+      factory_screen = <FactoryForm set_screen={this.set_screen}/>
     }
     else if ( this.state.screen === 'process' ){
       factory_screen = <FactoryProcess set_screen={this.set_screen}/>

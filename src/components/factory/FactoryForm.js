@@ -63,8 +63,6 @@ export default class FactoryForm extends Component {
       quantity_info = <Text style={{marginTop: '2%'}}>1 litro de óleo, 500ml de álcool, 250g de soda cáustica, 6.5L de água {this.state.fragrance ? fragrance_aux3 : ''}.</Text>
     }
 
-
-
     return (
       <Form>
         <Item picker>
@@ -180,7 +178,7 @@ export default class FactoryForm extends Component {
                       </Card>
                   </View>
                 </Modal>
-                <Button block onPress={this.submit} disabled={this.state.quantity === 2 ? false : true} >
+                <Button id="start-button" block onPress={this.submit} disabled={this.state.quantity === 2 ? false : true} >
                   <Text>Iniciar</Text>
                 </Button>
         </Container>
