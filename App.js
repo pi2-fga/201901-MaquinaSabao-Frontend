@@ -24,8 +24,8 @@ export default class App extends Component {
     this.state = {
       tab_number: 0,
       alcohol: '',
+      connect: false,
     };
-    this.scanConnectReadDeviceService()
   }
 
   async componentDidMount(){
@@ -38,6 +38,7 @@ export default class App extends Component {
     );
     if (granted === PermissionsAndroid.RESULTS.GRANTED) {
       console.log("permissão concedida");
+      this.scanConnectReadDeviceService()
     } else {
       alert("Você precisa permitir para usar o aplicativo!")
       this.componentDidMount()
@@ -55,27 +56,28 @@ export default class App extends Component {
             this.manager.stopDeviceScan()
             this.manager.connectToDevice(scannedDevice.id, null)
             .then((device) => {
+              alert("Connect!")
+              this.setState({connect: true})
               return device.discoverAllServicesAndCharacteristics()
             })
             .then(async (device) => {
               while(1){
-                const characteristic = await device.readCharacteristicForService(
-                  '1111',
-                  '2222',
-                  null
-                )
-                var characteristic_ascii = Base64.decode(characteristic.value)
-                this.setState({alcohol: characteristic_ascii})
+                try {
+                  const characteristic = await device.readCharacteristicForService(
+                    '1111',
+                    '2222',
+                    null
+                  )
+                  var characteristic_ascii = Base64.decode(characteristic.value)
+                  this.setState({alcohol: characteristic_ascii})
+                }catch{
+                  device.cancelConnection()
+                  alert('Desconnect!')
+                  this.setState({connect: false})
+                  break
+                }
               }
-              // device.cancelConnection()
-              // this.scanConnectReadDeviceService()
-              // characteristic.monitor((error, characteristic) => {
-              //  if(error){
-              //    alert(error)
-              //  }else{
-              //    this.setState({alcohol: characteristic})
-              //  }
-              // }, null)
+              this.scanConnectReadDeviceService()
             })
           }
         }
@@ -91,11 +93,15 @@ export default class App extends Component {
 
     let tab;
 
+    if (this.state.tab_number === 1 && this.state.connect === false){
+      this.set_tab_number(0)
+    }
+
     if(this.state.tab_number === 0){
       tab = <HomeScreen alcohol={this.state.alcohol}/>
     }
     else if (this.state.tab_number === 1){
-      tab = <Factory/>
+      tab = <Factory alcohol={this.state.alcohol}/>
     }
     else if (this.state.tab_number === 2){
       tab = <Historic/>
@@ -109,7 +115,7 @@ export default class App extends Component {
 
     return (
       <Container>
-        <MainScreenLayout set_tab_number= {this.set_tab_number}>
+        <MainScreenLayout set_tab_number= {this.set_tab_number} connect= {this.state.connect}>
           {tab}
         </MainScreenLayout>
       </Container>

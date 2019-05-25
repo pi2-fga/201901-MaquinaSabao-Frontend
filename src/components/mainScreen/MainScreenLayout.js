@@ -8,10 +8,10 @@ export default class MainScreenLayout extends Component{
   render() {
     return (
       <Container>
-        <MainHeader>
+        <MainHeader set_tab_number= {this.props.set_tab_number} connect={this.props.connect}>
           {this.props.children}
         </MainHeader>
-        <MainFooter set_tab_number= {this.props.set_tab_number}/>
+        <MainFooter set_tab_number= {this.props.set_tab_number} connect={this.props.connect}/>
       </Container>
     );
   }

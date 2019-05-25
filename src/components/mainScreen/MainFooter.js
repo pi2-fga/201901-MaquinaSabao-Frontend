@@ -13,19 +13,21 @@ export default class MainFooter extends Component {
 
   active_tab(number){
 
-    if(number === '1'){
+    if(number === '1' && this.props.connect === true){
       this.setState({tab: [true, false, false, false]})
       this.props.set_tab_number(1)
+    }else if(number == '1' && this.props.connect === false){
+      alert("Máquina não encontrada!")
     }
-    else if (number === '2') {
+    if (number === '2') {
       this.setState({tab: [false, true, false, false]})
       this.props.set_tab_number(2)
     }
-    else if (number === '3') {
+    if (number === '3') {
       this.setState({tab: [false, false, true, false]})
       this.props.set_tab_number(3)
     }
-    else if (number === '4') {
+    if (number === '4') {
       this.setState({tab: [false, false, false, true]})
       this.props.set_tab_number(4)
     }

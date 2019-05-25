@@ -10,7 +10,7 @@ export default class Factory extends Component {
     constructor(props) {
       super(props);
       this.state = {
-        screen: global.factory_screen, // Screen can be main, process or end
+        screen: global.factory_screen, // Screen can be main or process
       };
   }
 
@@ -23,7 +23,7 @@ export default class Factory extends Component {
     let factory_screen;
 
     if ( this.state.screen === 'main' ){
-      factory_screen = <FactoryForm set_screen={this.set_screen}/>
+      factory_screen = <FactoryForm set_screen={this.set_screen}  alcohol={this.props.alcohol}/>
     }
     else if ( this.state.screen === 'process' ){
       factory_screen = <FactoryProcess set_screen={this.set_screen}/>
