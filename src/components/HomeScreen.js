@@ -8,8 +8,6 @@ export default class HomeScreen extends Component {
 
     return (
       <Container>
-        <Text>oi111</Text>
-        <Text>{this.props.alcohol}</Text>
         <Image
           style={{width: "100%", height: "100%"}}
           source={require('./mainScreen/fundo.jpeg')}

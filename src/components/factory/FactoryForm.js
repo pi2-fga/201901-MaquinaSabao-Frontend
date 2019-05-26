@@ -12,27 +12,68 @@ export default class FactoryForm extends Component {
       quantity: 2,
       fragrance: 1,
       modal: false,
-      oil: 250,
+      oil: this.props.oil,
       alcohol: this.props.alcohol,
-      soda: 150,
-      wather: 1.4,
-      essence: 20,
+      soda: this.props.soda,
+      wather: this.props.wather,
+      essence: this.props.essence,
     };
     this.submit = this.submit.bind(this)
   }
 
   can_start(){
     var alcohol = parseFloat(this.props.alcohol)
+    var oil = parseFloat(this.props.oil)
+    var soda = parseFloat(this.props.soda)
+    var wather = parseFloat(this.props.wather)
+    var essence = parseFloat(this.props.essence)
+
     if (this.state.quantity === 2){
       if(alcohol < 125){
+        return false
+      }
+      if(oil < 250){
+        return false
+      }
+      if(soda < 150){
+        return false
+      }
+      if(wather < 1400){
+        return false
+      }
+      if(this.state.fragrance === 1 && essence < 20){
         return false
       }
     }else if(this.state.quantity === 4){
       if(alcohol < 250){
         return false
       }
+      if(oil < 500){
+        return false
+      }
+      if(soda < 200){
+        return false
+      }
+      if(wather < 3450){
+        return false
+      }
+      if(this.state.fragrance === 1 && essence < 40){
+        return false
+      }
     }else if(this.state.quantity === 8){
       if(alcohol < 500){
+        return false
+      }
+      if(oil < 1000){
+        return false
+      }
+      if(soda < 250){
+        return false
+      }
+      if(wather < 6500){
+        return false
+      }
+      if(this.state.fragrance === 1 && essence < 60){
         return false
       }
     }
@@ -132,7 +173,7 @@ export default class FactoryForm extends Component {
                             <Text style={{}}>óleo</Text>
                           </Left>
                           <Right>
-                            <Text style={{color: insumo_color}}>{this.state.oil} ml</Text>
+                            <Text style={{color: insumo_color}}>{this.props.oil} ml</Text>
                           </Right>
                         </CardItem>
                         <CardItem>
@@ -150,7 +191,7 @@ export default class FactoryForm extends Component {
                             <Text style={{}}>soda cáustica</Text>
                           </Left>
                           <Right>
-                            <Text style={{color: insumo_color}}>{this.state.soda} g</Text>
+                            <Text style={{color: insumo_color}}>{this.props.soda} g</Text>
                           </Right>
                         </CardItem>
                         <CardItem>
@@ -159,7 +200,7 @@ export default class FactoryForm extends Component {
                             <Text style={{}}>água</Text>
                           </Left>
                           <Right>
-                            <Text style={{color: insumo_color}}>{this.state.wather} L</Text>
+                            <Text style={{color: insumo_color}}>{this.props.wather} ml</Text>
                           </Right>
                         </CardItem>
                         {
@@ -170,7 +211,7 @@ export default class FactoryForm extends Component {
                               <Text style={{}}>essência</Text>
                             </Left>
                             <Right>
-                              <Text style={{color: insumo_color}}>{this.state.essence} ml</Text>
+                              <Text style={{color: insumo_color}}>{this.props.essence} ml</Text>
                             </Right>
                           </CardItem>) : (<View/>)
                         }

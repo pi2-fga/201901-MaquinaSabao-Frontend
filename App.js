@@ -10,7 +10,8 @@ import Manual from "./src/components/manual/Manual"
 import { BleManager } from 'react-native-ble-plx'
 import { PermissionsAndroid } from 'react-native';
 import { BluetoothStatus } from 'react-native-bluetooth-status';
-
+import { NativeAppEventEmittem } from 'react-native'
+import start from './EnableBluetooth.js'
 
 const alcohol = {service: "1111", characteristic: "2222"}
 
@@ -24,6 +25,10 @@ export default class App extends Component {
     this.state = {
       tab_number: 0,
       alcohol: '',
+      oil: '',
+      soda: '',
+      wather: '',
+      essence: '',
       connect: false,
     };
   }
@@ -45,44 +50,108 @@ export default class App extends Component {
     }
   }
 
-  scanConnectReadDeviceService(){
+  async scanConnectReadDeviceService(){
+
+    await start()
+
     this.manager.startDeviceScan(
       null,
       null, (error, scannedDevice) => {
         if (error){
-          alert("error")
+          alert(error)
         }else{
           if(scannedDevice.name === 'Blank'){
             this.manager.stopDeviceScan()
             this.manager.connectToDevice(scannedDevice.id, null)
             .then((device) => {
-              alert("Connect!")
+              alert("Conectado!")
               this.setState({connect: true})
               return device.discoverAllServicesAndCharacteristics()
             })
-            .then(async (device) => {
+            .then( async(device) => {
               while(1){
                 try {
-                  const characteristic = await device.readCharacteristicForService(
+                  // Alcool
+                  var characteristic = await device.readCharacteristicForService(
                     '1111',
                     '2222',
                     null
                   )
                   var characteristic_ascii = Base64.decode(characteristic.value)
                   this.setState({alcohol: characteristic_ascii})
+                  // Oleo
+                  characteristic = await device.readCharacteristicForService(
+                    '3333',
+                    '4444',
+                    null
+                  )
+                  characteristic_ascii = Base64.decode(characteristic.value)
+                  this.setState({oil: characteristic_ascii})
+                  // Soda
+                  characteristic = await device.readCharacteristicForService(
+                    '5555',
+                    '6666',
+                    null
+                  )
+                  characteristic_ascii = Base64.decode(characteristic.value)
+                  this.setState({soda: characteristic_ascii})
+                  // Agua
+                  characteristic = await device.readCharacteristicForService(
+                    '7777',
+                    '8888',
+                    null
+                  )
+                  characteristic_ascii = Base64.decode(characteristic.value)
+                  this.setState({wather: characteristic_ascii})
+                  // Essencia
+                  characteristic = await device.readCharacteristicForService(
+                    '9999',
+                    '9991',
+                    null
+                  )
+                  characteristic_ascii = Base64.decode(characteristic.value)
+                  this.setState({essence: characteristic_ascii})
                 }catch{
                   device.cancelConnection()
-                  alert('Desconnect!')
+                  alert('Desconectado!')
                   this.setState({connect: false})
                   break
                 }
               }
+              // this.manager.monitorCharacteristicForDevice(
+              //   device.id,
+              //   '1111',
+              //   '2222',
+              //   (error, characteristic) => {
+              //     if(error){
+              //       alert(error)
+              //     }else{
+              //       var characteristic_ascii = Base64.decode(characteristic.value)
+              //       this.setState({alcohol: characteristic_ascii})
+              //     }
+              //   },
+              //   null
+              // )
+              // device.monitorCharacteristicForService(
+              //   '1111',
+              //   '2222',
+              //   (error, characteristic) => {
+              //     if(error){
+              //       alert(error)
+              //     }else{
+              //       var characteristic_ascii = Base64.decode(characteristic.value)
+              //       this.setState({alcohol: characteristic_ascii})
+              //     }
+              //   },
+              //   null
+              // )
               this.scanConnectReadDeviceService()
             })
           }
         }
       }
     )
+
   }
 
   set_tab_number = (number) => {
@@ -98,10 +167,10 @@ export default class App extends Component {
     }
 
     if(this.state.tab_number === 0){
-      tab = <HomeScreen alcohol={this.state.alcohol}/>
+      tab = <HomeScreen/>
     }
     else if (this.state.tab_number === 1){
-      tab = <Factory alcohol={this.state.alcohol}/>
+      tab = <Factory alcohol={this.state.alcohol} oil={this.state.oil} soda={this.state.soda} wather={this.state.wather} essence={this.state.essence}/>
     }
     else if (this.state.tab_number === 2){
       tab = <Historic/>

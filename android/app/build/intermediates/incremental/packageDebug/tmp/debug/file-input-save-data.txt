@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon May 13 17:39:42 BRT 2019
+#Sun May 26 12:56:44 BRT 2019
 56.path=lib/x86_64/libreactnativejni.so
 5.base=/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/transforms/mergeJniLibs/debug/0
 42.base=/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/transforms/mergeJniLibs/debug/0
