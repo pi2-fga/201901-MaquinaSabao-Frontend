@@ -3,6 +3,7 @@ package com.maquina_sabao_front;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.imagepicker.ImagePickerPackage;
 import it.innove.BleManagerPackage;
 import com.polidea.reactnativeble.BlePackage;
 import ca.jaysoo.extradimensions.ExtraDimensionsPackage;
@@ -28,6 +29,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new ImagePickerPackage(),
             new BleManagerPackage(),
             new BlePackage(),
             new ExtraDimensionsPackage(),

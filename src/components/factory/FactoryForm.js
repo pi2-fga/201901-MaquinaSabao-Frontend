@@ -3,6 +3,9 @@ import { Container, Header, Content, Form, Item, Picker, Body, Title, Text, Labe
 import Modal from "react-native-modal";
 import { TouchableOpacity, Image } from 'react-native'
 import './global.js'
+import ImagePicker from 'react-native-image-picker';
+import {PermissionsAndroid} from 'react-native';
+
 
 export default class FactoryForm extends Component {
 
@@ -17,8 +20,10 @@ export default class FactoryForm extends Component {
       soda: this.props.soda,
       wather: this.props.wather,
       essence: this.props.essence,
+      picture: undefined,
     };
     this.submit = this.submit.bind(this)
+    this.take_picture = this.take_picture.bind(this)
   }
 
   can_start(){
@@ -103,6 +108,38 @@ export default class FactoryForm extends Component {
 
   close_modal = () =>{
     this.setState({modal: false})
+  }
+
+  async take_picture(){
+
+    options = {
+      title: null,
+      takePhotoButtonTitle: 'Tirar Foto...',
+      chooseFromLibraryButtonTitle: null,
+      storageOptions: {
+        skipBackup: true,
+        path: 'images',
+      },
+    };
+
+    ImagePicker.showImagePicker(options, (response) => {
+      console.log('Response = ', response);
+
+      if (response.didCancel) {
+        console.log('User cancelled image picker');
+      } else if (response.error) {
+        console.log('ImagePicker Error: ', response.error);
+      } else {
+        const source = { uri: response.uri };
+
+        // You can also display the image using data:
+        // const source = { uri: 'data:image/jpeg;base64,' + response.data };
+
+        this.setState({
+          picture: source,
+        });
+      }
+    });
   }
 
   render() {
@@ -217,19 +254,28 @@ export default class FactoryForm extends Component {
                         }
                         <CardItem>
                           <Title style={{color: 'black'}}>Qualidade do óleo:</Title>
+
+
+
                         </CardItem>
                           <View style={{marginTop: '5%'}}>
-                            <Button block dark>
+                            <Button block dark onPress={this.take_picture}>
                               <Text>Tirar foto do óleo</Text>
                               <Icon name='camera' type='AntDesign'/>
                             </Button>
                           </View>
                         <CardItem>
+
+
+
                           <Image
                             style={{width: 100, height: 100}}
-                            source={require('../../images/oleo.jpg')}
+                            source={this.state.picture}
                           />
                           <Text style={{color: 'green', marginLeft: '5%'}}>Boa</Text>
+
+
+
                         </CardItem>
                         <Button block danger onPress={this.close_modal}>
                           <Icon name='md-close-circle-outline' style={{}}/>

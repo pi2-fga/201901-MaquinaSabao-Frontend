@@ -11,7 +11,7 @@ import { BleManager } from 'react-native-ble-plx'
 import { PermissionsAndroid } from 'react-native';
 import { BluetoothStatus } from 'react-native-bluetooth-status';
 import { NativeAppEventEmittem } from 'react-native'
-import start from './EnableBluetooth.js'
+import Manager from 'react-native-ble-manager';
 
 const alcohol = {service: "1111", characteristic: "2222"}
 
@@ -30,10 +30,27 @@ export default class App extends Component {
       wather: '',
       essence: '',
       connect: false,
+      device_id: '',
     };
   }
 
   async componentDidMount(){
+    // const ble = await Manager.enableBluetooth()
+
+    const granted1 = await PermissionsAndroid.request(
+      PermissionsAndroid.PERMISSIONS.CAMERA,
+      {
+        buttonNegative: 'Cancel',
+        buttonPositive: 'OK',
+      },
+    );
+    if (granted1 === PermissionsAndroid.RESULTS.GRANTED) {
+      console.log('You can use the camera');
+    } else {
+      console.log('Camera permission denied');
+      this.componentDidMount()
+    }
+
     const granted = await PermissionsAndroid.request(
       PermissionsAndroid.PERMISSIONS.ACCESS_COARSE_LOCATION,
       {
@@ -45,14 +62,23 @@ export default class App extends Component {
       console.log("permissão concedida");
       this.scanConnectReadDeviceService()
     } else {
-      alert("Você precisa permitir para usar o aplicativo!")
       this.componentDidMount()
     }
   }
 
   async scanConnectReadDeviceService(){
 
-    await start()
+
+    // .then(() => {
+    //   // Success code
+    //   console.log('The bluetooth is already enabled or the user confirm');
+    // })
+    // .catch((error) => {
+    //   // Failure code
+    //   alert('Você deve ativar o bluetooth para poder fabricar sabão!')
+    //   start()
+    //   console.log('The user refuse to enable bluetooth');
+    // });
 
     this.manager.startDeviceScan(
       null,
@@ -60,7 +86,8 @@ export default class App extends Component {
         if (error){
           alert(error)
         }else{
-          if(scannedDevice.name === 'Blank'){
+          console.log(scannedDevice.name);
+          if(scannedDevice.name === 'Maquina de Sabao'){
             this.manager.stopDeviceScan()
             this.manager.connectToDevice(scannedDevice.id, null)
             .then((device) => {
@@ -69,89 +96,43 @@ export default class App extends Component {
               return device.discoverAllServicesAndCharacteristics()
             })
             .then( async(device) => {
-              while(1){
-                try {
-                  // Alcool
-                  var characteristic = await device.readCharacteristicForService(
-                    '1111',
-                    '2222',
-                    null
-                  )
-                  var characteristic_ascii = Base64.decode(characteristic.value)
-                  this.setState({alcohol: characteristic_ascii})
-                  // Oleo
-                  characteristic = await device.readCharacteristicForService(
-                    '3333',
-                    '4444',
-                    null
-                  )
-                  characteristic_ascii = Base64.decode(characteristic.value)
-                  this.setState({oil: characteristic_ascii})
-                  // Soda
-                  characteristic = await device.readCharacteristicForService(
-                    '5555',
-                    '6666',
-                    null
-                  )
-                  characteristic_ascii = Base64.decode(characteristic.value)
-                  this.setState({soda: characteristic_ascii})
-                  // Agua
-                  characteristic = await device.readCharacteristicForService(
-                    '7777',
-                    '8888',
-                    null
-                  )
-                  characteristic_ascii = Base64.decode(characteristic.value)
-                  this.setState({wather: characteristic_ascii})
-                  // Essencia
-                  characteristic = await device.readCharacteristicForService(
-                    '9999',
-                    '9991',
-                    null
-                  )
-                  characteristic_ascii = Base64.decode(characteristic.value)
-                  this.setState({essence: characteristic_ascii})
-                }catch{
-                  device.cancelConnection()
-                  alert('Desconectado!')
-                  this.setState({connect: false})
-                  break
-                }
-              }
-              // this.manager.monitorCharacteristicForDevice(
-              //   device.id,
-              //   '1111',
-              //   '2222',
-              //   (error, characteristic) => {
-              //     if(error){
-              //       alert(error)
-              //     }else{
-              //       var characteristic_ascii = Base64.decode(characteristic.value)
-              //       this.setState({alcohol: characteristic_ascii})
-              //     }
-              //   },
-              //   null
-              // )
-              // device.monitorCharacteristicForService(
-              //   '1111',
-              //   '2222',
-              //   (error, characteristic) => {
-              //     if(error){
-              //       alert(error)
-              //     }else{
-              //       var characteristic_ascii = Base64.decode(characteristic.value)
-              //       this.setState({alcohol: characteristic_ascii})
-              //     }
-              //   },
-              //   null
-              // )
-              this.scanConnectReadDeviceService()
+              // const services = await device.services()
+              // const characteristics = await services[2].characteristics()
+              // const characteristics1 = await services[3].characteristics()
+              //
+              // // console.log(characteristics.length);
+              // while(1){
+              //   try {
+              //     // Alcool
+              //     var characteristic = await device.readCharacteristicForService(
+              //       services[2].uuid,
+              //       characteristics[0].uuid,
+              //       null
+              //     )
+              //     await this.setState({alcohol: Base64.decode(characteristic.value)})
+              //
+              //
+              //     var characteristic2 = await device.readCharacteristicForService(
+              //       services[3].uuid,
+              //       characteristics1[0].uuid,
+              //       null
+              //     )
+              //     await this.setState({oil: Base64.decode(characteristic2.value)})
+              //   }catch(error){
+              //     console.log(error);
+              //     alert(error)
+              //     device.cancelConnection()
+              //     alert('Desconectado!')
+              //     this.setState({connect: false})
+              //     break
+              //   }
+              // }
+              // this.scanConnectReadDeviceService()
             })
           }
         }
       }
     )
-
   }
 
   set_tab_number = (number) => {
