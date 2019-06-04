@@ -21,6 +21,7 @@ export default class FactoryForm extends Component {
       wather: this.props.wather,
       essence: this.props.essence,
       picture: undefined,
+      oil_quality: ''
     };
     this.submit = this.submit.bind(this)
     this.take_picture = this.take_picture.bind(this)
@@ -134,6 +135,31 @@ export default class FactoryForm extends Component {
 
         // You can also display the image using data:
         // const source = { uri: 'data:image/jpeg;base64,' + response.data };
+
+        const data = new FormData();
+        data.append('photo', {
+          uri: response.uri,
+          type: 'image/jpeg', // or photo.type
+          name: 'foto'
+        });
+
+        fetch('http://192.168.0.7:8000/predict_oil_quality', {
+          method: 'post',
+          body: data
+        })
+        .then((response) => {
+          if(response.ok){
+            return response.json()
+          }
+        })
+        .then((data) => {
+          console.log("aaaaaaaaa");
+          console.log(data);
+          this.setState({
+            oil_quality: data,
+          });
+        })
+
 
         this.setState({
           picture: source,
@@ -254,9 +280,6 @@ export default class FactoryForm extends Component {
                         }
                         <CardItem>
                           <Title style={{color: 'black'}}>Qualidade do óleo:</Title>
-
-
-
                         </CardItem>
                           <View style={{marginTop: '5%'}}>
                             <Button block dark onPress={this.take_picture}>
@@ -265,16 +288,11 @@ export default class FactoryForm extends Component {
                             </Button>
                           </View>
                         <CardItem>
-
-
-
                           <Image
                             style={{width: 100, height: 100}}
                             source={this.state.picture}
                           />
-                          <Text style={{color: 'green', marginLeft: '5%'}}>Boa</Text>
-
-
+                          <Text style={{color: this.state.oil_quality === 'GOOD' ? 'green' : 'red', marginLeft: '5%'}}>{this.state.oil_quality}</Text>
 
                         </CardItem>
                         <Button block danger onPress={this.close_modal}>

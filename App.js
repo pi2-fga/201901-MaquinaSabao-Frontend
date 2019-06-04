@@ -68,18 +68,6 @@ export default class App extends Component {
 
   async scanConnectReadDeviceService(){
 
-
-    // .then(() => {
-    //   // Success code
-    //   console.log('The bluetooth is already enabled or the user confirm');
-    // })
-    // .catch((error) => {
-    //   // Failure code
-    //   alert('Você deve ativar o bluetooth para poder fabricar sabão!')
-    //   start()
-    //   console.log('The user refuse to enable bluetooth');
-    // });
-
     this.manager.startDeviceScan(
       null,
       null, (error, scannedDevice) => {
