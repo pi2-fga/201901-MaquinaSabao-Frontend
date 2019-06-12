@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Header, Content, Form, Item, Picker, Body, Title, Text, Label, Button, Card, CardItem, Icon, Left, Right, View } from 'native-base';
+import { Container, Header, Content, Form, Item, Picker, Body, Title, Text, Label, Button, Card, CardItem, Icon, Left, Right, View, Spinner } from 'native-base';
 import Modal from "react-native-modal";
 import { TouchableOpacity, Image } from 'react-native'
 import './global.js'
@@ -18,10 +18,12 @@ export default class FactoryForm extends Component {
       oil: this.props.oil,
       alcohol: this.props.alcohol,
       soda: this.props.soda,
-      wather: this.props.wather,
-      essence: this.props.essence,
+      essence_choice: 1,
+      essence1: this.props.essence1,
+      essence2: this.props.essence2,
       picture: undefined,
-      oil_quality: ''
+      oil_quality: '',
+      spinner: false
     };
     this.submit = this.submit.bind(this)
     this.take_picture = this.take_picture.bind(this)
@@ -32,7 +34,8 @@ export default class FactoryForm extends Component {
     var oil = parseFloat(this.props.oil)
     var soda = parseFloat(this.props.soda)
     var wather = parseFloat(this.props.wather)
-    var essence = parseFloat(this.props.essence)
+    var essence1 = parseFloat(this.props.essence1)
+    var essence2 = parseFloat(this.props.essence2)
 
     if (this.state.quantity === 2){
       if(alcohol < 125){
@@ -44,10 +47,10 @@ export default class FactoryForm extends Component {
       if(soda < 150){
         return false
       }
-      if(wather < 1400){
+      if(this.state.fragrance === 1 && this.state.essence_choice === 1 && this.state.essence1 < 20){
         return false
       }
-      if(this.state.fragrance === 1 && essence < 20){
+      if(this.state.fragrance === 1 && this.state.essence_choice === 2 && this.state.essence2 < 20){
         return false
       }
     }else if(this.state.quantity === 4){
@@ -60,10 +63,10 @@ export default class FactoryForm extends Component {
       if(soda < 200){
         return false
       }
-      if(wather < 3450){
+      if(this.state.fragrance === 1 && this.state.essence_choice === 1 && this.state.essence1 < 40){
         return false
       }
-      if(this.state.fragrance === 1 && essence < 40){
+      if(this.state.fragrance === 1 && this.state.essence_choice === 2 && this.state.essence2 < 40){
         return false
       }
     }else if(this.state.quantity === 8){
@@ -76,12 +79,15 @@ export default class FactoryForm extends Component {
       if(soda < 250){
         return false
       }
-      if(wather < 6500){
+      if(this.state.fragrance === 1 && this.state.essence_choice === 1 && this.state.essence1 < 60){
         return false
       }
-      if(this.state.fragrance === 1 && essence < 60){
+      if(this.state.fragrance === 1 && this.state.essence_choice === 2 && this.state.essence2 < 60){
         return false
       }
+    }
+    if( this.state.picture === undefined || this.state.oil_quality === '' ){
+      return false
     }
     return true
   }
@@ -124,7 +130,6 @@ export default class FactoryForm extends Component {
     };
 
     ImagePicker.showImagePicker(options, (response) => {
-      console.log('Response = ', response);
 
       if (response.didCancel) {
         console.log('User cancelled image picker');
@@ -132,6 +137,10 @@ export default class FactoryForm extends Component {
         console.log('ImagePicker Error: ', response.error);
       } else {
         const source = { uri: response.uri };
+
+        this.setState({spinner: true})
+
+        this.setState({oil_quality: ''})
 
         // You can also display the image using data:
         // const source = { uri: 'data:image/jpeg;base64,' + response.data };
@@ -148,16 +157,22 @@ export default class FactoryForm extends Component {
           body: data
         })
         .then((response) => {
+          this.setState({spinner: false})
           if(response.ok){
             return response.json()
           }
         })
         .then((data) => {
-          console.log("aaaaaaaaa");
-          console.log(data);
-          this.setState({
-            oil_quality: data,
-          });
+          if(data){
+            if(data === 'NO OIL'){
+              alert("Tire outra foto, isso não é um óleo!")
+              this.setState({picture: undefined})
+            }else{
+              this.setState({
+                oil_quality: data,
+              });
+            }
+          }
         })
 
 
@@ -257,24 +272,27 @@ export default class FactoryForm extends Component {
                             <Text style={{color: insumo_color}}>{this.props.soda} g</Text>
                           </Right>
                         </CardItem>
-                        <CardItem>
-                          <Left>
-                            <Icon name='paint-bucket' type='Foundation'/>
-                            <Text style={{}}>água</Text>
-                          </Left>
-                          <Right>
-                            <Text style={{color: insumo_color}}>{this.props.wather} ml</Text>
-                          </Right>
-                        </CardItem>
                         {
-                          this.state.fragrance ?
+                          this.state.fragrance && this.state.essence_choice === 1 ?
                           (<CardItem>
                             <Left>
                               <Icon name='paint-bucket' type='Foundation'/>
-                              <Text style={{}}>essência</Text>
+                              <Text style={{}}>essência 1</Text>
                             </Left>
                             <Right>
-                              <Text style={{color: insumo_color}}>{this.props.essence} ml</Text>
+                              <Text style={{color: insumo_color}}>{this.props.essence1} ml</Text>
+                            </Right>
+                          </CardItem>) : (<View/>)
+                        }
+                        {
+                          this.state.fragrance && this.state.essence_choice === 2 ?
+                          (<CardItem>
+                            <Left>
+                              <Icon name='paint-bucket' type='Foundation'/>
+                              <Text style={{}}>essência 2</Text>
+                            </Left>
+                            <Right>
+                              <Text style={{color: insumo_color}}>{this.props.essence2} ml</Text>
                             </Right>
                           </CardItem>) : (<View/>)
                         }
@@ -288,11 +306,27 @@ export default class FactoryForm extends Component {
                             </Button>
                           </View>
                         <CardItem>
-                          <Image
-                            style={{width: 100, height: 100}}
-                            source={this.state.picture}
-                          />
-                          <Text style={{color: this.state.oil_quality === 'GOOD' ? 'green' : 'red', marginLeft: '5%'}}>{this.state.oil_quality}</Text>
+                          {
+                            this.state.picture ?
+                            (
+                              <View>
+                                <Image
+                                  style={{width: 100, height: 100}}
+                                  source={this.state.picture}
+                                />
+                              </View>
+                            ) : (
+                              <View>
+                                <Icon name='alert-triangle' type='Feather' style={{marginLeft: "auto", marginRight: "auto", marginBottom: '3%'}}/>
+                                <Text style={{ marginLeft: '5%'}}>Você precisa de tirar uma foto do óleo para fabricar!</Text>
+                              </View>
+                            )
+
+                          }
+                          {
+                            this.state.spinner ? (<Spinner color='blue' style={{marginLeft: "auto", marginRight: "auto"}} />) : (<Text style={{color: this.state.oil_quality === 'GOOD' ? 'green' : 'red', marginLeft: '5%'}}>{this.state.oil_quality}</Text>)
+                          }
+
 
                         </CardItem>
                         <Button block danger onPress={this.close_modal}>

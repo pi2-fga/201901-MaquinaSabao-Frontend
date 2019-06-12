@@ -26,7 +26,7 @@ export default class Factory extends Component {
       factory_screen = <FactoryForm set_screen={this.set_screen}  alcohol={this.props.alcohol} oil={this.props.oil} soda={this.props.soda} wather={this.props.wather} essence={this.props.essence}/>
     }
     else if ( this.state.screen === 'process' ){
-      factory_screen = <FactoryProcess set_screen={this.set_screen}/>
+      factory_screen = <FactoryProcess set_screen={this.set_screen} temp={this.props.temp}/>
     }
 
     return (

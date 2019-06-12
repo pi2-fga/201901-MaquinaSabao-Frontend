@@ -23,7 +23,7 @@ export default class FactoryProcess extends Component{
     super(props);
     this.state = {
       step: global.step_process,
-      machine_temp: 50,
+      machine_temp: this.props.temp,
       conclusion_modal: false,
     };
     this.close_modal = this.close_modal.bind(this)

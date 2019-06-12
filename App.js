@@ -27,10 +27,12 @@ export default class App extends Component {
       alcohol: '',
       oil: '',
       soda: '',
-      wather: '',
+      feedback: '',
       essence: '',
-      connect: false,
+      connect: true, // mudarrrrr
       device_id: '',
+      response: 'receita2',
+      temp: ''
     };
   }
 
@@ -85,27 +87,103 @@ export default class App extends Component {
             })
             .then( async(device) => {
               // const services = await device.services()
-              // const characteristics = await services[2].characteristics()
-              // const characteristics1 = await services[3].characteristics()
+              // const characteristics_alcohol = await services[2].characteristics()
+              // const characteristics_oil = await services[3].characteristics()
+              // const characteristics_essence = await services[4].characteristics()
+              // const characteristics_temp = await services[5].characteristics()
+              // const characteristics_soda = await services[6].characteristics()
+              // const characteristics_feedback = await services[7].characteristics()
               //
-              // // console.log(characteristics.length);
+              //
               // while(1){
               //   try {
+              //
+              //
               //     // Alcool
+              //
               //     var characteristic = await device.readCharacteristicForService(
               //       services[2].uuid,
-              //       characteristics[0].uuid,
+              //       characteristics_alcohol[0].uuid,
               //       null
               //     )
               //     await this.setState({alcohol: Base64.decode(characteristic.value)})
               //
+              //     // Oleo
               //
               //     var characteristic2 = await device.readCharacteristicForService(
               //       services[3].uuid,
-              //       characteristics1[0].uuid,
+              //       characteristics_oil[0].uuid,
               //       null
               //     )
               //     await this.setState({oil: Base64.decode(characteristic2.value)})
+              //
+              //
+              //     // Essencia
+              //
+              //     var characteristic3 = await device.readCharacteristicForService(
+              //       services[4].uuid,
+              //       characteristics_essence[0].uuid,
+              //       null
+              //     )
+              //     await this.setState({essence1: Base64.decode(characteristic3.value)})
+              //
+              //     var characteristic4 = await device.readCharacteristicForService(
+              //       services[4].uuid,
+              //       characteristics_essence[1].uuid,
+              //       null
+              //     )
+              //     await this.setState({essence2: Base64.decode(characteristic4.value)})
+              //
+              //     // Temperatura
+              //
+              //     //
+              //     // var characteristic5 = await device.readCharacteristicForService(
+              //     //   services[5].uuid,
+              //     //   characteristics_temp[0].uuid,
+              //     //   null
+              //     // )
+              //     // await this.setState({temp: Base64.decode(characteristic5.value)})
+              //     //
+              //
+              //     // Soda
+              //
+              //     var characteristic7 = await device.readCharacteristicForService(
+              //       services[6].uuid,
+              //       characteristics_soda[0].uuid,
+              //       null
+              //     )
+              //     await this.setState({soda: Base64.decode(characteristic7.value)})
+              //
+              //     // Feedback
+              //
+              //     var characteristic8 = await device.readCharacteristicForService(
+              //       services[7].uuid,
+              //       characteristics_feedback[0].uuid,
+              //       null
+              //     )
+              //     await this.setState({feedback: Base64.decode(characteristic8.value)})
+              //
+              //     console.log(services[7].uuid);
+              //     console.log(characteristics_feedback[0].uuid);
+              //
+              //     console.log(this.state.feedback);
+              //     console.log("bbbbbbbbbbbbb");
+              //
+              //     if (this.state.feedback === 'pode comecar'){
+              //       const feedback_write = await device.writeCharacteristicWithResponseForService(
+              //         services[7].uuid,
+              //         characteristics_feedback[1].uuid,
+              //         Base64.encode(this.state.response),
+              //       )
+              //       console.log(feedback_write);
+              //       console.log("aaaaaaaaaaa");
+              //     }else if(this.state.feedback === 'FIM'){
+              //       this.setState({response: '0'})
+              //     }
+              //
+              //     // Feedback Escrita
+              //
+              //
               //   }catch(error){
               //     console.log(error);
               //     alert(error)
@@ -139,7 +217,7 @@ export default class App extends Component {
       tab = <HomeScreen/>
     }
     else if (this.state.tab_number === 1){
-      tab = <Factory alcohol={this.state.alcohol} oil={this.state.oil} soda={this.state.soda} wather={this.state.wather} essence={this.state.essence}/>
+      tab = <Factory alcohol={this.state.alcohol} oil={this.state.oil} soda={this.state.soda} essence1={this.state.essence1} essence2={this.state.essence2} temp={this.state.temp}/>
     }
     else if (this.state.tab_number === 2){
       tab = <Historic/>
