@@ -15,7 +15,19 @@ export default class Historic extends Component {
     this.state = {
       modal: false,
       element: {},
+      list: [],
     }
+  }
+
+  componentDidMount(){
+    fetch('http://192.168.0.7:8000/manufacturing/', {
+      method: 'get',
+    }).then((response) => {
+      console.log(response);
+      return response.json();
+    }).then((data) => {
+      this.setState({list: data})
+    });
   }
 
   open_modal = (element) => {
@@ -49,50 +61,42 @@ export default class Historic extends Component {
               <Card>
                 <CardItem>
                   <Left><Text>Data: </Text></Left>
-                  <Right><Text>{this.state.element.date}</Text></Right>
+                  <Right><Text>{this.state.element.date_of_manufacture}</Text></Right>
                 </CardItem>
                 <CardItem>
                   <Left><Text>Hora de inicio:</Text></Left>
-                  <Right><Text>{this.state.element.startTime}</Text></Right>
+                  <Right><Text>{this.state.element.start_of_manufacture}</Text></Right>
                 </CardItem>
                 <CardItem>
                   <Left><Text>Hora de fim: </Text></Left>
-                  <Right><Text>{this.state.element.endTime}</Text></Right>
+                  <Right><Text>{this.state.element.end_of_manufacture}</Text></Right>
                 </CardItem>
                 <CardItem>
                   <Left><Text>Quantidade de sabão:</Text></Left>
-                  <Right><Text> {this.state.element.quantity}L</Text></Right>
+                  <Right><Text> {this.state.element.amount_of_soap}L</Text></Right>
                 </CardItem>
                 <CardItem>
                   <Left><Text>Ph previsto: </Text></Left>
-                  <Right><Text>{this.state.element.prePh}</Text></Right>
-                </CardItem>
-                <CardItem>
-                  <Left><Text>Viscosidade prevista: </Text></Left>
-                  <Right><Text>{this.state.element.preViscosity}CPS</Text></Right>
-                </CardItem>
-                <CardItem>
-                  <Left><Text>Viscosidade: </Text></Left>
-                  <Right><Text>{this.state.element.viscosity}CPS</Text></Right>
+                  <Right><Text>{this.state.element.expected_ph}</Text></Right>
                 </CardItem>
                 <CardItem>
                   <Left><Text>Ph: </Text></Left>
-                  <Right><Text>{this.state.element.ph}</Text></Right>
+                  <Right><Text>{this.state.element.actual_ph}</Text></Right>
                 </CardItem>
                 <CardItem>
                   <Left><Text>Qualidade do óleo: </Text></Left>
-                  <Right><Text>{this.state.element.quality}</Text></Right>
+                  <Right><Text>{this.state.element.oil_quality}</Text></Right>
                 </CardItem>
                 <CardItem>
                   <Left><Text>Fragrância: </Text></Left>
-                  <Right><Text>{this.state.element.fragrance}</Text></Right>
+                  <Right><Text>{this.state.element.have_fragrance? 'Sim' : 'Não'}</Text></Right>
                 </CardItem>
                 <CardItem>
                   <Left><Text>Imagem do óleo:</Text></Left>
                   <Right>
                     <Image
                       style={{width: 100, height: 100}}
-                      source={require('../../images/oleo.jpg')}
+                      source={this.state.element.oil_image}
                     />
                   </Right>
                 </CardItem>
@@ -105,13 +109,13 @@ export default class Historic extends Component {
           </Modal>
           <List>
             {
-              list.map( (element) => (
+              this.state.list.map( (element) => (
                   <ListItem onPress={() => this.open_modal(element)} key={element.id}>
                     <Left>
-                      <Text>{element.date}</Text>
+                      <Text>{element.date_of_manufacture}</Text>
                     </Left>
                     <Right>
-                      <Text>{element.startTime}</Text>
+                      <Text>{element.start_of_manufacture}</Text>
                     </Right>
                   </ListItem>
               ))
