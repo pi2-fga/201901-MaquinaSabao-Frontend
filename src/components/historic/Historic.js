@@ -28,7 +28,7 @@ export default class Historic extends Component {
 
 
   componentDidMount(){
-    fetch('http://192.168.0.7:8000/manufacturing/', {
+    fetch('http://192.168.0.7:8000/index_manufacturing_month/', {
       method: 'get',
     }).then((response) => {
       console.log(response);
