@@ -5,6 +5,7 @@ INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/andr
 INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:1:1-28:12
 INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:1:1-28:12
 MERGED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:1:1-28:12
+MERGED from [:react-native-bluetooth-status] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-bluetooth-status/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
 MERGED from [:react-native-image-picker] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
 MERGED from [:react-native-ble-manager] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [:react-native-ble-plx] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-plx/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-12:12
@@ -151,6 +152,8 @@ uses-sdk
 INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml
 INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-bluetooth-status] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-bluetooth-status/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-bluetooth-status] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-bluetooth-status/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-image-picker] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-image-picker] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-ble-manager] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
@@ -249,6 +252,8 @@ ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android
 		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:5:22-75
 uses-permission#android.permission.BLUETOOTH
 ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:6:5-67
+MERGED from [:react-native-bluetooth-status] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-bluetooth-status/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-68
+MERGED from [:react-native-bluetooth-status] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-bluetooth-status/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-68
 MERGED from [:react-native-ble-manager] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-68
 MERGED from [:react-native-ble-manager] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-68
 MERGED from [:react-native-ble-plx] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-plx/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-68
@@ -259,6 +264,8 @@ MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /home/bruno/.gradle/ca
 		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:6:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
 ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:7:5-73
+MERGED from [:react-native-bluetooth-status] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-bluetooth-status/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-74
+MERGED from [:react-native-bluetooth-status] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-bluetooth-status/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-74
 MERGED from [:react-native-ble-manager] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-74
 MERGED from [:react-native-ble-manager] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-74
 MERGED from [:react-native-ble-plx] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-plx/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-74
