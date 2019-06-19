@@ -318,7 +318,7 @@ export default class FactoryForm extends Component {
                             ) : (
                               <View>
                                 <Icon name='alert-triangle' type='Feather' style={{marginLeft: "auto", marginRight: "auto", marginBottom: '3%'}}/>
-                                <Text style={{ marginLeft: '5%'}}>Você precisa de tirar uma foto do óleo para fabricar!</Text>
+                                <Text style={{ marginLeft: '5%'}}>Você precisa tirar uma foto do óleo para fabricar!</Text>
                               </View>
                             )
 
