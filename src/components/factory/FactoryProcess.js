@@ -1,75 +1,32 @@
 import React, {Component} from 'react';
-import { Container, Spinner, Button, Text, Label, CardItem, Body, Card, Separator, View} from 'native-base';
+import { Container, Spinner, Button, Text, Label, CardItem, Body, Card, Separator, View, Icon, Title} from 'native-base';
 import StepIndicator from 'react-native-step-indicator';
 import { StyleSheet } from 'react-native'
 import { Col, Row, Grid } from 'react-native-easy-grid';
-import TimerMixin from 'react-timer-mixin';
 import './global.js'
 import Modal from "react-native-modal";
 
 
 
 const machine_steps = [
-                       'Dissolvendo soda cáustica em água.\n(aproximadamente 7 minutos)',
-                       'Acrescentando o óleo residual, e misturando.\n(aproximadamente 5 minutos)',
-                       'Acrescentando o álcool, e misturando.\n(aproximadamente 5 minutos)',
-                       'Acrescentando o água fervente, e misturando.\n(aproximadamente 5 minutos)',
-                       'Acrescentando o água a temperatura ambiente e essência, e misturando.\n(aproximadamente 15 minutos)',
+                       'Dissolvendo soda cáustica em água e dosando água em temperatura ambiente.\n(aproximadamente 7 minutos)',
+                       'Acrescentando o óleo residual.\n(aproximadamente 5 minutos)',
+                       'Acrescentando o álcool.\n(aproximadamente 5 minutos)',
+                       'Acrescentando o água fervente.\n(aproximadamente 5 minutos)',
+                       'Acrescentando essência, e misturando.\n(aproximadamente 15 minutos)',
                       ]
 
 export default class FactoryProcess extends Component{
 
   constructor(props) {
     super(props);
-    this.state = {
-      step: global.step_process,
-      machine_temp: this.props.temp,
-      conclusion_modal: false,
-    };
     this.close_modal = this.close_modal.bind(this)
-  }
-
-  mixins: [TimerMixin]
-  componentDidMount() {
-    if (global.step_process !== 4){
-      setTimeout(() => {
-        this.setState({
-          step: 1
-        })
-        global.step_process = 1
-        setTimeout(() => {
-          this.setState({
-            step: 2
-          })
-          global.step_process = 2
-          setTimeout(() => {
-            this.setState({
-              step: 3
-            })
-            global.step_process = 3
-            setTimeout(() => {
-              this.setState({
-                step: 4
-              })
-              global.step_process = 4
-              setTimeout(() => {
-                this.setState({
-                  conclusion_modal: true
-                })
-              }, 3000);
-            }, 3000);
-          }, 3000);
-        }, 3000);
-      }, 3000);
-    }
   }
 
   close_modal(){
     this.props.set_screen('main')
     global.factory_screen = 'main'
-    this.setState({
-      conclusion_modal: false
-    })
+    this.props.close_conclusion_modal
   }
 
   render() {
@@ -78,62 +35,75 @@ export default class FactoryProcess extends Component{
 
     let conclusion_modal
 
-    if (this.state.machine_temp <= 40){
-      machine_temp = <Text id='machine_temp' style={{color: 'green'}}>  {this.state.machine_temp}ºC</Text>
+    if (parseFloat(this.props.temp) <= 40){
+      machine_temp = <Text id='machine_temp' style={{color: 'green'}}>  {this.props.temp}ºC</Text>
     }else{
-      machine_temp = <Text id='machine_temp' style={{color: 'red'}}>  {this.state.machine_temp}ºC</Text>
+      machine_temp = <Text id='machine_temp' style={{color: 'red'}}>  {this.props.temp}ºC</Text>
     }
 
-    if( this.state.conclusion_modal ){
-        global.step_process = 0
-      conclusion_modal = (<Modal isVisible={this.state.conclusion_modal}><Card><CardItem><Text style={{color: 'green'}}>Processo de fabricação finalizado!</Text></CardItem><Button block success onPress={this.close_modal}><Text>Voltar</Text></Button></Card></Modal>)
+    if( this.props.conclusion_modal ){
+      conclusion_modal = (<Modal isVisible={this.props.conclusion_modal}><Card><CardItem><Text style={{color: 'green'}}>Processo de fabricação finalizado!</Text></CardItem><Button block success onPress={this.close_modal}><Text>Voltar</Text></Button></Card></Modal>)
     }else{
       conclusion_modal = (<View></View>)
     }
 
-    return (
-      <Container>
-      <StepIndicator currentPosition={this.state.step}/>
-        <Grid>
-            <Row style={{ height: '13%', marginBottom: '1%'}}>
-                <Col style={{}}>
-                  <Spinner color='blue' />
-                </Col>
-                <Col style={{justifyContent: 'center'}}>
-                  <Label>Em andamento</Label>
-                </Col>
-            </Row>
+    const color_dict = {'2': 150, '4': 200, '8': 250}
 
-            <Card>
-             <CardItem transparent={false} style={{backgroundColor: '#ADD8E6'}}>
-               <Body>
-                 <Text>
-                    {machine_steps[this.state.step]}
-                 </Text>
-               </Body>
-             </CardItem>
-             <CardItem transparent={false} style={{backgroundColor: '#ADD8E6'}}>
-               { this.state.step === 3 ? (<Grid><Label>Temperatura da água: </Label><Text style={{color: 'red'}}>30ºC</Text></Grid>) : (<View/>)}
-             </CardItem>
-            </Card>
-            <Row style={{ height: '5%', marginTop: '2%', marginLeft: '1%'}}>
-              <Label style={{marginTop: '0%'}}>Temperatura da Máquina:</Label>
-              {machine_temp}
-            </Row>
-            <Row style={{ height: '5%', marginTop: '2%', marginLeft: '1%'}}>
-              <Label style={{marginTop: '0%'}}>Ph previsto:</Label>
-              <Text>  9</Text>
-            </Row>
-            <Row style={{ height: '5%', marginTop: '2%', marginLeft: '1%'}}>
-              <Label style={{marginTop: '0%'}}>Viscosidade prevista:</Label>
-              <Text >  4000 CPS</Text>
-            </Row>
-        </Grid>
-        {
-          conclusion_modal
-        }
-      </Container>
-    );
+    var color_soda
+
+    if(color_dict[this.props.amount_of_soap_request] <= parseFloat(this.props.soda)){
+      color_soda = 'green'
+    }else{
+      color_soda = 'red'
+    }
+
+    if(isNaN(this.props.feedback)){
+      return (
+        <Container>
+          <Title style={{color: "black"}}>Aguarde...</Title>
+          <Spinner color='blue' />
+        </Container>
+      )
+    }else{
+      return (
+        <Container>
+        <StepIndicator currentPosition={parseInt(this.props.feedback, 10) - 1}/>
+          <Grid>
+              <Row style={{ height: '13%', marginBottom: '1%'}}>
+                  <Col style={{}}>
+                    <Spinner color='blue' />
+                  </Col>
+                  <Col style={{justifyContent: 'center'}}>
+                    <Label>Em andamento</Label>
+                  </Col>
+              </Row>
+
+              <Card>
+               <CardItem transparent={false} style={{backgroundColor: '#ADD8E6'}}>
+                 <Body>
+                   <Text>
+                      {machine_steps[parseInt(this.props.feedback, 10) - 1]}
+                   </Text>
+                 </Body>
+               </CardItem>
+                { parseInt(this.props.feedback, 10) - 1 === 0 ? (<CardItem style={{backgroundColor: '#fffd94'}}><Grid><Icon name='alert-triangle' type='Feather'/><Label style={{color: 'black'}}>É necessário colocar {color_dict[this.props.amount_of_soap_request]} g de soda cáustica!</Label></Grid></CardItem>) : (<View/>)}
+
+                { parseInt(this.props.feedback, 10) - 1 === 0 ? (<CardItem transparent={false} style={{backgroundColor: '#fffd94'}}><Grid><Icon name='paint-bucket' type='Foundation'/><Label style={{color: 'black'}}>Soda Cáustica: </Label><Text style={{color: color_soda}}> {this.props.soda} g</Text></Grid></CardItem>) : (<View/>)}
+
+              </Card>
+              <Row style={{ height: '5%', marginTop: '2%', marginLeft: '1%'}}>
+                <Label style={{marginTop: '0%'}}>Temperatura da Máquina:</Label>
+                {machine_temp}
+              </Row>
+          </Grid>
+          {
+            conclusion_modal
+          }
+        </Container>
+      );
+    }
+
+
   }
 }
 

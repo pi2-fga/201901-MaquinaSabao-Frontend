@@ -15,36 +15,31 @@ export default class FactoryForm extends Component {
       quantity: 2,
       fragrance: 1,
       modal: false,
-      oil: this.props.oil,
-      alcohol: this.props.alcohol,
-      soda: this.props.soda,
       essence_choice: 1,
-      essence1: this.props.essence1,
-      essence2: this.props.essence2,
       picture: undefined,
       oil_quality: '',
       spinner: false
     };
     this.submit = this.submit.bind(this)
     this.take_picture = this.take_picture.bind(this)
+    this.props.set_request({amount_of_soap_request: this.state.quantity.toString()})
+    this.props.set_request({have_fragrance_request: this.state.fragrance === 1? 'True' : 'False'})
   }
 
   can_start(){
     var alcohol = parseFloat(this.props.alcohol)
     var oil = parseFloat(this.props.oil)
     var soda = parseFloat(this.props.soda)
-    var wather = parseFloat(this.props.wather)
     var essence1 = parseFloat(this.props.essence1)
     var essence2 = parseFloat(this.props.essence2)
+
+    return true // aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa <<< mudar
 
     if (this.state.quantity === 2){
       if(alcohol < 125){
         return false
       }
       if(oil < 250){
-        return false
-      }
-      if(soda < 150){
         return false
       }
       if(this.state.fragrance === 1 && this.state.essence_choice === 1 && this.state.essence1 < 20){
@@ -60,9 +55,6 @@ export default class FactoryForm extends Component {
       if(oil < 500){
         return false
       }
-      if(soda < 200){
-        return false
-      }
       if(this.state.fragrance === 1 && this.state.essence_choice === 1 && this.state.essence1 < 40){
         return false
       }
@@ -74,9 +66,6 @@ export default class FactoryForm extends Component {
         return false
       }
       if(oil < 1000){
-        return false
-      }
-      if(soda < 250){
         return false
       }
       if(this.state.fragrance === 1 && this.state.essence_choice === 1 && this.state.essence1 < 60){
@@ -92,13 +81,15 @@ export default class FactoryForm extends Component {
     return true
   }
 
-  set_quantity(value: string) {
+  set_quantity(value) {
+    this.props.set_request({amount_of_soap_request: value.toString()})
     this.setState({
       quantity: value
     });
   }
 
-  set_fragrance(value: string) {
+  set_fragrance(value) {
+    this.props.set_request({have_fragrance_request: value === '1'? 'True' : 'False'})
     this.setState({
       fragrance: value
     });
@@ -111,12 +102,22 @@ export default class FactoryForm extends Component {
   }
 
   submit(){
+    this.props.set_request({start_of_manufacture_request: new Date().toJSON().replace('T', ' ').substr(0,19)})
     this.props.set_screen('process')
     var response = '0'
-    if (this.state.fragrance) {
-      response = "Receita" + this.state.quantity + '-' + this.state.essence_choice
+    var quantity_aux = ''
+    if (this.state.quantity === 2) {
+      quantity_aux = '1'
+    }
+    else if (this.state.quantity === 4){
+      quantity_aux = '2'
     }else{
-      reponse = "Receita" + this.state.quantity
+      quantity_aux = '3'
+    }
+    if (this.state.fragrance) {
+      response = "receita" + quantity_aux + this.state.essence_choice
+    }else{
+      reponse = "receita" + this.state.quantity + '0'
     }
     this.props.set_response(response)
     global.factory_screen = 'process'
@@ -154,9 +155,7 @@ export default class FactoryForm extends Component {
         this.setState({spinner: true})
 
         this.setState({oil_quality: ''})
-
-        // You can also display the image using data:
-        // const source = { uri: 'data:image/jpeg;base64,' + response.data };
+        this.props.set_request({oil_quality_request: ''})
 
         const data = new FormData();
         data.append('photo', {
@@ -179,16 +178,18 @@ export default class FactoryForm extends Component {
           if(data){
             if(data === 'NO OIL'){
               alert("Tire outra foto, isso não é um óleo!")
+              this.props.set_request({oil_image_request: ''})
               this.setState({picture: undefined})
             }else{
               this.setState({
                 oil_quality: data,
-              });
+              })
+              this.props.set_request({oil_quality_request: data})
             }
           }
         })
 
-
+        this.props.set_request({oil_image_request: source})
         this.setState({
           picture: source,
         });
@@ -243,7 +244,7 @@ export default class FactoryForm extends Component {
         {
           this.state.fragrance ? (
             <Item picker>
-              <Label>Compartimento:</Label>
+              <Label>Compartimento (Essência):</Label>
               <Picker
                 mode="dropdown"
                 selectedValue={this.state.essence_choice}
@@ -275,7 +276,7 @@ export default class FactoryForm extends Component {
                         <CardItem>
                           <Left>
                             <Icon name='paint-bucket' type='Foundation'/>
-                            <Text style={{}}>óleo</Text>
+                            <Text style={{}}>Óleo</Text>
                           </Left>
                           <Right>
                             <Text style={{color: insumo_color}}>{this.props.oil} ml</Text>
@@ -284,19 +285,10 @@ export default class FactoryForm extends Component {
                         <CardItem>
                           <Left>
                             <Icon name='paint-bucket' type='Foundation'/>
-                            <Text style={{}}>álcool</Text>
+                            <Text style={{}}>Álcool</Text>
                           </Left>
                           <Right>
                             <Text style={{color: insumo_color}}>{this.props.alcohol} ml</Text>
-                          </Right>
-                        </CardItem>
-                        <CardItem>
-                          <Left>
-                            <Icon name='paint-bucket' type='Foundation'/>
-                            <Text style={{}}>soda cáustica</Text>
-                          </Left>
-                          <Right>
-                            <Text style={{color: insumo_color}}>{this.props.soda} g</Text>
                           </Right>
                         </CardItem>
                         {
@@ -304,7 +296,7 @@ export default class FactoryForm extends Component {
                           (<CardItem>
                             <Left>
                               <Icon name='paint-bucket' type='Foundation'/>
-                              <Text style={{}}>essência 1</Text>
+                              <Text style={{}}>Essência (Compartimento 1)</Text>
                             </Left>
                             <Right>
                               <Text style={{color: insumo_color}}>{this.props.essence1} ml</Text>
@@ -316,7 +308,7 @@ export default class FactoryForm extends Component {
                           (<CardItem>
                             <Left>
                               <Icon name='paint-bucket' type='Foundation'/>
-                              <Text style={{}}>essência 2</Text>
+                              <Text style={{}}>Essência (Compartimento 2)</Text>
                             </Left>
                             <Right>
                               <Text style={{color: insumo_color}}>{this.props.essence2} ml</Text>
