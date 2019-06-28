@@ -190,6 +190,25 @@ export default class App extends Component {
 
                       // REQUEST TO CREATE MANUFACTURING
 
+                      const data = new FormData();
+
+                      data.append('actual_ph', this.state.actual_ph_request)
+                      data.append('start_of_manufacture', this.state.start_of_manufacture_request)
+                      data.append('end_of_manufacture', this.state.end_of_manufacture_request)
+                      data.append('amount_of_soap', this.state.amount_of_soap_request)
+                      data.append('oil_quality', this.state.oil_quality_request)
+                      data.append('have_fragrance', this.state.have_fragrance_request)
+                      data.append('oil_image', {
+                        uri: this.state.oil_image_request.uri,
+                        type: 'image/jpeg',
+                        name: 'foto'
+                      });
+
+                      fetch('http://192.168.0.7:8000/manufacturing', {
+                        method: 'post',
+                        body: data
+                      })
+
                     }
 
                   }catch(error){
