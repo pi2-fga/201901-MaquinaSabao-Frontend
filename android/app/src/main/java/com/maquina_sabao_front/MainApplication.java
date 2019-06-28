@@ -31,7 +31,10 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+<<<<<<< HEAD
             new SvgPackage(),
+=======
+>>>>>>> 52dbca173e40c089cc48b66f13230997abfd6556
             new RNBluetoothManagerPackage(),
             new ImagePickerPackage(),
             new BleManagerPackage(),

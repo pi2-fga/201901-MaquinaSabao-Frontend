@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 import { Container, Text, View } from "native-base";
-import { Image } from 'react-native'
+import { Image, Dimensions } from 'react-native'
 
 export default class HomeScreen extends Component {
 
   render() {
 
     return (
-      <Container>
+      <View>
         <Image
-          style={{width: "100%", height: "100%"}}
-          source={require('./mainScreen/fundo.jpeg')}
+          style={{width: Dimensions.get('window').width, height: Dimensions.get('window').height - 200}}
+          source={require('../images/fundo.jpeg')}
         />
-      </Container>
+      </View>
     );
   }
 }
