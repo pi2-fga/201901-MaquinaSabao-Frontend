@@ -23,10 +23,10 @@ export default class Factory extends Component {
     let factory_screen;
 
     if ( this.state.screen === 'main' ){
-      factory_screen = <FactoryForm set_screen={this.set_screen}  alcohol={this.props.alcohol} oil={this.props.oil} soda={this.props.soda} wather={this.props.wather} essence={this.props.essence}/>
+      factory_screen = <FactoryForm set_screen={this.set_screen}  alcohol={this.props.alcohol} oil={this.props.oil} soda={this.props.soda} wather={this.props.wather} essence={this.props.essence} set_response={this.props.set_response}/>
     }
     else if ( this.state.screen === 'process' ){
-      factory_screen = <FactoryProcess set_screen={this.set_screen} temp={this.props.temp}/>
+      factory_screen = <FactoryProcess set_screen={this.set_screen} temp={this.props.temp} set_response={this.props.set_response}/>
     }
 
     return (

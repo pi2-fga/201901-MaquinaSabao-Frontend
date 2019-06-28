@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { Container, Text, View, Card, CardItem, Col, Row, Link, Title, Grid, Left } from "native-base";
 import { Image, Linking, Dimensions } from 'react-native';
-import { LineChart, BarChart, PieChart, ProgressChart, ContributionGraph, StackedBarChart   } from 'react-native-chart-kit'
+import { LineChart, BarChart, PieChart, ProgressChart, ContributionGraph, StackedBarChart   } from 'react-native-chart-kit' 
 
 export default class Bi extends Component {
   constructor(props){
     super(props)
-    this.state = {list1:[], list2:[0.0], list3:[0.0]}
+    this.state = {list1:[], list2:[0.0], list3:[0.0], alcohol_link:'', soda_link:''}
   }
   componentDidMount(){
     fetch('http://192.168.43.216:8000/index_manufacturing_month/', {
@@ -24,9 +24,27 @@ export default class Bi extends Component {
         list3_aux.push(parseFloat(data[x].internet_soda_price)+ parseFloat( data[x].internet_alcohol_price))
       }
       this.setState({list1: list1_aux, list2: list2_aux, list3: list3_aux})
-      console.log(this.state.list2)
-      console.log(typeof this.state.list3)
-    });
+    })
+    fetch('http://192.168.43.216:8000/get_cheaper_alcohol_ml/', {
+      method: 'get',
+    }).then((response) => {
+      return response.json();
+    }).then((data) => {
+      var alcohol_link_aux = data.item_link
+      console.log('VAI CARAI')
+      console.log(alcohol_link_aux)
+      this.setState({ alcohol_link: alcohol_link_aux })
+    })
+    fetch('http://192.168.43.216:8000/get_cheaper_soda/', {
+      method: 'get',
+    }).then((response) => {
+      return response.json();
+    }).then((data) => {
+      var soda_link_aux = data.item_link
+      console.log('VAI CARAI')
+      console.log(soda_link_aux)
+      this.setState({ soda_link: soda_link_aux })
+    })
   }
   render() {
     return (
@@ -57,7 +75,7 @@ export default class Bi extends Component {
         <Card>
         <Title style={{ color: 'black' }}>MATÉRIAS PRIMAS MAIS BARATAS</Title>
           <CardItem style={{ height: 150}}>
-            <Col onPress={() => { Linking.openURL('https://www.americanas.com.br/produto/26894060/soda-caustica-escamas-99-pote-1kg') }}>
+            <Col onPress={() => { Linking.openURL(this.state.alcohol_link) }}>
                 <Image
                   style={{  resizeMode: 'contain',height: undefined, width: undefined, flex: 1 }}
                   source={require('../../images/alcool.jpg')}
@@ -71,7 +89,7 @@ export default class Bi extends Component {
               </Row>
           </CardItem>
           <CardItem style={{ height: 150}}>
-            <Col onPress={() => { Linking.openURL('https://www.americanas.com.br/produto/26894060/soda-caustica-escamas-99-pote-1kg') }}>
+            <Col onPress={() => { Linking.openURL(this.state.soda_link) }}>
                 <Image
                   style={{  resizeMode: 'contain',height: undefined, width: undefined, flex: 1 }}
                   source={require('../../images/soda.jpg')}

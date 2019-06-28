@@ -4,6 +4,7 @@ import android.app.Application;
 
 import com.facebook.react.ReactApplication;
 import com.horcrux.svg.SvgPackage;
+import com.solinor.bluetoothstatus.RNBluetoothManagerPackage;
 import com.imagepicker.ImagePickerPackage;
 import it.innove.BleManagerPackage;
 import com.polidea.reactnativeble.BlePackage;
@@ -31,6 +32,7 @@ public class MainApplication extends Application implements ReactApplication {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
             new SvgPackage(),
+            new RNBluetoothManagerPackage(),
             new ImagePickerPackage(),
             new BleManagerPackage(),
             new BlePackage(),

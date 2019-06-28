@@ -104,8 +104,21 @@ export default class FactoryForm extends Component {
     });
   }
 
+  set_essence_choice(value: string) {
+    this.setState({
+      essence_choice: value
+    });
+  }
+
   submit(){
     this.props.set_screen('process')
+    var response = '0'
+    if (this.state.fragrance) {
+      response = "Receita" + this.state.quantity + '-' + this.state.essence_choice
+    }else{
+      reponse = "Receita" + this.state.quantity
+    }
+    this.props.set_response(response)
     global.factory_screen = 'process'
   }
 
@@ -227,7 +240,21 @@ export default class FactoryForm extends Component {
             <Picker.Item label="Não" value={0} />
           </Picker>
         </Item>
-
+        {
+          this.state.fragrance ? (
+            <Item picker>
+              <Label>Compartimento:</Label>
+              <Picker
+                mode="dropdown"
+                selectedValue={this.state.essence_choice}
+                onValueChange={this.set_essence_choice.bind(this)}
+              >
+                <Picker.Item label="1" value={1} />
+                <Picker.Item label="2" value={2} />
+              </Picker>
+            </Item>
+          ) : (<View/>)
+        }
         <Container style={{}}>
           <Card style={{marginTop: '5%', marginBottom: '5%'}}>
             <CardItem transparent={false} style={{ backgroundColor: 'yellow'}}>

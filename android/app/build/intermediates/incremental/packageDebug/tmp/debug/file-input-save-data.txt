@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Jun 12 14:31:06 BRT 2019
+#Fri Jun 21 15:12:40 BRT 2019
 56.path=lib/armeabi-v7a/libc++_shared.so
 5.base=/home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/build/intermediates/transforms/mergeJniLibs/debug/0
 42.base=/home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/build/intermediates/transforms/mergeJniLibs/debug/0

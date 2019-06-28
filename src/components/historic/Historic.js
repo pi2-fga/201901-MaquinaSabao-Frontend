@@ -5,17 +5,37 @@ import { TouchableOpacity, Image, ScrollView } from 'react-native'
 import ExtraDimensions from 'react-native-extra-dimensions-android';
 
 
-const list = [{id: 1, date: '12/01/2019', startTime: '12:42:30', endTime: '13:30:30', quantity: 2, prePh: 9, preViscosity: 4000, viscosity: 3000, ph: 8, quality:'boa', fragrance:'Sim'},
-              {id: 2, date: '12/01/2019', startTime: '12:02:45', endTime: '12:42:60', quantity: 2, prePh: 9, preViscosity: 4000, viscosity: 3000, ph: 8, quality:'boa', fragrance:'Sim'},
-              {id: 3, date: '11/01/2019', startTime: '12:50:10', endTime: '13:40:10', quantity: 2, prePh: 9, preViscosity: 4000, viscosity: 3000, ph: 8, quality:'boa', fragrance:'Sim'}]
-
 export default class Historic extends Component {
   constructor(props){
     super(props)
     this.state = {
       modal: false,
-      element: {},
+      element:   {
+          id: 1,
+          start_of_manufacture: '',
+          end_of_manufacture: '',
+          amount_of_soap: '',
+          expected_ph: '',
+          actual_ph: '',
+          oil_quality: '',
+          have_fragrance: true,
+          oil_image: ''
+        },
+      list: [],
     }
+  }
+
+
+
+  componentDidMount(){
+    fetch('http://192.168.0.7:8000/index_manufacturing_month/', {
+      method: 'get',
+    }).then((response) => {
+      console.log(response);
+      return response.json();
+    }).then((data) => {
+      this.setState({list: data})
+    });
   }
 
   open_modal = (element) => {
@@ -49,50 +69,42 @@ export default class Historic extends Component {
               <Card>
                 <CardItem>
                   <Left><Text>Data: </Text></Left>
-                  <Right><Text>{this.state.element.date}</Text></Right>
+                  <Right><Text>{this.state.element.start_of_manufacture.replace('-','/').replace('-','/').split('T')[0]}</Text></Right>
                 </CardItem>
                 <CardItem>
                   <Left><Text>Hora de inicio:</Text></Left>
-                  <Right><Text>{this.state.element.startTime}</Text></Right>
+                  <Right><Text>{this.state.element.start_of_manufacture.replace('Z','').split('T')[1]}</Text></Right>
                 </CardItem>
                 <CardItem>
                   <Left><Text>Hora de fim: </Text></Left>
-                  <Right><Text>{this.state.element.endTime}</Text></Right>
+                  <Right><Text>{this.state.element.end_of_manufacture.replace('Z','').split('T')[1]}</Text></Right>
                 </CardItem>
                 <CardItem>
                   <Left><Text>Quantidade de sabão:</Text></Left>
-                  <Right><Text> {this.state.element.quantity}L</Text></Right>
+                  <Right><Text> {this.state.element.amount_of_soap}L</Text></Right>
                 </CardItem>
                 <CardItem>
                   <Left><Text>Ph previsto: </Text></Left>
-                  <Right><Text>{this.state.element.prePh}</Text></Right>
-                </CardItem>
-                <CardItem>
-                  <Left><Text>Viscosidade prevista: </Text></Left>
-                  <Right><Text>{this.state.element.preViscosity}CPS</Text></Right>
-                </CardItem>
-                <CardItem>
-                  <Left><Text>Viscosidade: </Text></Left>
-                  <Right><Text>{this.state.element.viscosity}CPS</Text></Right>
+                  <Right><Text>{this.state.element.expected_ph}</Text></Right>
                 </CardItem>
                 <CardItem>
                   <Left><Text>Ph: </Text></Left>
-                  <Right><Text>{this.state.element.ph}</Text></Right>
+                  <Right><Text>{this.state.element.actual_ph}</Text></Right>
                 </CardItem>
                 <CardItem>
                   <Left><Text>Qualidade do óleo: </Text></Left>
-                  <Right><Text>{this.state.element.quality}</Text></Right>
+                  <Right><Text>{this.state.element.oil_quality}</Text></Right>
                 </CardItem>
                 <CardItem>
                   <Left><Text>Fragrância: </Text></Left>
-                  <Right><Text>{this.state.element.fragrance}</Text></Right>
+                  <Right><Text>{this.state.element.have_fragrance? 'Sim' : 'Não'}</Text></Right>
                 </CardItem>
                 <CardItem>
                   <Left><Text>Imagem do óleo:</Text></Left>
                   <Right>
                     <Image
                       style={{width: 100, height: 100}}
-                      source={require('../../images/oleo.jpg')}
+                      source={{uri: "http://192.168.0.7:8000" + this.state.element.oil_image}}
                     />
                   </Right>
                 </CardItem>
@@ -105,13 +117,13 @@ export default class Historic extends Component {
           </Modal>
           <List>
             {
-              list.map( (element) => (
+              this.state.list.map( (element) => (
                   <ListItem onPress={() => this.open_modal(element)} key={element.id}>
                     <Left>
-                      <Text>{element.date}</Text>
+                      <Text>{element.start_of_manufacture.replace('-','/').replace('-','/').split('T')[0]}</Text>
                     </Left>
                     <Right>
-                      <Text>{element.startTime}</Text>
+                      <Text>{element.start_of_manufacture.split('T')[1].replace('Z','')}</Text>
                     </Right>
                   </ListItem>
               ))
