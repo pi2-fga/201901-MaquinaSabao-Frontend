@@ -102,25 +102,30 @@ export default class FactoryForm extends Component {
   }
 
   submit(){
-    this.props.set_request({start_of_manufacture_request: new Date().toJSON().replace('T', ' ').substr(0,19)})
-    this.props.set_screen('process')
-    var response = '0'
-    var quantity_aux = ''
-    if (this.state.quantity === 2) {
-      quantity_aux = '1'
-    }
-    else if (this.state.quantity === 4){
-      quantity_aux = '2'
+    if(this.props.feedback !== 'pode comecar'){
+      alert("Máquina está sendo usada!")
     }else{
-      quantity_aux = '3'
+      this.props.set_request({start_of_manufacture_request: new Date().toJSON().replace('T', ' ').substr(0,19)})
+      this.props.set_screen('process')
+      var response = '0'
+      var quantity_aux = ''
+      if (this.state.quantity === 2) {
+        quantity_aux = '1'
+      }
+      else if (this.state.quantity === 4){
+        quantity_aux = '2'
+      }else{
+        quantity_aux = '3'
+      }
+      if (this.state.fragrance) {
+        response = "receita" + quantity_aux + this.state.essence_choice
+      }else{
+        reponse = "receita" + this.state.quantity + '0'
+      }
+      this.props.set_response(response)
+      global.factory_screen = 'process'
     }
-    if (this.state.fragrance) {
-      response = "receita" + quantity_aux + this.state.essence_choice
-    }else{
-      reponse = "receita" + this.state.quantity + '0'
-    }
-    this.props.set_response(response)
-    global.factory_screen = 'process'
+
   }
 
   open_modal = () => {
@@ -164,7 +169,7 @@ export default class FactoryForm extends Component {
           name: 'foto'
         });
 
-        fetch('http://192.168.0.7:8000/predict_oil_quality', {
+        fetch('http://52.67.39.4/predict_oil_quality', {
           method: 'post',
           body: data
         })

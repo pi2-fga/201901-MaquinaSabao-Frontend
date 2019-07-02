@@ -20,9 +20,9 @@ export default class Historic extends Component {
           have_fragrance: true,
           oil_image: '',
         },
-      list: [{id: 1, start_of_manufacture: '2019-06-04TAAA'}],
+      list: [], // {id: 1, start_of_manufacture: '2019-06-04TAAA'}
       chosenDate: new Date(),
-      static_list: [{id: 1, start_of_manufacture: '2019-06-04TAAA'}]
+      static_list: [] // {id: 1, start_of_manufacture: '2019-06-04TAAA'}
     }
     this.setDate = this.setDate.bind(this);
   }
@@ -43,7 +43,7 @@ export default class Historic extends Component {
   }
 
   componentDidMount(){
-    fetch('http://192.168.0.7:8000/index_manufacturing_month/', {
+    fetch('http://52.67.39.4/index_manufacturing_month/', {
       method: 'get',
     }).then((response) => {
       console.log(response);
@@ -72,26 +72,28 @@ export default class Historic extends Component {
     return (
       <Container>
       <Title style={{ color: 'black', marginTop: '5%', marginBottom: '10%' }}>HISTÓRICO DE FABRICAÇÕES</Title>
-      <Button style={{marginLeft: 'auto', marginRight: 'auto'}}>
-        <DatePicker
-            defaultDate={new Date()}
-            locale={"pt-br"}
-            timeZoneOffsetInMinutes={undefined}
-            modalTransparent={false}
-            animationType={"fade"}
-            androidMode={"default"}
-            placeHolderText="[SELECIONE UMA DATA]"
-            textStyle={{ color: "white" }}
-            placeHolderTextStyle={{ color: "#d3d3d3" }}
-            onDateChange={this.setDate}
-            disabled={false}
-            />
-        </Button>
         <Content>
           <Header>
             <Left>
               <Text style={{color: 'white', marginLeft: '11%'}}>Data</Text>
             </Left>
+            <Right>
+              <Button block success>
+              <DatePicker
+                  defaultDate={new Date()}
+                  locale={"pt-br"}
+                  timeZoneOffsetInMinutes={undefined}
+                  modalTransparent={false}
+                  animationType={"fade"}
+                  androidMode={"default"}
+                  placeHolderText="[Calendário]"
+                  textStyle={{ color: "white" }}
+                  placeHolderTextStyle={{ color: "white" }}
+                  onDateChange={this.setDate}
+                  disabled={false}
+                  />
+              </Button>
+              </Right>
             <Right>
               <Text style={{color: 'white'}}>Hora de inicio</Text>
             </Right>

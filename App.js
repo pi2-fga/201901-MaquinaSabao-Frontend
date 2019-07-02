@@ -204,7 +204,7 @@ export default class App extends Component {
                         name: 'foto'
                       });
 
-                      fetch('http://192.168.0.7:8000/manufacturing', {
+                      fetch('http://52.67.39.4/manufacturing', {
                         method: 'post',
                         body: data
                       })
