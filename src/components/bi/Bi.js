@@ -6,10 +6,10 @@ import { LineChart, BarChart, PieChart, ProgressChart, ContributionGraph, Stacke
 export default class Bi extends Component {
   constructor(props){
     super(props)
-    this.state = {list1:[], list2:[0.0], list3:[0.0], alcohol_link:'', soda_link:''}
+    this.state = { list1: [], list2: [0.0], list3: [0.0], alcohol_link: '', soda_link: '', alcohol_img: '', soda_img: ''}
   }
   componentDidMount(){
-    fetch('http://192.168.43.216:8000/index_manufacturing_month/', {
+    fetch('http://192.168.0.194:8000/index_manufacturing_month/', {
       method: 'get',
     }).then((response) => {
       console.log(response);
@@ -25,25 +25,23 @@ export default class Bi extends Component {
       }
       this.setState({list1: list1_aux, list2: list2_aux, list3: list3_aux})
     })
-    fetch('http://192.168.43.216:8000/get_cheaper_alcohol_ml/', {
+    fetch('http://192.168.0.194:8000/get_cheaper_alcohol_ml/', {
       method: 'get',
     }).then((response) => {
       return response.json();
     }).then((data) => {
       var alcohol_link_aux = data.item_link
-      console.log('VAI CARAI')
-      console.log(alcohol_link_aux)
-      this.setState({ alcohol_link: alcohol_link_aux })
+      var alcohol_img_aux = data.item_img
+      this.setState({ alcohol_link: alcohol_link_aux, alcohol_img: alcohol_img_aux })
     })
-    fetch('http://192.168.43.216:8000/get_cheaper_soda/', {
+    fetch('http://192.168.0.194:8000/get_cheaper_soda/', {
       method: 'get',
     }).then((response) => {
       return response.json();
     }).then((data) => {
       var soda_link_aux = data.item_link
-      console.log('VAI CARAI')
-      console.log(soda_link_aux)
-      this.setState({ soda_link: soda_link_aux })
+      var soda_img_aux = data.item_img
+      this.setState({ soda_link: soda_link_aux, soda_img: soda_img_aux })
     })
   }
   render() {
@@ -54,7 +52,8 @@ export default class Bi extends Component {
           data={{
             labels: this.state.list1,
             datasets: [{
-              data: this.state.list2
+              data: this.state.list2,
+              color: (opacity = 1) => `rgba(134, 65, 244, ${opacity})`
             },
             {
               data: this.state.list3
@@ -68,7 +67,6 @@ export default class Bi extends Component {
             backgroundGradientFrom: '#3f51b5',
             backgroundGradientTo: '#3f51b5',
             decimalPlaces: 2, // optional, defaults to 2dp
-            color: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`
           }}
           bezier
         />
@@ -78,7 +76,7 @@ export default class Bi extends Component {
             <Col onPress={() => { Linking.openURL(this.state.alcohol_link) }}>
                 <Image
                   style={{  resizeMode: 'contain',height: undefined, width: undefined, flex: 1 }}
-                  source={require('../../images/alcool.jpg')}
+                  source={{ uri: this.state.alcohol_img }}
                 />
             </Col>
             <Row>
@@ -92,7 +90,7 @@ export default class Bi extends Component {
             <Col onPress={() => { Linking.openURL(this.state.soda_link) }}>
                 <Image
                   style={{  resizeMode: 'contain',height: undefined, width: undefined, flex: 1 }}
-                  source={require('../../images/soda.jpg')}
+                  source={{ uri: this.state.soda_img }}
                 />
             </Col>
             <Row>

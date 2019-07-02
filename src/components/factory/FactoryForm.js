@@ -164,7 +164,7 @@ export default class FactoryForm extends Component {
           name: 'foto'
         });
 
-        fetch('http://192.168.43.216:8000/predict_oil_quality/', {
+        fetch('http://192.168.0.194:8000/predict_oil_quality/', {
           method: 'post',
           body: data
         })
