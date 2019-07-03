@@ -27,7 +27,7 @@ export default class App extends Component {
       alcohol: '',
       oil: '',
       soda: '',
-      feedback: '1',
+      feedback: '',
       essence: '',
       connect: true, // mudarrrrr
       device_id: '',
@@ -187,7 +187,7 @@ export default class App extends Component {
                         )
                         this.setState({response: '0'})
                     }else if(this.state.feedback.split(' ')[0] === 'FIM'){
-                      await this.setState({actual_ph_request: this.state.feedback.split(' ')[1]})
+                      await this.setState({actual_ph_request: parseFloat(his.state.feedback.split(' ')[1])})
                       await this.setState({conclusion_modal: true})
                       await this.setState({end_of_manufacture_request: new Date().toJSON().replace('T', ' ').substr(0,19)})
 
@@ -204,10 +204,10 @@ export default class App extends Component {
                       data.append('oil_image', {
                         uri: this.state.oil_image_request.uri,
                         type: 'image/jpeg',
-                        name: 'foto'
+                        name: 'foto.jpeg'
                       });
 
-                      fetch('http://192.168.0.7:8000/manufacturing', {
+                      fetch('http://52.67.39.4/manufacturing', {
                         method: 'post',
                         body: data
                       })

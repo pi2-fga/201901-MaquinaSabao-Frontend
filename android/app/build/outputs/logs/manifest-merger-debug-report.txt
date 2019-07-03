@@ -1,313 +1,313 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:1:1-28:12
-INJECTED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:1:1-28:12
-INJECTED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:1:1-28:12
-INJECTED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:1:1-28:12
-MERGED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:1:1-28:12
-MERGED from [:react-native-svg] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-bluetooth-status] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-bluetooth-status/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
-MERGED from [:react-native-image-picker] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
-MERGED from [:react-native-ble-manager] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:react-native-ble-plx] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-plx/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-12:12
-MERGED from [:react-native-extra-dimensions-android] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-extra-dimensions-android/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-vector-icons] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-gesture-handler] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.59.5] /home/carlos/.gradle/caches/transforms-1/files-1.1/react-native-0.59.5.aar/c7d545aca2e7e565f11026e87c22fb24/AndroidManifest.xml:2:1-13:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d0b0e818fdb954f57f9cac8e3ff7de81/AndroidManifest.xml:17:1-22:12
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.7.0.aar/56d96566c3bebb8eaca8ab368b0476cf/AndroidManifest.xml:2:1-18:12
-MERGED from [com.android.support:support-fragment:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/6b5936ad6dc043bd609306723d04eac5/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/7fdf718d2d9005a93acf38d0d63696fb/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/2a1f270efe1ededc02909112c4afd093/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/b077f28c5f6cf4b6b7f285ed8c117330/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/c6c9047a55afdd386e1bda2fa8181dad/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/b340c883a812443cfa409ed34c349e60/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/3f97742bd632c3bb9fe953be04761ae9/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/476b9023c72c6679862e79a4009cac93/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/c179ddb8f691140fa37bcf17e6d812c5/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/3ade6062f1981d786e748c9baf999ab5/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/c0c9dedf15429ce30ae627aaea306256/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/620bd5f2ffdb7a115017533691c8b223/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/ec4aa573741e0685cec8792237dea4b6/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f8eeafb429725cc9d3a880992c5f151d/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/9728d0de586349ab50b80fa747159dac/AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/55baa098d258f7c25ad5fddd0149a1a4/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/carlos/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/b90db098835d18db991d32450a2d7ede/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/32d6d1dc8b0e449b8698268cd7bc9c57/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/d2973ae081271e32e832fc9d5bcdbd00/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/751a11ba1cfb206e4a936aacf83a2281/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/carlos/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/3f3e96a5989940bb1a98e504f1bad35d/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/carlos/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/74264bd42d91e83b02c55e58fe1574f9/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/carlos/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/d01dbedc3bbc83397f9e73d4f8ee46cb/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] /home/carlos/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f5969cd5a4e234ff63eaea859c874f2b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/b53b432ac37e2ef8804d903452909632/AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.fresco:fresco:1.10.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/7b3d61a9848acfd1a3a2867e9b76eddf/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/acede2bb30ba09caf5734770a89eab45/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:drawee:1.10.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/90d742889f0c5e17d7615948b1032c1c/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/782f3aad8c74b011cf6a1f9d97a6c943/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/09f6d62c92d94bf558af3c7399e28300/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.6.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/b932ffe0e0f7ee0ca4bb66f1e3a4825f/AndroidManifest.xml:2:1-13:12
-MERGED from [com.artemzin.rxjava:proguard-rules:1.3.3.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/proguard-rules-1.3.3.0.aar/b92608fac86f5ffcf8256ea0b4e2f507/AndroidManifest.xml:2:1-10:12
-MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/a0bdb3f23212198ef3557f134abc8338/AndroidManifest.xml:2:1-9:12
-INJECTED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:2:1-13:12
-INJECTED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:2:1-13:12
-INJECTED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:2:1-13:12
+ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:1:1-28:12
+MERGED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:1:1-28:12
+MERGED from [:react-native-svg] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-bluetooth-status] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-bluetooth-status/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
+MERGED from [:react-native-image-picker] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
+MERGED from [:react-native-ble-manager] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:react-native-ble-plx] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-plx/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-12:12
+MERGED from [:react-native-extra-dimensions-android] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-extra-dimensions-android/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-vector-icons] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-gesture-handler] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.59.5] /home/bruno/.gradle/caches/transforms-1/files-1.1/react-native-0.59.5.aar/81436e53248f76c69904e10a67cb6308/AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.7.0.aar/e222e2b101a9735a4ebbb07bf22b5a90/AndroidManifest.xml:2:1-18:12
+MERGED from [com.android.support:support-fragment:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/9e097461a264d23e710bf799b927d739/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/69f0e7b42f88443903fb80f91e491d20/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/cf41bfeb3751316d728c668ff4be9d0b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/90e5663146cc9b1d766c9d1b92d129a5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/cf97ea992cd8b740438b5fe740bac1fb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/c745df43f729bcc4e7b8537f250b0f9f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/2467ad82e8d9bfe832ca2e25aab62786/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/7cb1cced88f3b96f344de25b9f181c87/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/89133aa4dbd51c6494af248e73b6afd6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/1c29b530ae2ec6423c04aa302c3bca9c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/94ae64161c0fe402bf7710ebf6925982/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/daf1a5e3279a4938dcbd95ee3c83b917/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/693064502522d45868f9b73024b606a3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/dff89fc04a7a1c06aeb689362419af27/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/047103cbae18a508c68f8e790989f402/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/93b7252ede949652e1303452c33ff33b/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/bruno/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/a523d7171ff870ea248985a3829f0849/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/c0e348e1faa2e7edb60ae6875008ba9c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/53a95e60580d3394f466e9cea103bbd9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/048b9b5ed29c3d6e9af0c7145fe30cfa/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/bruno/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/fa9e2a777bafa0455c81f356f49761c2/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/bruno/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/6101f761d3bd12826ac8a049843255f4/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/bruno/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/f1d535a25f079d8c91aa3b4192e0dce2/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /home/bruno/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/6b2075ae20dec5571c0f66b51465f4bb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/91cc81dfb4012cb48a9964665783d4d1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/b2c57e68500926e1a8faa272366d89f7/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/e3db6dbc40d0bc1e3838318e27b43bf0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/8a77fe7457e08f1c3076e064b0da0131/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/6dff942eaec6d8dfde5c4a99eed618ad/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/0bb94df63a963a82622f3a45827e5a3b/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/bfb11047d212f152352c97a0152ce48b/AndroidManifest.xml:2:1-13:12
+MERGED from [com.artemzin.rxjava:proguard-rules:1.3.3.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/proguard-rules-1.3.3.0.aar/bd8de8bea1a80fd8d37d5efe0f8f50f1/AndroidManifest.xml:2:1-10:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/db77a347cc61b4922759ef645ec10f1b/AndroidManifest.xml:2:1-9:12
+INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:2:1-13:12
+INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:2:1-13:12
+INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:2:1-13:12
 	package
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:2:3-36
-		INJECTED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:2:3-36
-		INJECTED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:2:3-36
+		INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:2:3-36
+		INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:1:1-28:12
-		INJECTED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:1:1-28:12
+		INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:3:5-51
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:1:1-28:12
-		INJECTED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:1:1-28:12
+		INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:4:5-67
+ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:4:5-67
 	android:name
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:4:22-64
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:4:22-64
 uses-permission#android.permission.CAMERA
-ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:5:5-64
+ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:5:5-64
 	android:name
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:5:22-62
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:5:22-62
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:6:5-80
+ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:6:5-80
 	android:name
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:6:22-78
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:6:22-78
 application
-ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:8:5-26:19
-MERGED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:8:5-26:19
-MERGED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:8:5-26:19
-MERGED from [:react-native-image-picker] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
-MERGED from [:react-native-image-picker] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
-MERGED from [com.facebook.react:react-native:0.59.5] /home/carlos/.gradle/caches/transforms-1/files-1.1/react-native-0.59.5.aar/c7d545aca2e7e565f11026e87c22fb24/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.react:react-native:0.59.5] /home/carlos/.gradle/caches/transforms-1/files-1.1/react-native-0.59.5.aar/c7d545aca2e7e565f11026e87c22fb24/AndroidManifest.xml:11:5-20
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.7.0.aar/56d96566c3bebb8eaca8ab368b0476cf/AndroidManifest.xml:16:5-53
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.7.0.aar/56d96566c3bebb8eaca8ab368b0476cf/AndroidManifest.xml:16:5-53
-MERGED from [com.android.support:support-compat:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f8eeafb429725cc9d3a880992c5f151d/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f8eeafb429725cc9d3a880992c5f151d/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/9728d0de586349ab50b80fa747159dac/AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/9728d0de586349ab50b80fa747159dac/AndroidManifest.xml:22:5-23:19
-MERGED from [com.facebook.soloader:soloader:0.6.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/b932ffe0e0f7ee0ca4bb66f1e3a4825f/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.6.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/b932ffe0e0f7ee0ca4bb66f1e3a4825f/AndroidManifest.xml:11:5-20
+ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:8:5-26:19
+MERGED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:8:5-26:19
+MERGED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:8:5-26:19
+MERGED from [:react-native-image-picker] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-image-picker] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [com.facebook.react:react-native:0.59.5] /home/bruno/.gradle/caches/transforms-1/files-1.1/react-native-0.59.5.aar/81436e53248f76c69904e10a67cb6308/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.59.5] /home/bruno/.gradle/caches/transforms-1/files-1.1/react-native-0.59.5.aar/81436e53248f76c69904e10a67cb6308/AndroidManifest.xml:11:5-20
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.7.0.aar/e222e2b101a9735a4ebbb07bf22b5a90/AndroidManifest.xml:16:5-53
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.7.0.aar/e222e2b101a9735a4ebbb07bf22b5a90/AndroidManifest.xml:16:5-53
+MERGED from [com.android.support:support-compat:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/dff89fc04a7a1c06aeb689362419af27/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/dff89fc04a7a1c06aeb689362419af27/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/047103cbae18a508c68f8e790989f402/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/047103cbae18a508c68f8e790989f402/AndroidManifest.xml:22:5-23:19
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/bfb11047d212f152352c97a0152ce48b/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/bfb11047d212f152352c97a0152ce48b/AndroidManifest.xml:11:5-20
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f8eeafb429725cc9d3a880992c5f151d/AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/dff89fc04a7a1c06aeb689362419af27/AndroidManifest.xml:22:18-91
 	android:label
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:10:7-39
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:10:7-39
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:10:7-39
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:10:7-39
 	android:debuggable
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:12:115-140
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:12:115-140
 	tools:ignore
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:12:75-114
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:12:75-114
 	android:roundIcon
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:12:7-52
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:12:7-52
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:12:7-52
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:12:7-52
 	tools:targetApi
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:12:54-74
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:12:54-74
 	android:icon
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:11:7-41
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:11:7-41
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:11:7-41
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:11:7-41
 	android:allowBackup
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:13:7-34
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:13:7-34
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:13:7-34
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:13:7-34
 	android:theme
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:14:7-38
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:14:7-38
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:14:7-38
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:14:7-38
 	android:usesCleartextTraffic
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:12:18-53
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:12:18-53
 	android:name
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:9:7-38
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:9:7-38
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:9:7-38
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:9:7-38
 activity#com.maquina_sabao_front.MainActivity
-ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:15:7-24:18
+ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:15:7-24:18
 	android:label
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:17:9-41
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:17:9-41
 	android:windowSoftInputMode
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:19:9-51
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:19:9-51
 	android:configChanges
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:18:9-79
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:18:9-79
 	android:name
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:16:9-37
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:16:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:20:9-23:25
+ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:20:9-23:25
 action#android.intent.action.MAIN
-ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:21:13-65
+ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:21:13-65
 	android:name
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:21:21-62
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:21:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:22:13-73
+ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:22:13-73
 	android:name
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:22:23-70
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:22:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:25:7-84
+ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:25:7-84
 	android:name
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:25:17-81
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml:25:17-81
 uses-sdk
-INJECTED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml
-INJECTED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml
-MERGED from [:react-native-svg] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-svg] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-bluetooth-status] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-bluetooth-status/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-bluetooth-status] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-bluetooth-status/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-image-picker] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-image-picker] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-ble-manager] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:react-native-ble-manager] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:react-native-ble-plx] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-plx/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-ble-plx] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-plx/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-extra-dimensions-android] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-extra-dimensions-android/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-extra-dimensions-android] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-extra-dimensions-android/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-gesture-handler] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-gesture-handler] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.59.5] /home/carlos/.gradle/caches/transforms-1/files-1.1/react-native-0.59.5.aar/c7d545aca2e7e565f11026e87c22fb24/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.59.5] /home/carlos/.gradle/caches/transforms-1/files-1.1/react-native-0.59.5.aar/c7d545aca2e7e565f11026e87c22fb24/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d0b0e818fdb954f57f9cac8e3ff7de81/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d0b0e818fdb954f57f9cac8e3ff7de81/AndroidManifest.xml:20:5-44
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.7.0.aar/56d96566c3bebb8eaca8ab368b0476cf/AndroidManifest.xml:7:5-9:41
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.7.0.aar/56d96566c3bebb8eaca8ab368b0476cf/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-fragment:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/6b5936ad6dc043bd609306723d04eac5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/6b5936ad6dc043bd609306723d04eac5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/7fdf718d2d9005a93acf38d0d63696fb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/7fdf718d2d9005a93acf38d0d63696fb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/2a1f270efe1ededc02909112c4afd093/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/2a1f270efe1ededc02909112c4afd093/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/b077f28c5f6cf4b6b7f285ed8c117330/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/b077f28c5f6cf4b6b7f285ed8c117330/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/c6c9047a55afdd386e1bda2fa8181dad/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/c6c9047a55afdd386e1bda2fa8181dad/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/b340c883a812443cfa409ed34c349e60/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/b340c883a812443cfa409ed34c349e60/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/3f97742bd632c3bb9fe953be04761ae9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/3f97742bd632c3bb9fe953be04761ae9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/476b9023c72c6679862e79a4009cac93/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/476b9023c72c6679862e79a4009cac93/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/c179ddb8f691140fa37bcf17e6d812c5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/c179ddb8f691140fa37bcf17e6d812c5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/3ade6062f1981d786e748c9baf999ab5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/3ade6062f1981d786e748c9baf999ab5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/c0c9dedf15429ce30ae627aaea306256/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/c0c9dedf15429ce30ae627aaea306256/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/620bd5f2ffdb7a115017533691c8b223/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/620bd5f2ffdb7a115017533691c8b223/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/ec4aa573741e0685cec8792237dea4b6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/ec4aa573741e0685cec8792237dea4b6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f8eeafb429725cc9d3a880992c5f151d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f8eeafb429725cc9d3a880992c5f151d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/9728d0de586349ab50b80fa747159dac/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/9728d0de586349ab50b80fa747159dac/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/55baa098d258f7c25ad5fddd0149a1a4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/55baa098d258f7c25ad5fddd0149a1a4/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/carlos/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/b90db098835d18db991d32450a2d7ede/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/carlos/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/b90db098835d18db991d32450a2d7ede/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/32d6d1dc8b0e449b8698268cd7bc9c57/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/32d6d1dc8b0e449b8698268cd7bc9c57/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/d2973ae081271e32e832fc9d5bcdbd00/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/d2973ae081271e32e832fc9d5bcdbd00/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/751a11ba1cfb206e4a936aacf83a2281/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/751a11ba1cfb206e4a936aacf83a2281/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/carlos/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/3f3e96a5989940bb1a98e504f1bad35d/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/carlos/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/3f3e96a5989940bb1a98e504f1bad35d/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/carlos/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/74264bd42d91e83b02c55e58fe1574f9/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/carlos/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/74264bd42d91e83b02c55e58fe1574f9/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/carlos/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/d01dbedc3bbc83397f9e73d4f8ee46cb/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/carlos/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/d01dbedc3bbc83397f9e73d4f8ee46cb/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /home/carlos/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f5969cd5a4e234ff63eaea859c874f2b/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /home/carlos/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f5969cd5a4e234ff63eaea859c874f2b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/b53b432ac37e2ef8804d903452909632/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/b53b432ac37e2ef8804d903452909632/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.fresco:fresco:1.10.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/7b3d61a9848acfd1a3a2867e9b76eddf/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:1.10.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/7b3d61a9848acfd1a3a2867e9b76eddf/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/acede2bb30ba09caf5734770a89eab45/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/acede2bb30ba09caf5734770a89eab45/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.10.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/90d742889f0c5e17d7615948b1032c1c/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.10.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/90d742889f0c5e17d7615948b1032c1c/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/782f3aad8c74b011cf6a1f9d97a6c943/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/782f3aad8c74b011cf6a1f9d97a6c943/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/09f6d62c92d94bf558af3c7399e28300/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/09f6d62c92d94bf558af3c7399e28300/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.6.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/b932ffe0e0f7ee0ca4bb66f1e3a4825f/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:soloader:0.6.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/b932ffe0e0f7ee0ca4bb66f1e3a4825f/AndroidManifest.xml:7:5-9:41
-MERGED from [com.artemzin.rxjava:proguard-rules:1.3.3.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/proguard-rules-1.3.3.0.aar/b92608fac86f5ffcf8256ea0b4e2f507/AndroidManifest.xml:8:5-43
-MERGED from [com.artemzin.rxjava:proguard-rules:1.3.3.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/proguard-rules-1.3.3.0.aar/b92608fac86f5ffcf8256ea0b4e2f507/AndroidManifest.xml:8:5-43
-MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/a0bdb3f23212198ef3557f134abc8338/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/a0bdb3f23212198ef3557f134abc8338/AndroidManifest.xml:5:5-7:41
-INJECTED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml
-INJECTED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml
+INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-svg] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-svg] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-bluetooth-status] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-bluetooth-status/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-bluetooth-status] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-bluetooth-status/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-ble-manager] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-ble-manager] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-ble-plx] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-plx/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-ble-plx] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-plx/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-extra-dimensions-android] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-extra-dimensions-android/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-extra-dimensions-android] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-extra-dimensions-android/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.59.5] /home/bruno/.gradle/caches/transforms-1/files-1.1/react-native-0.59.5.aar/81436e53248f76c69904e10a67cb6308/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.59.5] /home/bruno/.gradle/caches/transforms-1/files-1.1/react-native-0.59.5.aar/81436e53248f76c69904e10a67cb6308/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/AndroidManifest.xml:20:5-44
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.7.0.aar/e222e2b101a9735a4ebbb07bf22b5a90/AndroidManifest.xml:7:5-9:41
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.7.0.aar/e222e2b101a9735a4ebbb07bf22b5a90/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-fragment:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/9e097461a264d23e710bf799b927d739/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/9e097461a264d23e710bf799b927d739/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/69f0e7b42f88443903fb80f91e491d20/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/69f0e7b42f88443903fb80f91e491d20/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/cf41bfeb3751316d728c668ff4be9d0b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/cf41bfeb3751316d728c668ff4be9d0b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/90e5663146cc9b1d766c9d1b92d129a5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/90e5663146cc9b1d766c9d1b92d129a5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/cf97ea992cd8b740438b5fe740bac1fb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/cf97ea992cd8b740438b5fe740bac1fb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/c745df43f729bcc4e7b8537f250b0f9f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/c745df43f729bcc4e7b8537f250b0f9f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/2467ad82e8d9bfe832ca2e25aab62786/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/2467ad82e8d9bfe832ca2e25aab62786/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/7cb1cced88f3b96f344de25b9f181c87/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/7cb1cced88f3b96f344de25b9f181c87/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/89133aa4dbd51c6494af248e73b6afd6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/89133aa4dbd51c6494af248e73b6afd6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/1c29b530ae2ec6423c04aa302c3bca9c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/1c29b530ae2ec6423c04aa302c3bca9c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/94ae64161c0fe402bf7710ebf6925982/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/94ae64161c0fe402bf7710ebf6925982/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/daf1a5e3279a4938dcbd95ee3c83b917/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/daf1a5e3279a4938dcbd95ee3c83b917/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/693064502522d45868f9b73024b606a3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/693064502522d45868f9b73024b606a3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/dff89fc04a7a1c06aeb689362419af27/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/dff89fc04a7a1c06aeb689362419af27/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/047103cbae18a508c68f8e790989f402/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/047103cbae18a508c68f8e790989f402/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/93b7252ede949652e1303452c33ff33b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/93b7252ede949652e1303452c33ff33b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/bruno/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/a523d7171ff870ea248985a3829f0849/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/bruno/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/a523d7171ff870ea248985a3829f0849/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/c0e348e1faa2e7edb60ae6875008ba9c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/c0e348e1faa2e7edb60ae6875008ba9c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/53a95e60580d3394f466e9cea103bbd9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/53a95e60580d3394f466e9cea103bbd9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/048b9b5ed29c3d6e9af0c7145fe30cfa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/048b9b5ed29c3d6e9af0c7145fe30cfa/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/bruno/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/fa9e2a777bafa0455c81f356f49761c2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/bruno/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/fa9e2a777bafa0455c81f356f49761c2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/bruno/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/6101f761d3bd12826ac8a049843255f4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/bruno/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/6101f761d3bd12826ac8a049843255f4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/bruno/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/f1d535a25f079d8c91aa3b4192e0dce2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/bruno/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/f1d535a25f079d8c91aa3b4192e0dce2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/bruno/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/6b2075ae20dec5571c0f66b51465f4bb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/bruno/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/6b2075ae20dec5571c0f66b51465f4bb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/91cc81dfb4012cb48a9964665783d4d1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/91cc81dfb4012cb48a9964665783d4d1/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:1.10.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/b2c57e68500926e1a8faa272366d89f7/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/b2c57e68500926e1a8faa272366d89f7/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/e3db6dbc40d0bc1e3838318e27b43bf0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/e3db6dbc40d0bc1e3838318e27b43bf0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/8a77fe7457e08f1c3076e064b0da0131/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/8a77fe7457e08f1c3076e064b0da0131/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/6dff942eaec6d8dfde5c4a99eed618ad/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/6dff942eaec6d8dfde5c4a99eed618ad/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/0bb94df63a963a82622f3a45827e5a3b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/0bb94df63a963a82622f3a45827e5a3b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/bfb11047d212f152352c97a0152ce48b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/bfb11047d212f152352c97a0152ce48b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.artemzin.rxjava:proguard-rules:1.3.3.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/proguard-rules-1.3.3.0.aar/bd8de8bea1a80fd8d37d5efe0f8f50f1/AndroidManifest.xml:8:5-43
+MERGED from [com.artemzin.rxjava:proguard-rules:1.3.3.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/proguard-rules-1.3.3.0.aar/bd8de8bea1a80fd8d37d5efe0f8f50f1/AndroidManifest.xml:8:5-43
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/db77a347cc61b4922759ef645ec10f1b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/db77a347cc61b4922759ef645ec10f1b/AndroidManifest.xml:5:5-7:41
+INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml
+INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml
-		INJECTED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml
-		INJECTED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:5:5-77
+ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:5:5-77
 	android:name
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:5:22-75
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:5:22-75
 uses-permission#android.permission.BLUETOOTH
-ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:6:5-67
-MERGED from [:react-native-bluetooth-status] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-bluetooth-status/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-68
-MERGED from [:react-native-bluetooth-status] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-bluetooth-status/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-68
-MERGED from [:react-native-ble-manager] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-68
-MERGED from [:react-native-ble-manager] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-68
-MERGED from [:react-native-ble-plx] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-plx/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-68
-MERGED from [:react-native-ble-plx] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-plx/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-68
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.7.0.aar/56d96566c3bebb8eaca8ab368b0476cf/AndroidManifest.xml:11:5-68
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.7.0.aar/56d96566c3bebb8eaca8ab368b0476cf/AndroidManifest.xml:11:5-68
+ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:6:5-67
+MERGED from [:react-native-bluetooth-status] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-bluetooth-status/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-68
+MERGED from [:react-native-bluetooth-status] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-bluetooth-status/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-68
+MERGED from [:react-native-ble-manager] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-68
+MERGED from [:react-native-ble-manager] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-68
+MERGED from [:react-native-ble-plx] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-plx/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-68
+MERGED from [:react-native-ble-plx] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-plx/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-68
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.7.0.aar/e222e2b101a9735a4ebbb07bf22b5a90/AndroidManifest.xml:11:5-68
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.7.0.aar/e222e2b101a9735a4ebbb07bf22b5a90/AndroidManifest.xml:11:5-68
 	android:name
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:6:22-65
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:6:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:7:5-73
-MERGED from [:react-native-bluetooth-status] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-bluetooth-status/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-74
-MERGED from [:react-native-bluetooth-status] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-bluetooth-status/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-74
-MERGED from [:react-native-ble-manager] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-74
-MERGED from [:react-native-ble-manager] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-74
-MERGED from [:react-native-ble-plx] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-plx/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-74
-MERGED from [:react-native-ble-plx] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-plx/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-74
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.7.0.aar/56d96566c3bebb8eaca8ab368b0476cf/AndroidManifest.xml:12:5-74
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.7.0.aar/56d96566c3bebb8eaca8ab368b0476cf/AndroidManifest.xml:12:5-74
+ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:7:5-73
+MERGED from [:react-native-bluetooth-status] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-bluetooth-status/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-74
+MERGED from [:react-native-bluetooth-status] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-bluetooth-status/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-74
+MERGED from [:react-native-ble-manager] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-74
+MERGED from [:react-native-ble-manager] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-74
+MERGED from [:react-native-ble-plx] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-plx/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-74
+MERGED from [:react-native-ble-plx] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-plx/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-74
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.7.0.aar/e222e2b101a9735a4ebbb07bf22b5a90/AndroidManifest.xml:12:5-74
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.7.0.aar/e222e2b101a9735a4ebbb07bf22b5a90/AndroidManifest.xml:12:5-74
 	android:name
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:7:22-71
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:7:22-71
 uses-permission-sdk-23#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:8:5-87
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.7.0.aar/56d96566c3bebb8eaca8ab368b0476cf/AndroidManifest.xml:14:5-88
-MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /home/carlos/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.7.0.aar/56d96566c3bebb8eaca8ab368b0476cf/AndroidManifest.xml:14:5-88
+ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:8:5-87
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.7.0.aar/e222e2b101a9735a4ebbb07bf22b5a90/AndroidManifest.xml:14:5-88
+MERGED from [com.polidea.rxandroidble:rxandroidble:1.7.0] /home/bruno/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.7.0.aar/e222e2b101a9735a4ebbb07bf22b5a90/AndroidManifest.xml:14:5-88
 	android:name
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:8:29-85
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:8:29-85
 uses-feature#android.hardware.bluetooth_le
-ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:10:5-89
-MERGED from [:react-native-ble-manager] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-13:35
-MERGED from [:react-native-ble-manager] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-13:35
+ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:10:5-89
+MERGED from [:react-native-ble-manager] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-13:35
+MERGED from [:react-native-ble-manager] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-13:35
 	android:required
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:10:64-87
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:10:64-87
 	android:name
-		ADDED from /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:10:19-63
+		ADDED from /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/debug/AndroidManifest.xml:10:19-63
 provider#com.imagepicker.FileProvider
-ADDED from [:react-native-image-picker] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
+ADDED from [:react-native-image-picker] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
 	android:grantUriPermissions
-		ADDED from [:react-native-image-picker] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
+		ADDED from [:react-native-image-picker] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
 	android:authorities
-		ADDED from [:react-native-image-picker] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-60
+		ADDED from [:react-native-image-picker] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-60
 	android:exported
-		ADDED from [:react-native-image-picker] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+		ADDED from [:react-native-image-picker] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
 	android:name
-		ADDED from [:react-native-image-picker] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-56
+		ADDED from [:react-native-image-picker] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-56
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:react-native-image-picker] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:58
+ADDED from [:react-native-image-picker] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:58
 	android:resource
-		ADDED from [:react-native-image-picker] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-55
+		ADDED from [:react-native-image-picker] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-55
 	android:name
-		ADDED from [:react-native-image-picker] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
+		ADDED from [:react-native-image-picker] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from [:react-native-ble-manager] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-81
+ADDED from [:react-native-ble-manager] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from [:react-native-ble-manager] /home/carlos/Documents/Pi2/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-78
+		ADDED from [:react-native-ble-manager] /home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-78
