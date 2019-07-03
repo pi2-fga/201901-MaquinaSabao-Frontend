@@ -134,7 +134,7 @@ export default class Historic extends Component {
                   <Right>
                     <Image
                       style={{width: 100, height: 100}}
-                      source={{uri: "http://192.168.0.7:8000" + this.state.element.oil_image}}
+                      source={{uri: "http://52.67.39.4" + this.state.element.oil_image}}
                     />
                   </Right>
                 </CardItem>

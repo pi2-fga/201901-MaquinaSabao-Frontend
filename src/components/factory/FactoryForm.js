@@ -23,7 +23,7 @@ export default class FactoryForm extends Component {
     this.submit = this.submit.bind(this)
     this.take_picture = this.take_picture.bind(this)
     this.props.set_request({amount_of_soap_request: this.state.quantity.toString()})
-    this.props.set_request({have_fragrance_request: this.state.fragrance === 1? 'True' : 'False'})
+    this.props.set_request({have_fragrance_request: this.state.fragrance === 1? true : false})
   }
 
   can_start(){
@@ -33,7 +33,7 @@ export default class FactoryForm extends Component {
     var essence1 = parseFloat(this.props.essence1)
     var essence2 = parseFloat(this.props.essence2)
 
-    return true // aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa <<< mudar
+    // return true // aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa <<< mudar
 
     if (this.state.quantity === 2){
       if(alcohol < 125){
@@ -89,7 +89,7 @@ export default class FactoryForm extends Component {
   }
 
   set_fragrance(value) {
-    this.props.set_request({have_fragrance_request: value === '1'? 'True' : 'False'})
+    this.props.set_request({have_fragrance_request: value === '1'? true : false})
     this.setState({
       fragrance: value
     });
@@ -106,6 +106,30 @@ export default class FactoryForm extends Component {
       alert("Máquina está sendo usada!")
     }else{
       this.props.set_request({start_of_manufacture_request: new Date().toJSON().replace('T', ' ').substr(0,19)})
+
+      // REQUEST TO CREATE MANUFACTURING
+
+      // const data = new FormData();
+      //
+      // data.append('actual_ph', 2.0)
+      // data.append('start_of_manufacture',  new Date().toJSON().replace('T', ' ').substr(0,19))
+      // data.append('end_of_manufacture',  new Date().toJSON().replace('T', ' ').substr(0,19))
+      // data.append('amount_of_soap', 2)
+      // data.append('oil_quality', 'GOOD')
+      // data.append('have_fragrance', true)
+      // data.append('oil_image', {
+      //   uri: this.state.picture.uri,
+      //   type: 'image/jpeg',
+      //   name: 'foto.jpeg'
+      // });
+      //
+      // fetch('http://52.67.39.4/manufacturing/', {
+      //   method: 'post',
+      //   body: data
+      // })
+
+      // --------------------------------
+
       this.props.set_screen('process')
       var response = '0'
       var quantity_aux = ''
@@ -169,7 +193,7 @@ export default class FactoryForm extends Component {
           name: 'foto'
         });
 
-        fetch('http://52.67.39.4/predict_oil_quality', {
+        fetch('http://52.67.39.4/predict_oil_quality/', {
           method: 'post',
           body: data
         })
@@ -249,7 +273,7 @@ export default class FactoryForm extends Component {
         {
           this.state.fragrance ? (
             <Item picker>
-              <Label>Compartimento (Essência):</Label>
+              <Label>Compartimento:</Label>
               <Picker
                 mode="dropdown"
                 selectedValue={this.state.essence_choice}
@@ -342,7 +366,7 @@ export default class FactoryForm extends Component {
                             ) : (
                               <View>
                                 <Icon name='alert-triangle' type='Feather' style={{marginLeft: "auto", marginRight: "auto", marginBottom: '3%'}}/>
-                                <Text style={{ marginLeft: '5%'}}>Você precisa de tirar uma foto do óleo para fabricar!</Text>
+                                <Text style={{ marginLeft: '5%'}}>Você precisa tirar uma foto do óleo para fabricar!</Text>
                               </View>
                             )
 
