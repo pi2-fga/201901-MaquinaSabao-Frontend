@@ -3,10 +3,9 @@ package com.maquina_sabao_front;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.learnium.RNDeviceInfo.RNDeviceInfo;
 import com.horcrux.svg.SvgPackage;
-import com.solinor.bluetoothstatus.RNBluetoothManagerPackage;
 import com.imagepicker.ImagePickerPackage;
-import it.innove.BleManagerPackage;
 import com.polidea.reactnativeble.BlePackage;
 import ca.jaysoo.extradimensions.ExtraDimensionsPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
@@ -31,10 +30,9 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNDeviceInfo(),
             new SvgPackage(),
-            new RNBluetoothManagerPackage(),
             new ImagePickerPackage(),
-            new BleManagerPackage(),
             new BlePackage(),
             new ExtraDimensionsPackage(),
             new VectorIconsPackage(),

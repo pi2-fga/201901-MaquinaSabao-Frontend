@@ -112,7 +112,7 @@ android {
         abi {
             reset()
             enable enableSeparateBuildPerCPUArchitecture
-            universalApk false  // If true, also generate a universal APK
+            universalApk true  // If true, also generate a universal APK
             include "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
         }
     }
@@ -149,10 +149,9 @@ android {
 }
 
 dependencies {
+    implementation project(':react-native-device-info')
     implementation project(':react-native-svg')
-    implementation project(':react-native-bluetooth-status')
     implementation project(':react-native-image-picker')
-    implementation project(':react-native-ble-manager')
     implementation project(':react-native-ble-plx')
     implementation project(':react-native-extra-dimensions-android')
     implementation project(':react-native-vector-icons')

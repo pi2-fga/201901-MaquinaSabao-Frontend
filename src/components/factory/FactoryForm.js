@@ -5,6 +5,7 @@ import { TouchableOpacity, Image } from 'react-native'
 import './global.js'
 import ImagePicker from 'react-native-image-picker';
 import {PermissionsAndroid} from 'react-native';
+import DeviceInfo from 'react-native-device-info';
 
 
 export default class FactoryForm extends Component {
@@ -33,7 +34,7 @@ export default class FactoryForm extends Component {
     var essence1 = parseFloat(this.props.essence1)
     var essence2 = parseFloat(this.props.essence2)
 
-    // return true // aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa <<< mudar
+    return true // aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa <<< mudar
 
     if (this.state.quantity === 2){
       if(alcohol < 125){
@@ -109,24 +110,25 @@ export default class FactoryForm extends Component {
 
       // REQUEST TO CREATE MANUFACTURING
 
-      // const data = new FormData();
-      //
-      // data.append('actual_ph', 2.0)
-      // data.append('start_of_manufacture',  new Date().toJSON().replace('T', ' ').substr(0,19))
-      // data.append('end_of_manufacture',  new Date().toJSON().replace('T', ' ').substr(0,19))
-      // data.append('amount_of_soap', 2)
-      // data.append('oil_quality', 'GOOD')
-      // data.append('have_fragrance', true)
-      // data.append('oil_image', {
-      //   uri: this.state.picture.uri,
-      //   type: 'image/jpeg',
-      //   name: 'foto.jpeg'
-      // });
-      //
-      // fetch('http://52.67.39.4/manufacturing/', {
-      //   method: 'post',
-      //   body: data
-      // })
+      const data = new FormData();
+
+      data.append('actual_ph', 2.0)
+      data.append('start_of_manufacture',  new Date().toJSON().replace('T', ' ').substr(0,19))
+      data.append('end_of_manufacture',  new Date().toJSON().replace('T', ' ').substr(0,19))
+      data.append('amount_of_soap', 2)
+      data.append('oil_quality', 'GOOD')
+      data.append('have_fragrance', true)
+      data.append('device_id', DeviceInfo.getUniqueID())
+      data.append('oil_image', {
+        uri: this.state.picture.uri,
+        type: 'image/jpeg',
+        name: 'foto.jpeg'
+      });
+
+      fetch('http://52.67.39.4/manufacturing/', {
+        method: 'post',
+        body: data
+      })
 
       // --------------------------------
 

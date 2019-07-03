@@ -3,7 +3,7 @@ import { Container, Header, Content, Text, Title, List, FlatList, ListItem, Righ
 import Modal from "react-native-modal";
 import { TouchableOpacity, Image, ScrollView } from 'react-native'
 import ExtraDimensions from 'react-native-extra-dimensions-android';
-
+import DeviceInfo from 'react-native-device-info';
 
 export default class Historic extends Component {
   constructor(props){
@@ -43,7 +43,7 @@ export default class Historic extends Component {
   }
 
   componentDidMount(){
-    fetch('http://52.67.39.4/index_manufacturing_month/', {
+    fetch('http://52.67.39.4/manufacturing/?device_id=' + DeviceInfo.getUniqueID(), {
       method: 'get',
     }).then((response) => {
       console.log(response);

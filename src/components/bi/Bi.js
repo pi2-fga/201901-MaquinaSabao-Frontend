@@ -2,14 +2,17 @@ import React, { Component } from "react";
 import { Container, Text, View, Card, CardItem, Col, Row, Link, Title, Grid, Left, Spinner, Label, Right } from "native-base";
 import { Image, Linking, Dimensions } from 'react-native';
 import { LineChart, BarChart, PieChart, ProgressChart, ContributionGraph, StackedBarChart   } from 'react-native-chart-kit'
+import DeviceInfo from 'react-native-device-info';
+import ProgressBar from 'react-native-progress/Bar'
+
 
 export default class Bi extends Component {
   constructor(props){
     super(props)
-    this.state = { list1: [], list2: [0.0], list3: [0.0], alcohol_link: '', soda_link: '', alcohol_img: '', soda_img: '', can_start1: false, can_start2: false, can_start3: false, no_chart: false, soda_name: '', alcohol_name: '', alcohol_price: '', soda_price: '' }
+    this.state = { list1: [], list2: [0.0], list3: [0.0], alcohol_link: '', soda_link: '', alcohol_img: '', soda_img: '', can_start1: false, can_start2: false, can_start3: false, no_chart: false, soda_name: '', alcohol_name: '', alcohol_price: '', soda_price: '', load: 0.0 }
   }
   componentDidMount(){
-    fetch('http://52.67.39.4/index_manufacturing_month/', {
+    fetch('http://52.67.39.4/index_manufacturing_month/?device_id=' + DeviceInfo.getUniqueID(), {
       method: 'get',
     }).then((response) => {
       console.log(response);
@@ -28,6 +31,7 @@ export default class Bi extends Component {
       }
       this.setState({list1: list1_aux, list2: list2_aux, list3: list3_aux})
       this.setState({can_start1: true})
+      this.setState({load: 0.3})
     })
     fetch('http://52.67.39.4/get_cheaper_alcohol_ml/', {
       method: 'get',
@@ -40,6 +44,7 @@ export default class Bi extends Component {
       var alcohol_price = data.item_price
       this.setState({ alcohol_link: alcohol_link_aux, alcohol_img: alcohol_img_aux, alcohol_name: alcohol_desc, alcohol_price: alcohol_price })
       this.setState({can_start2: true})
+      this.setState({load: 0.7})
     })
     fetch('http://52.67.39.4/get_cheaper_soda/', {
       method: 'get',
@@ -52,6 +57,7 @@ export default class Bi extends Component {
       var soda_price = data.item_price
       this.setState({ soda_link: soda_link_aux, soda_img: soda_img_aux, soda_name: soda_desc, soda_price: soda_price })
       this.setState({can_start3: true})
+      this.setState({load: 1})
     })
   }
   render() {
@@ -130,8 +136,10 @@ export default class Bi extends Component {
     }else{
       return (
         <Container>
-          <Title style={{color: "black"}}>Aguarde...</Title>
-          <Spinner color='blue' />
+          <View style={{marginBottom: 'auto', marginLeft: 'auto', marginRight: 'auto',marginTop: '10%'}}>
+            <Title style={{color: "black", marginBottom: '3%'}}>Carregando...</Title>
+            <ProgressBar progress={this.state.load}/>
+          </View>
         </Container>
       );
     }
