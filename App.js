@@ -29,10 +29,8 @@ export default class App extends Component {
       soda: '',
       feedback: '',
       essence: '',
-      connect: true, // mudarrrrr
+      connect: false, // mudarrrrr
       device_id: '',
-      response: '0',
-      temp: '',
       response: '0',
       temp: '',
       conclusion_modal: false,
@@ -99,9 +97,9 @@ export default class App extends Component {
             if(scannedDevice.name === 'Maquina de Sabao'){
               this.manager.stopDeviceScan()
               this.manager.connectToDevice(scannedDevice.id, null)
-              alert("Conectado")
-              this.setState({connect: true})
               .then((device) => {
+                alert("Conectado!")
+                this.setState({connect: true})
                 return device.discoverAllServicesAndCharacteristics()
               })
               .then( async(device) => {

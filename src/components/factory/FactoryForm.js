@@ -23,7 +23,7 @@ export default class FactoryForm extends Component {
     this.submit = this.submit.bind(this)
     this.take_picture = this.take_picture.bind(this)
     this.props.set_request({amount_of_soap_request: this.state.quantity.toString()})
-    this.props.set_request({have_fragrance_request: this.state.fragrance === 1? 'True' : 'False'})
+    this.props.set_request({have_fragrance_request: this.state.fragrance === 1? true : false})
   }
 
   can_start(){
@@ -33,7 +33,7 @@ export default class FactoryForm extends Component {
     var essence1 = parseFloat(this.props.essence1)
     var essence2 = parseFloat(this.props.essence2)
 
-    return true // aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa <<< mudar
+    // return true // aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa <<< mudar
 
     if (this.state.quantity === 2){
       if(alcohol < 125){
@@ -89,7 +89,7 @@ export default class FactoryForm extends Component {
   }
 
   set_fragrance(value) {
-    this.props.set_request({have_fragrance_request: value === '1'? 'True' : 'False'})
+    this.props.set_request({have_fragrance_request: value === '1'? true : false})
     this.setState({
       fragrance: value
     });
