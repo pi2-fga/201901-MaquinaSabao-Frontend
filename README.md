@@ -7,6 +7,8 @@
 
 O projeto "Soap lab" tem como intuito oferecer uma alternativa sustentável ao descarte indevido de óleo vegetal caseiro. A máquina recebe como insumo óleo vegetal que seria descartado, e juntamente com alguns outros ingredientes, produz uma quantidade de sabonete líquido que pode ser utilizado posteriormente. O aplicativo frontend atua como interface de usuário para controle da máquina, além de oferecer funcionalidades úteis como histórico de fabricações anteriores, e gráficos comparativos da economia provida por utilizar o sabão produzido pela máquina.
 
+O aplicativo pode ser instalado através do seguinte link: https://www.apkfiles.com/apk-596296/soap-lab.
+
 ### 2. Tecnologias
 
 #### 2.1 React Native
