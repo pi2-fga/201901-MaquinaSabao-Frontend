@@ -28,12 +28,12 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-hdpi-v4/abc_ic_star_black_48dp.png"
     },
     {
-        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
-        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-hdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-mdpi-v4/abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-hdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -932,12 +932,12 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/dff89fc04a7a1c06aeb689362419af27/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
     },
     {
-        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
-    },
-    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_icon.xml.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",

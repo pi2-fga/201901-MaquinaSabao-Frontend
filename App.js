@@ -25,9 +25,9 @@ export default class App extends Component {
       alcohol: '',
       oil: '',
       soda: '',
-      feedback: 'pode comecar',
+      feedback: '',
       essence: '',
-      connect: true, // mudarrrrr
+      connect: false, // mudarrrrr
       device_id: '',
       response: '0',
       temp: '',
