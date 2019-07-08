@@ -23,10 +23,10 @@ export default class Factory extends Component {
     let factory_screen;
 
     if ( this.state.screen === 'main' ){
-      factory_screen = <FactoryForm set_screen={this.set_screen}  alcohol={this.props.alcohol} oil={this.props.oil} soda={this.props.soda} wather={this.props.wather} essence={this.props.essence} set_response={this.props.set_response} set_request={this.props.set_request} feedback={this.props.feedback}/>
+      factory_screen = (<FactoryForm open_flag={this.props.open_flag} close_clean_modal={this.props.close_clean_modal} conclusion_modal={this.props.conclusion_modal} clean_modal={this.props.clean_modal} set_screen={this.set_screen} close_conclusion_modal={this.props.close_conclusion_modal} alcohol={this.props.alcohol} oil={this.props.oil} soda={this.props.soda} essence1={this.props.essence1} essence2={this.props.essence2} set_response={this.props.set_response} set_request={this.props.set_request} feedback={this.props.feedback}/>)
     }
     else if ( this.state.screen === 'process' ){
-      factory_screen = <FactoryProcess set_screen={this.set_screen} temp={this.props.temp} set_response={this.props.set_response} feedback={this.props.feedback} soda={this.props.soda} conclusion_modal={this.props.conclusion_modal} close_conclusion_modal={this.props.close_conclusion_modal} amount_of_soap_request={this.props.amount_of_soap_request}/>
+      factory_screen = <FactoryProcess set_screen={this.set_screen} temp={this.props.temp} set_response={this.props.set_response} feedback={this.props.feedback} soda={this.props.soda} close_conclusion_modal={this.props.close_conclusion_modal} amount_of_soap_request={this.props.amount_of_soap_request}/>
     }
 
     return (
