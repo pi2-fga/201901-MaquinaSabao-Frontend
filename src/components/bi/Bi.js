@@ -12,7 +12,7 @@ export default class Bi extends Component {
     this.state = { list1: [], list2: [0.0], list3: [0.0], alcohol_link: '', soda_link: '', alcohol_img: '', soda_img: '', can_start1: false, can_start2: false, can_start3: false, no_chart: false, soda_name: '', alcohol_name: '', alcohol_price: '', soda_price: '', load: 0.0 }
   }
   componentDidMount(){
-    fetch('http://52.67.39.4/index_manufacturing_month/?device_id=' + DeviceInfo.getUniqueID(), {
+    fetch('http://18.231.192.68/index_manufacturing_month/?device_id=' + DeviceInfo.getUniqueID(), {
       method: 'get',
     }).then((response) => {
       console.log(response);
@@ -33,7 +33,7 @@ export default class Bi extends Component {
       this.setState({can_start1: true})
       this.setState({load: 0.3})
     })
-    fetch('http://52.67.39.4/get_cheaper_alcohol_ml/', {
+    fetch('http://18.231.192.68/get_cheaper_alcohol_ml/', {
       method: 'get',
     }).then((response) => {
       return response.json();
@@ -46,7 +46,7 @@ export default class Bi extends Component {
       this.setState({can_start2: true})
       this.setState({load: 0.7})
     })
-    fetch('http://52.67.39.4/get_cheaper_soda/', {
+    fetch('http://18.231.192.68/get_cheaper_soda/', {
       method: 'get',
     }).then((response) => {
       return response.json();

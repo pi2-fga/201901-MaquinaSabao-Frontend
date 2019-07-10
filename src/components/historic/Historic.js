@@ -43,7 +43,7 @@ export default class Historic extends Component {
   }
 
   componentDidMount(){
-    fetch('http://52.67.39.4/manufacturing/?device_id=' + DeviceInfo.getUniqueID(), {
+    fetch('http://18.231.192.68/manufacturing/?device_id=' + DeviceInfo.getUniqueID(), {
       method: 'get',
     }).then((response) => {
       console.log(response);
@@ -134,7 +134,7 @@ export default class Historic extends Component {
                   <Right>
                     <Image
                       style={{width: 100, height: 100}}
-                      source={{uri: "http://52.67.39.4" + this.state.element.oil_image}}
+                      source={{uri: "http://18.231.192.68" + this.state.element.oil_image}}
                     />
                   </Right>
                 </CardItem>
