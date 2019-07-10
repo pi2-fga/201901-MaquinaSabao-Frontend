@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Header, Content, Footer, FooterTab, Button, Icon, Text } from 'native-base';
+import { Alert } from 'react-native';
 
 
 export default class MainFooter extends Component {
@@ -17,7 +18,7 @@ export default class MainFooter extends Component {
       this.setState({tab: [true, false, false, false]})
       this.props.set_tab_number(1)
     }else if(number == '1' && this.props.connect === false){
-      alert("Máquina não encontrada!")
+      Alert.alert("Aviso!" ,"Máquina não encontrada!")
     }
     if (number === '2') {
       this.setState({tab: [false, true, false, false]})

@@ -9,11 +9,11 @@ import Bi from "./src/components/bi/Bi"
 import Manual from "./src/components/manual/Manual"
 import { BleManager } from 'react-native-ble-plx'
 import { PermissionsAndroid } from 'react-native';
-import { BluetoothStatus } from 'react-native-bluetooth-status';
 import { NativeAppEventEmittem } from 'react-native'
-import Manager from 'react-native-ble-manager';
+import DeviceInfo from 'react-native-device-info';
+import { Alert } from 'react-native';
+import './src/components/factory/global.js'
 
-const alcohol = {service: "1111", characteristic: "2222"}
 
 const Base64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(e){var t="";var n,r,i,s,o,u,a;var f=0;e=Base64._utf8_encode(e);while(f<e.length){n=e.charCodeAt(f++);r=e.charCodeAt(f++);i=e.charCodeAt(f++);s=n>>2;o=(n&3)<<4|r>>4;u=(r&15)<<2|i>>6;a=i&63;if(isNaN(r)){u=a=64}else if(isNaN(i)){a=64}t=t+this._keyStr.charAt(s)+this._keyStr.charAt(o)+this._keyStr.charAt(u)+this._keyStr.charAt(a)}return t},decode:function(e){var t="";var n,r,i;var s,o,u,a;var f=0;e=e.replace(/[^A-Za-z0-9+/=]/g,"");while(f<e.length){s=this._keyStr.indexOf(e.charAt(f++));o=this._keyStr.indexOf(e.charAt(f++));u=this._keyStr.indexOf(e.charAt(f++));a=this._keyStr.indexOf(e.charAt(f++));n=s<<2|o>>4;r=(o&15)<<4|u>>2;i=(u&3)<<6|a;t=t+String.fromCharCode(n);if(u!=64){t=t+String.fromCharCode(r)}if(a!=64){t=t+String.fromCharCode(i)}}t=Base64._utf8_decode(t);return t},_utf8_encode:function(e){e=e.replace(/rn/g,"n");var t="";for(var n=0;n<e.length;n++){var r=e.charCodeAt(n);if(r<128){t+=String.fromCharCode(r)}else if(r>127&&r<2048){t+=String.fromCharCode(r>>6|192);t+=String.fromCharCode(r&63|128)}else{t+=String.fromCharCode(r>>12|224);t+=String.fromCharCode(r>>6&63|128);t+=String.fromCharCode(r&63|128)}}return t},_utf8_decode:function(e){var t="";var n=0;var r=c1=c2=0;while(n<e.length){r=e.charCodeAt(n);if(r<128){t+=String.fromCharCode(r);n++}else if(r>191&&r<224){c2=e.charCodeAt(n+1);t+=String.fromCharCode((r&31)<<6|c2&63);n+=2}else{c2=e.charCodeAt(n+1);c3=e.charCodeAt(n+2);t+=String.fromCharCode((r&15)<<12|(c2&63)<<6|c3&63);n+=3}}return t}}
 
@@ -28,19 +28,20 @@ export default class App extends Component {
       oil: '',
       soda: '',
       feedback: '',
-      essence: '',
+      essence1: '',
+      essence2: '',
       connect: false, // mudarrrrr
       device_id: '',
       response: '0',
       temp: '',
+      clean_modal: false,
       conclusion_modal: false,
-      actual_ph_request: '',
       start_of_manufacture_request: '',
-      end_of_manufacture_request: '',
       amount_of_soap_request: '',
       oil_quality_request: '',
       have_fragrance_request: '',
       oil_image_request: '',
+      flag: false,
     };
   }
 
@@ -81,16 +82,14 @@ export default class App extends Component {
 
   async scanConnectReadDeviceService(){
 
-    await BluetoothStatus.enable();
+    var state = await this.manager.state();
 
-    var state = await BluetoothStatus.state();
-
-    if(state){
+    if(state === "PoweredOn"){
       this.manager.startDeviceScan(
         null,
         null, (error, scannedDevice) => {
           if (error){
-            alert(error)
+            Alert.alert("Aviso!", error)
             this.scanConnectReadDeviceService()
           }else{
             console.log(scannedDevice.name);
@@ -98,7 +97,7 @@ export default class App extends Component {
               this.manager.stopDeviceScan()
               this.manager.connectToDevice(scannedDevice.id, null)
               .then((device) => {
-                alert("Conectado!")
+                Alert.alert("Aviso!", "Conectado!")
                 this.setState({connect: true})
                 return device.discoverAllServicesAndCharacteristics()
               })
@@ -175,7 +174,7 @@ export default class App extends Component {
                     )
                     await this.setState({feedback: Base64.decode(characteristic8.value)})
 
-                    // Feedback Escrita
+                    // Feedback Escritaresponse
 
                     if (this.state.feedback === 'pode comecar' && this.state.response !== '0'){
                         await device.writeCharacteristicWithResponseForService(
@@ -184,21 +183,42 @@ export default class App extends Component {
                           Base64.encode(this.state.response),
                         )
                         this.setState({response: '0'})
-                    }else if(this.state.feedback.split(' ')[0] === 'FIM'){
-                      await this.setState({actual_ph_request: parseFloat(his.state.feedback.split(' ')[1])})
+                    }else if(this.state.feedback === 'FIM' && this.state.flag === true){
+
                       await this.setState({conclusion_modal: true})
-                      await this.setState({end_of_manufacture_request: new Date().toJSON().replace('T', ' ').substr(0,19)})
+                      await this.setState({flag: false})
+
+                      global.factory_screen = 'main'
+
+                      var characteristic9 = await device.readCharacteristicForService(
+                        services[7].uuid,
+                        characteristics_feedback[2].uuid,
+                        null
+                      )
+
+                      // console.log("aaaaaaaaaaaa");
+                      // console.log(Base64.decode(characteristic9.value));
+                      // console.log("resto");
+                      // console.log(this.state.start_of_manufacture_request);
+                      // console.log(new Date().toJSON().replace('T', ' ').substr(0,19));
+                      // console.log(this.state.amount_of_soap_request);
+                      // console.log(this.state.have_fragrance_request);
+                      // console.log(DeviceInfo.getUniqueID());
+                      // console.log(this.state.oil_image_request.uri);
+
 
                       // REQUEST TO CREATE MANUFACTURING
 
                       const data = new FormData();
 
-                      data.append('actual_ph', this.state.actual_ph_request)
+                      data.append('actual_ph', Base64.decode(characteristic9.value))
                       data.append('start_of_manufacture', this.state.start_of_manufacture_request)
-                      data.append('end_of_manufacture', this.state.end_of_manufacture_request)
+                      data.append('end_of_manufacture', new Date().toJSON().replace('T', ' ').substr(0,19))
                       data.append('amount_of_soap', this.state.amount_of_soap_request)
                       data.append('oil_quality', this.state.oil_quality_request)
+                      // data.append('oil_quality', "GOOD")
                       data.append('have_fragrance', this.state.have_fragrance_request)
+                      data.append('device_id', DeviceInfo.getUniqueID())
                       data.append('oil_image', {
                         uri: this.state.oil_image_request.uri,
                         type: 'image/jpeg',
@@ -210,12 +230,14 @@ export default class App extends Component {
                         body: data
                       })
 
+                    }else if(this.state.feedback === 'limpeza concluida'){
+                      this.setState({clean_modal: true})
                     }
 
                   }catch(error){
-                    alert(error)
+                    Alert.alert("Aviso!", error)
                     device.cancelConnection()
-                    alert('Desconectado!')
+                    Alert.alert("Aviso!", 'Desconectado!')
                     this.setState({connect: false})
                     break
                   }
@@ -240,7 +262,15 @@ export default class App extends Component {
   }
 
   close_conclusion_modal = () => {
-    this.setState({conclusion_modal: true})
+    this.setState({conclusion_modal: false})
+  }
+
+  close_clean_modal = () => {
+    this.setState({clean_modal: false})
+  }
+
+  open_flag = () => {
+    this.setState({flag: true})
   }
 
   render() {
@@ -255,7 +285,7 @@ export default class App extends Component {
       tab = <HomeScreen/>
     }
     else if (this.state.tab_number === 1){
-      tab = <Factory alcohol={this.state.alcohol} oil={this.state.oil} soda={this.state.soda} essence1={this.state.essence1} essence2={this.state.essence2} temp={this.state.temp} set_response={this.set_response} feedback={this.state.feedback} conclusion_modal={this.state.conclusion_modal} close_conclusion_modal={this.close_conclusion_modal} set_request={this.set_request} have_fragrance_request={this.state.have_fragrance_request} amount_of_soap_request={this.state.amount_of_soap_request}/>
+      tab = <Factory open_flag={this.open_flag} clean_modal={this.state.clean_modal} alcohol={this.state.alcohol} oil={this.state.oil} soda={this.state.soda} essence1={this.state.essence1} essence2={this.state.essence2} temp={this.state.temp} set_response={this.set_response} feedback={this.state.feedback} conclusion_modal={this.state.conclusion_modal} close_clean_modal={this.close_clean_modal} close_conclusion_modal={this.close_conclusion_modal} set_request={this.set_request} have_fragrance_request={this.state.have_fragrance_request} amount_of_soap_request={this.state.amount_of_soap_request}/>
     }
     else if (this.state.tab_number === 2){
       tab = <Historic/>

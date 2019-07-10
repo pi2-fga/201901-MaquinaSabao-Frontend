@@ -5,6 +5,8 @@ import { TouchableOpacity, Image } from 'react-native'
 import './global.js'
 import ImagePicker from 'react-native-image-picker';
 import {PermissionsAndroid} from 'react-native';
+import DeviceInfo from 'react-native-device-info';
+import { Alert } from 'react-native';
 
 
 export default class FactoryForm extends Component {
@@ -21,9 +23,12 @@ export default class FactoryForm extends Component {
       spinner: false
     };
     this.submit = this.submit.bind(this)
+    this.clean = this.clean.bind(this)
     this.take_picture = this.take_picture.bind(this)
     this.props.set_request({amount_of_soap_request: this.state.quantity.toString()})
     this.props.set_request({have_fragrance_request: this.state.fragrance === 1? true : false})
+    this.close_modal = this.close_modal.bind(this)
+    this.close_modal_fab = this.close_modal_fab.bind(this)
   }
 
   can_start(){
@@ -33,7 +38,7 @@ export default class FactoryForm extends Component {
     var essence1 = parseFloat(this.props.essence1)
     var essence2 = parseFloat(this.props.essence2)
 
-    // return true // aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa <<< mudar
+    //return true // aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa <<< mudar
 
     if (this.state.quantity === 2){
       if(alcohol < 125){
@@ -42,10 +47,10 @@ export default class FactoryForm extends Component {
       if(oil < 250){
         return false
       }
-      if(this.state.fragrance === 1 && this.state.essence_choice === 1 && this.state.essence1 < 20){
+      if(this.state.fragrance === 1 && this.state.essence_choice === 1 && essence1 < 20){
         return false
       }
-      if(this.state.fragrance === 1 && this.state.essence_choice === 2 && this.state.essence2 < 20){
+      if(this.state.fragrance === 1 && this.state.essence_choice === 2 && essence2 < 20){
         return false
       }
     }else if(this.state.quantity === 4){
@@ -55,10 +60,10 @@ export default class FactoryForm extends Component {
       if(oil < 500){
         return false
       }
-      if(this.state.fragrance === 1 && this.state.essence_choice === 1 && this.state.essence1 < 40){
+      if(this.state.fragrance === 1 && this.state.essence_choice === 1 && essence1 < 40){
         return false
       }
-      if(this.state.fragrance === 1 && this.state.essence_choice === 2 && this.state.essence2 < 40){
+      if(this.state.fragrance === 1 && this.state.essence_choice === 2 && essence2 < 40){
         return false
       }
     }else if(this.state.quantity === 8){
@@ -68,10 +73,10 @@ export default class FactoryForm extends Component {
       if(oil < 1000){
         return false
       }
-      if(this.state.fragrance === 1 && this.state.essence_choice === 1 && this.state.essence1 < 60){
+      if(this.state.fragrance === 1 && this.state.essence_choice === 1 && essence1 < 60){
         return false
       }
-      if(this.state.fragrance === 1 && this.state.essence_choice === 2 && this.state.essence2 < 60){
+      if(this.state.fragrance === 1 && this.state.essence_choice === 2 && essence2 < 60){
         return false
       }
     }
@@ -101,11 +106,21 @@ export default class FactoryForm extends Component {
     });
   }
 
+  clean(){
+    if(this.props.feedback !== 'pode comecar'){
+      Alert.alert("Aviso!" ,"Máquina está ocupada!")
+    }else{
+      Alert.alert("Aviso!" ,"Processo de limpeza iniciado!")
+      this.props.set_response("limpeza")
+    }
+  }
+
   submit(){
     if(this.props.feedback !== 'pode comecar'){
-      alert("Máquina está sendo usada!")
+      Alert.alert("Aviso!" ,"Máquina está sendo usada!")
     }else{
       this.props.set_request({start_of_manufacture_request: new Date().toJSON().replace('T', ' ').substr(0,19)})
+      this.props.open_flag()
 
       // REQUEST TO CREATE MANUFACTURING
 
@@ -117,6 +132,7 @@ export default class FactoryForm extends Component {
       // data.append('amount_of_soap', 2)
       // data.append('oil_quality', 'GOOD')
       // data.append('have_fragrance', true)
+      // data.append('device_id', DeviceInfo.getUniqueID())
       // data.append('oil_image', {
       //   uri: this.state.picture.uri,
       //   type: 'image/jpeg',
@@ -144,7 +160,7 @@ export default class FactoryForm extends Component {
       if (this.state.fragrance) {
         response = "receita" + quantity_aux + this.state.essence_choice
       }else{
-        reponse = "receita" + this.state.quantity + '0'
+        response = "receita" + quantity_aux + '0'
       }
       this.props.set_response(response)
       global.factory_screen = 'process'
@@ -157,6 +173,10 @@ export default class FactoryForm extends Component {
   }
 
   close_modal = () =>{
+    this.setState({modal: false})
+  }
+
+  close_modal_clean = () =>{
     this.setState({modal: false})
   }
 
@@ -205,16 +225,10 @@ export default class FactoryForm extends Component {
         })
         .then((data) => {
           if(data){
-            if(data === 'NO OIL'){
-              alert("Tire outra foto, isso não é um óleo!")
-              this.props.set_request({oil_image_request: ''})
-              this.setState({picture: undefined})
-            }else{
-              this.setState({
-                oil_quality: data,
-              })
-              this.props.set_request({oil_quality_request: data})
-            }
+            this.setState({
+              oil_quality: data,
+            })
+            this.props.set_request({oil_quality_request: data})
           }
         })
 
@@ -224,6 +238,10 @@ export default class FactoryForm extends Component {
         });
       }
     });
+  }
+
+  close_modal_fab = () => {
+    this.props.close_conclusion_modal()
   }
 
   render() {
@@ -243,8 +261,20 @@ export default class FactoryForm extends Component {
       quantity_info = <Text style={{marginTop: '2%'}}>1 litro de óleo, 500ml de álcool, 250g de soda cáustica, 6.5L de água {this.state.fragrance ? fragrance_aux3 : ''}.</Text>
     }
 
+    let conclusion_modal
+
+    conclusion_modal = (<Modal isVisible={this.props.conclusion_modal}><Card><CardItem><Text style={{color: 'green'}}>{"Processo de fabricação finalizado com sucesso!"}</Text></CardItem><Button block success onPress={this.close_modal_fab}><Text>Voltar</Text></Button></Card></Modal>)
+
     return (
       <Form>
+        <Modal isVisible={this.props.clean_modal}>
+        <Card>
+          <CardItem>
+            <Text style={{color: 'green'}}>
+              {"Processo de limpeza finalizado com sucesso!\n\n Retire a água do compartimento!"}
+            </Text>
+          </CardItem>
+        <Button block success onPress={this.props.close_clean_modal}><Text>Voltar</Text></Button></Card></Modal>
         <Item picker>
           <Label>Quantidade:</Label>
           <Picker
@@ -285,7 +315,7 @@ export default class FactoryForm extends Component {
             </Item>
           ) : (<View/>)
         }
-        <Container style={{}}>
+        <Container style={{marginTop: "3%"}}>
           <Card style={{marginTop: '5%', marginBottom: '5%'}}>
             <CardItem transparent={false} style={{ backgroundColor: 'yellow'}}>
               <Body >
@@ -308,7 +338,7 @@ export default class FactoryForm extends Component {
                             <Text style={{}}>Óleo</Text>
                           </Left>
                           <Right>
-                            <Text style={{color: insumo_color}}>{this.props.oil} ml</Text>
+                            <Text style={{color: insumo_color}}>{this.props.oil.split('.')[0]} ml</Text>
                           </Right>
                         </CardItem>
                         <CardItem>
@@ -317,7 +347,7 @@ export default class FactoryForm extends Component {
                             <Text style={{}}>Álcool</Text>
                           </Left>
                           <Right>
-                            <Text style={{color: insumo_color}}>{this.props.alcohol} ml</Text>
+                            <Text style={{color: insumo_color}}>{this.props.alcohol.split('.')[0]} ml</Text>
                           </Right>
                         </CardItem>
                         {
@@ -328,7 +358,7 @@ export default class FactoryForm extends Component {
                               <Text style={{}}>Essência (Compartimento 1)</Text>
                             </Left>
                             <Right>
-                              <Text style={{color: insumo_color}}>{this.props.essence1} ml</Text>
+                              <Text style={{color: insumo_color}}>{this.props.essence1.split('.')[0]} ml</Text>
                             </Right>
                           </CardItem>) : (<View/>)
                         }
@@ -340,10 +370,17 @@ export default class FactoryForm extends Component {
                               <Text style={{}}>Essência (Compartimento 2)</Text>
                             </Left>
                             <Right>
-                              <Text style={{color: insumo_color}}>{this.props.essence2} ml</Text>
+                              <Text style={{color: insumo_color}}>{this.props.essence2.split('.')[0]} ml</Text>
                             </Right>
                           </CardItem>) : (<View/>)
                         }
+                        <CardItem>
+                          <Title style={{color: 'black', marginBottom: "3%"}}>Limpeza:</Title>
+                        </CardItem>
+                          <Button id="start-button" block onPress={this.clean} info>
+                            <Icon name='dishwasher' type="MaterialCommunityIcons" style={{}}/>
+                            <Text>Fazer Limpeza</Text>
+                          </Button>
                         <CardItem>
                           <Title style={{color: 'black'}}>Qualidade do óleo:</Title>
                         </CardItem>
@@ -386,6 +423,9 @@ export default class FactoryForm extends Component {
                 <Button id="start-button" block onPress={this.submit} disabled={!this.can_start()} >
                   <Text>Iniciar</Text>
                 </Button>
+                {
+                  conclusion_modal
+                }
         </Container>
       </Form>
     );

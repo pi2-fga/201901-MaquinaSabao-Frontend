@@ -28,12 +28,12 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-hdpi-v4/abc_ic_star_black_48dp.png"
     },
     {
-        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
-        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-hdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-mdpi-v4/abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-hdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -92,6 +92,10 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-hdpi-v4/abc_list_divider_mtrl_alpha.9.png"
     },
     {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable_abc_ratingbar_indicator_material.xml.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable/abc_ratingbar_indicator_material.xml"
     },
@@ -110,6 +114,10 @@
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-mdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable-mdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/color_abc_hint_foreground_material_light.xml.flat",
@@ -176,6 +184,10 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-hdpi-v4/abc_ic_star_black_36dp.png"
     },
     {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable-hdpi-v4/googleg_standard_color_18.png"
+    },
+    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/layout_notification_template_part_time.xml.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/dff89fc04a7a1c06aeb689362419af27/res/layout/notification_template_part_time.xml"
     },
@@ -208,6 +220,10 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable/abc_list_selector_holo_dark.xml"
     },
     {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable-mdpi-v4/googleg_standard_color_18.png"
+    },
+    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/layout-v21_notification_action.xml.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/dff89fc04a7a1c06aeb689362419af27/res/layout-v21/notification_action.xml"
     },
@@ -236,8 +252,16 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-mdpi-v4/abc_list_divider_mtrl_alpha.9.png"
     },
     {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable-hdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-mdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/layout_notification_template_lines_media.xml.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/bccdf4e84ccaf54eef6aab5c927498bb/res/layout/notification_template_lines_media.xml"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -280,6 +304,10 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-xxhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/color_common_google_signin_btn_text_light.xml.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
@@ -300,12 +328,12 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-xhdpi-v4/abc_text_select_handle_middle_mtrl_dark.png"
     },
     {
-        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
-        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
-    },
-    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-mdpi-v4/abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
@@ -322,6 +350,10 @@
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-ldrtl-mdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_dark_focused.xml.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat",
@@ -370,6 +402,10 @@
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-xxhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/layout_notification_media_cancel_action.xml.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/bccdf4e84ccaf54eef6aab5c927498bb/res/layout/notification_media_cancel_action.xml"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_background_transition_holo_light.xml.flat",
@@ -444,6 +480,10 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/color/abc_btn_colored_borderless_text_material.xml"
     },
     {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-xxhdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
     },
@@ -476,6 +516,10 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-ldrtl-xhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_googleg_disabled_color_18.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable-xxhdpi-v4/googleg_disabled_color_18.png"
+    },
+    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/dff89fc04a7a1c06aeb689362419af27/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
     },
@@ -490,6 +534,10 @@
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable_abc_list_divider_material.xml.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable/abc_list_divider_material.xml"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_light_normal.xml.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable/common_google_signin_btn_icon_light_normal.xml"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -548,6 +596,10 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable/abc_list_selector_holo_light.xml"
     },
     {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/layout_notification_template_media_custom.xml.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/bccdf4e84ccaf54eef6aab5c927498bb/res/layout/notification_template_media_custom.xml"
+    },
+    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-mdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
     },
@@ -568,6 +620,10 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-ldrtl-hdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/color_common_google_signin_btn_text_dark.xml.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-hdpi-v4/abc_list_longpressed_holo.9.png"
     },
@@ -586,6 +642,14 @@
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-xhdpi-v4/abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_dark_normal.xml.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -648,6 +712,10 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-xhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_disabled.xml.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable/common_google_signin_btn_icon_disabled.xml"
+    },
+    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-hdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
     },
@@ -684,6 +752,14 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-mdpi-v4/abc_text_select_handle_right_mtrl_light.png"
     },
     {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable-hdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-hdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
     },
@@ -692,16 +768,20 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/anim/abc_tooltip_exit.xml"
     },
     {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
-        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-hdpi-v4/abc_text_select_handle_right_mtrl_dark.png"
-    },
-    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/dff89fc04a7a1c06aeb689362419af27/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-hdpi-v4/abc_text_select_handle_right_mtrl_dark.png"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -752,8 +832,20 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-xxhdpi-v4/abc_text_select_handle_middle_mtrl_dark.png"
     },
     {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_narrow_custom.xml.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/bccdf4e84ccaf54eef6aab5c927498bb/res/layout/notification_template_big_media_narrow_custom.xml"
+    },
+    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-mdpi-v4/abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_light_normal.xml.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable/common_google_signin_btn_text_light_normal.xml"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -832,16 +924,20 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_16dp.png"
     },
     {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_light_focused.xml.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable/common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/dff89fc04a7a1c06aeb689362419af27/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
     },
     {
-        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
-    },
-    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_icon.xml.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -854,6 +950,10 @@
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable_abc_ic_ab_back_material.xml.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable/abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable-xxhdpi-v4/googleg_standard_color_18.png"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -886,6 +986,10 @@
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-hdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -952,12 +1056,16 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-xhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-xhdpi-v4/abc_list_pressed_holo_light.9.png"
+    },
+    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-mdpi-v4/abc_ic_star_half_black_48dp.png"
     },
     {
-        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
-        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-xhdpi-v4/abc_list_pressed_holo_light.9.png"
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_full_open_on_phone.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable-xhdpi-v4/common_full_open_on_phone.png"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable_abc_edit_text_material.xml.flat",
@@ -990,6 +1098,14 @@
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/color_abc_btn_colored_text_material.xml.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/color/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_googleg_disabled_color_18.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable-xhdpi-v4/googleg_disabled_color_18.png"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
@@ -1026,6 +1142,10 @@
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_disabled.xml.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable/common_google_signin_btn_text_disabled.xml"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -1066,6 +1186,10 @@
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -1144,6 +1268,10 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-xxhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_light_focused.xml.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable/common_google_signin_btn_text_light_focused.xml"
+    },
+    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/dff89fc04a7a1c06aeb689362419af27/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png"
     },
@@ -1158,6 +1286,10 @@
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable_abc_ratingbar_material.xml.flat",
@@ -1180,6 +1312,10 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/layout/abc_popup_menu_header_item_layout.xml"
     },
     {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable_redbox_top_border_background.xml.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/react-native-0.59.5.aar/81436e53248f76c69904e10a67cb6308/res/drawable/redbox_top_border_background.xml"
     },
@@ -1188,8 +1324,16 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/react-native-0.59.5.aar/81436e53248f76c69904e10a67cb6308/res/anim/catalyst_fade_out.xml"
     },
     {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_custom.xml.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/bccdf4e84ccaf54eef6aab5c927498bb/res/layout/notification_template_big_media_custom.xml"
+    },
+    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable_abc_ic_arrow_drop_right_black_24dp.xml.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/layout_notification_template_big_media.xml.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/bccdf4e84ccaf54eef6aab5c927498bb/res/layout/notification_template_big_media.xml"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/layout-v16_notification_template_custom_big.xml.flat",
@@ -1198,6 +1342,10 @@
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/anim_abc_grow_fade_in_from_bottom.xml.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_dark_normal.xml.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable/common_google_signin_btn_icon_dark_normal.xml"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/anim_abc_popup_enter.xml.flat",
@@ -1216,6 +1364,10 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/color/abc_secondary_text_material_light.xml"
     },
     {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable-xhdpi-v4/googleg_standard_color_18.png"
+    },
+    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-xxhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
     },
@@ -1226,6 +1378,14 @@
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/color_abc_tint_switch_track.xml.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/color/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_full_open_on_phone.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable-hdpi-v4/common_full_open_on_phone.png"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_narrow.xml.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/bccdf4e84ccaf54eef6aab5c927498bb/res/layout/notification_template_big_media_narrow.xml"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
@@ -1244,8 +1404,16 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/layout/abc_action_bar_up_container.xml"
     },
     {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_googleg_disabled_color_18.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable-mdpi-v4/googleg_disabled_color_18.png"
+    },
+    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/layout_redbox_view.xml.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/react-native-0.59.5.aar/81436e53248f76c69904e10a67cb6308/res/layout/redbox_view.xml"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -1352,6 +1520,10 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-xxhdpi-v4/abc_ic_star_half_black_16dp.png"
     },
     {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/layout_notification_template_media.xml.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/bccdf4e84ccaf54eef6aab5c927498bb/res/layout/notification_template_media.xml"
+    },
+    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
     },
@@ -1396,6 +1568,10 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-xhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_light.xml.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable/common_google_signin_btn_icon_light.xml"
+    },
+    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable_abc_btn_radio_material.xml.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable/abc_btn_radio_material.xml"
     },
@@ -1410,6 +1586,10 @@
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/layout_notification_template_part_chronometer.xml.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/dff89fc04a7a1c06aeb689362419af27/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_light.xml.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable/common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable_abc_btn_colored_material.xml.flat",
@@ -1428,8 +1608,20 @@
         "source": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/packaged_res/debug/layout/list_item.xml"
     },
     {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_dark.xml.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable/common_google_signin_btn_icon_dark.xml"
+    },
+    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/color_abc_background_cache_hint_selector_material_dark.xml.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/color/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_dark_focused.xml.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable/common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/color_common_google_signin_btn_tint.xml.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/color/common_google_signin_btn_tint.xml"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/anim_abc_popup_exit.xml.flat",
@@ -1442,6 +1634,10 @@
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/xml_provider_paths.xml.flat",
         "source": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/node_modules/react-native-image-picker/android/build/intermediates/packaged_res/debug/xml/provider_paths.xml"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_dark.xml.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable/common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/layout_redbox_item_title.xml.flat",
@@ -1504,6 +1700,10 @@
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-mdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/layout_notification_media_action.xml.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/bccdf4e84ccaf54eef6aab5c927498bb/res/layout/notification_media_action.xml"
+    },
+    {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_normal.9.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/dff89fc04a7a1c06aeb689362419af27/res/drawable-mdpi-v4/notification_bg_normal.9.png"
     },
@@ -1514,6 +1714,10 @@
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/layout-v21_notification_template_custom_big.xml.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/dff89fc04a7a1c06aeb689362419af27/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/layout_select_dialog_multichoice_material.xml.flat",
@@ -1594,6 +1798,10 @@
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f97c9e2e1f12c15b6a22b54b00349ee0/res/drawable-xxhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_googleg_disabled_color_18.png.flat",
+        "source": "/home/bruno/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7f4204b009845c84f867d1e968b385cc/res/drawable-hdpi-v4/googleg_disabled_color_18.png"
     },
     {
         "merged": "/home/bruno/UnB/PI2/repo_oficial/201901-MaquinaSabao-Frontend/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
