@@ -139,7 +139,7 @@ export default class FactoryForm extends Component {
       //   name: 'foto.jpeg'
       // });
       //
-      // fetch('http://52.67.39.4/manufacturing/', {
+      // fetch('http://18.231.192.68/manufacturing/', {
       //   method: 'post',
       //   body: data
       // })
@@ -213,7 +213,7 @@ export default class FactoryForm extends Component {
           name: 'foto'
         });
 
-        fetch('http://52.67.39.4/predict_oil_quality/', {
+        fetch('http://18.231.192.68/predict_oil_quality/', {
           method: 'post',
           body: data
         })

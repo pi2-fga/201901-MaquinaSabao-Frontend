@@ -43,6 +43,31 @@ export default class App extends Component {
       oil_image_request: '',
       flag: false,
     };
+
+    // global.factory_screen = 'process'
+
+    // setTimeout(function(){
+    //    this.setState({feedback: '1'})
+    //    setTimeout(function(){
+    //       this.setState({feedback: '2'})
+    //       setTimeout(function(){
+    //          this.setState({feedback: '3'})
+    //          setTimeout(function(){
+    //             this.setState({feedback: '4'})
+    //             setTimeout(function(){
+    //                this.setState({feedback: '5'})
+    //                setTimeout(function(){
+    //                   this.setState({feedback: '6'})
+    //                   setTimeout(function(){
+    //                      this.setState({feedback: 'FIM'})
+    //                    }, 3000);
+    //                 }, 3000);
+    //              }, 3000);
+    //           }, 3000);
+    //        }, 3000);
+    //     }, 3000);
+    //  }, 3000);
+
   }
 
   set_request = (dict) => {
@@ -225,7 +250,7 @@ export default class App extends Component {
                         name: 'foto.jpeg'
                       });
 
-                      fetch('http://52.67.39.4/manufacturing', {
+                      fetch('http://18.231.192.68/manufacturing', {
                         method: 'post',
                         body: data
                       })
